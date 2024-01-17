@@ -1,0 +1,47 @@
+name: "Biostats uOttawa"
+title: "Biostats uOttawaa"
+output_dir: "docs"
+include: [".nojekyll"]
+#theme: "theme.css"
+navbar:
+  title: "Biostats uOttawa"
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "Bio4x58"
+      menu:
+        - text: 4158 (english)
+          href: https://biostats-uottawa.github.io/bio4158_course/
+        - text: 4558 (français)
+          href: https://biostats-uottawa.github.io/bio4558_cours/
+    - text: "Bio8940"
+      href: https://biostats-uottawa.github.io/bio8940_course/
+    - text: "IntroR"
+      menu:
+        - text: R-way to hell
+          href: https://biostats-uottawa.github.io/R_way/ 
+        - text: Chemin de l'enf-R
+          href: https://biostats-uottawa.github.io/chemin_R/
+      href: index.html      
+    - text: "Contact"
+      icon: fa-envelope
+      href: people.html
+
+output:
+  html_document:
+    theme: yeti
+    highlight: kate
+    toc: true
+    toc_depth: 2
+    toc_float:
+      collapsed: false
+    fig_align: center
+    # anchor_sections = FALSE
+#    includes:
+#      in_header: GA_script.html
+    # css: 'styles.css'
+    # css:
+    #  - https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css
+    #  - styles.css
+
+exclude: ["LICENSE", "README.md", "/profile/"]
