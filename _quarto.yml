@@ -6,9 +6,7 @@ website:
   title: "Biostats uOttawa"
   navbar:
     title: "Biostats uOttawa"
-    right:
-      - text: "Home"
-        href: index.qmd
+    left:
       - text: "Bio4x58"
         menu:
           - text: 4158 (english)
@@ -23,13 +21,21 @@ website:
             href: https://biostats-uottawa.github.io/R_way/ 
           - text: Chemin de l'enf-R
             href: https://biostats-uottawa.github.io/chemin_R/
-      - text: "Contact"
-        icon: fa-envelope
-        href: people.qmd
-  
+    tools:
+      - icon: envelope
+        href: people.html
+        text: Contact
+      - icon: github
+        menu:
+        - text: Code
+          href: https://github.com/biostats-uOttawa/biostats-uottawa.github.io
+        - text: Issues
+          href: https://github.com/Biostats-uOttawa/biostats-uottawa.github.io/issues
+
 format:
   html:
-    theme: yeti
+    theme: cosmo
     highlight: kate
+    fig_align: center
     css: styles.css
     toc: true
