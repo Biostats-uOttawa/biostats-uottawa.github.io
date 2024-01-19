@@ -58,12 +58,12 @@ Le site regroupe les différentes ressources développées par [Julien Martin](p
   * BIO4158 Applied biostatistics with R ([cours][4158_course] / [manuel][4158_manual])
   * BIO4558 Biostatistiques appliquées avec R ([cours][4558_course] / [manuel][4558_manual])
 
-* cours gradués
+* Cours gradués
   * BIO8940: Advanced biostatistics and open science ([cours][8940_course] / [manuel][8940_manual])
 
-#### Extra resources
+#### Tutoriels
 
-* An introduction to R
+* Introduction à R
   * anglais ([cours][Rintro] / [manuel][R_way])
   * français ([cours][introR] / [manuel][chemin_R])
 
