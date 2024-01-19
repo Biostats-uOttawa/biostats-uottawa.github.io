@@ -32,11 +32,12 @@ by [Julien Martin](people.qmd)
 
 #### Courses at uOttawa
 
-* BIO 4X58: Biostatistics with R
-  * english BIO4158 ([course site][4158_course] / [course manual][4158_manual])
-  * french BIO4558 ([course site][4558_course] / [course manual][4558_manual])
+* Undergraduate courses (BIO 4X58):
+  * BIO4158 Applied biostatistics with R ([course site][4158_course] / [course manual][4158_manual])
+  * BIO4558 Biostatistiques appliquées avec R([course site][4558_course] / [course manual][4558_manual])
 
-* BIO8940: Advanced biostatistics and open science ([course site][8940_course] / [course manual][8940_manual])
+* Graduate courses
+  * BIO8940: Advanced biostatistics and open science ([course site][8940_course] / [course manual][8940_manual])
 
 #### Extra resources
 
@@ -53,11 +54,12 @@ Le site regroupe les différentes ressources développées par [Julien Martin][l
 
 #### Cours
 
-* BIO 4X58: Biostatistiques avec R
-  * anglais BIO4158 ([cours][4158_course] / [manuel][4158_manual])
-  * français BIO4558 ([cours][4558_course] / [manuel][4558_manual])
+* Cours de baccalauréat (BIO 4X58)
+  * BIO4158 Applied biostatistics with R ([cours][4158_course] / [manuel][4158_manual])
+  * BIO4558 Biostatistiques appliquées avec R ([cours][4558_course] / [manuel][4558_manual])
 
-* BIO8940: Advanced biostatistics and open science ([cours][8940_course] / [manuel][8940_manual])
+* cours gradués
+  * BIO8940: Advanced biostatistics and open science ([cours][8940_course] / [manuel][8940_manual])
 
 #### Extra resources
 
