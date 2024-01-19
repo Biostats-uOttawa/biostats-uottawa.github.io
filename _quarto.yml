@@ -30,6 +30,6 @@ website:
 format:
   html:
     theme: yeti
-    highlight: github
+    highlight: kate
     css: styles.css
     toc: true
