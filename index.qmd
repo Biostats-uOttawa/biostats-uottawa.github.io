@@ -49,7 +49,7 @@ by [Julien Martin](people.qmd)
 
 ### Resources de biostatistique pour les étudiants de uOttawa
 
-Le site regroupe les différentes ressources développées par [Julien Martin][lab_website] pour les cours de biostatistiques à uOttawa
+Le site regroupe les différentes ressources développées par [Julien Martin](people.qmd) pour les cours de biostatistiques à uOttawa
 
 
 #### Cours
