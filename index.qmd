@@ -1,0 +1,70 @@
+---
+title: "Biostats uOttawa"
+---
+
+{{< include _links.qmd >}}
+
+```{r}
+#| label: setup
+#| include: FALSE
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r}
+#| fig.align: 'center'
+#| out.width: "25%"
+dat<-data.frame(a = rnorm(10000))
+library(ggplot2)
+ggplot(dat, aes(a))+geom_density(color="blue", fill="red") +theme_classic()+xlab("Gaussian distribution")
+```
+
+::: {.panel-tabset }
+
+
+## English
+
+### Biostatistic resources for uOttawa students
+
+
+This regroup the different resources developed for the biostatistic courses at the university of Ottawa
+by [Julien Martin](people.qmd)  
+
+
+#### Courses at uOttawa
+
+* BIO 4X58: Biostatistics with R
+  * english BIO4158 ([course site][4158_course] / [course manual][4158_manual])
+  * french BIO4558 ([course site][4558_course] / [course manual][4558_manual])
+
+* BIO8940: Advanced biostatistics and open science ([course site][8940_course] / [course manual][8940_manual])
+
+#### Extra resources
+
+* An introduction to R
+  * english ([course][Rintro] / [course manual][R_way])
+  * french ([course][introR] / [course manual][chemin_R])
+
+## Français
+
+### Resources de biostatistique pour les étudiants de uOttawa
+
+Le site regroupe les différentes ressources développées par [Julien Martin][lab_website] pour les cours de biostatistiques à uOttawa
+
+
+#### Cours
+
+* BIO 4X58: Biostatistiques avec R
+  * anglais BIO4158 ([cours][4158_course] / [manuel][4158_manual])
+  * français BIO4558 ([cours][4558_course] / [manuel][4558_manual])
+
+* BIO8940: Advanced biostatistics and open science ([cours][8940_course] / [manuel][8940_manual])
+
+#### Extra resources
+
+* An introduction to R
+  * anglais ([cours][Rintro] / [manuel][R_way])
+  * français ([cours][introR] / [manuel][chemin_R])
+
+
+:::
+
