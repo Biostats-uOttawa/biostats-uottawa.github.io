@@ -5,7 +5,7 @@ project:
     - "*.qmd"
     - "!slides/"
   resources:
-    - "slides_intro_r/"
+    - "slides_r/"
     - "data/"
 
 website:
