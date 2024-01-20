@@ -20,5 +20,5 @@
 [moi_uo]: https://www.uottawa.ca/faculty-science/professors/julien-martin
 [moi_github]: https://github.com/juliengamartin
 
-[introR]: none
-[Rintro]: none
+[introR]: https://biostats-uottawa.github.io/intro_r_en.html 
+[Rintro]: https://biostats-uottawa.github.io/intro_r_fr.html 
