@@ -1,6 +1,12 @@
 project:
   type: website
   output-dir: docs
+  render:
+    - "*.qmd"
+    - "!slides/"
+  resources:
+    - "slides_intro_r/"
+    - "data/"
 
 website:
   title: "Biostats uOttawa"
@@ -13,12 +19,12 @@ website:
         href: https://biostats-uottawa.github.io/bio4558_cours/
       - text: Bio8940
         href: https://biostats-uottawa.github.io/bio8940_course/
-      - text: "IntroR"
+      - text: Intro R
         menu:
           - text: R-way to hell
-            href: https://biostats-uottawa.github.io/R_way/ 
+            href: intro_r_en.qmd 
           - text: Chemin de l'enf-R
-            href: https://biostats-uottawa.github.io/chemin_R/
+            href: intro_r_fr.qmd
     tools:
       - icon: envelope
         href: people.html

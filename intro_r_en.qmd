@@ -1,0 +1,59 @@
+---
+title: "Introduction to R"
+format:
+  html:
+    toc: false
+---
+
+{{< include _links.qmd >}}
+
+```{r}
+#| label: setup
+#| include: FALSE
+library(yaml)
+library(stringr)
+library(tibble)
+library(dplyr)
+library(purrr)
+library(glue)
+library(knitr)
+library(kableExtra)
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Slides
+
+A few presentations to take as an easy intro to R.
+
+```{r}
+schedule_df <- data.frame(
+  topic = c("Introduction R", "Data in R", "Simple stats in R"),
+  weekno = 1:3
+) %>%
+  mutate(
+    lecture = file.exists(sprintf("slides_r/lec_en-%.2d.html", weekno)),
+  ) %>%
+  mutate(
+    slides = case_when(lecture == TRUE ~
+      glue("<a class='fa fa-link' href='slides_r/{sprintf(\"lec_en-%.2d.html\", weekno)}' target='_blank'></a> / <a class='fa fa-file-pdf' href='slides_r/{sprintf(\"lec_en-%.2d.pdf\", weekno)}' target='_blank'></a>"),
+      .default = NA),
+    topic = ifelse(is.na(topic), "", topic)
+  ) %>%
+  select(topic, slides)
+
+schedule_df %>%
+  kable(
+    escape = FALSE, align = c("c", "c"),
+    col.names = c(
+      "Topic", "Slides"
+    )
+  ) %>%
+  kable_styling(
+    bootstrap_options = "striped",
+    fixed_thead = T
+  )
+```
+
+## Manual
+
+Here is a link to the the introduction to R manual: [On the R-way to hell][R_way] {{< fa thumbs-up >}} 

@@ -7,10 +7,52 @@
     "text": "Julien Martin\n\n\n\n\n\n\n\n\n\n\n\n\nJulien is an Associate Professor at the University of Ottawa and has been teaching (and learning) R for the last 15 years.\n\nUniversity page\nLab website\nGitHub"
   },
   {
+    "objectID": "intro_r_en.html",
+    "href": "intro_r_en.html",
+    "title": "Introduction to R",
+    "section": "",
+    "text": "A few presentations to take as an easy intro to R.\n\n\n\n\n\nTopic\nSlides\n\n\n\n\nIntroduction R\n / \n\n\nData in R\n / \n\n\nSimple stats in R\n /"
+  },
+  {
+    "objectID": "intro_r_en.html#slides",
+    "href": "intro_r_en.html#slides",
+    "title": "Introduction to R",
+    "section": "",
+    "text": "A few presentations to take as an easy intro to R.\n\n\n\n\n\nTopic\nSlides\n\n\n\n\nIntroduction R\n / \n\n\nData in R\n / \n\n\nSimple stats in R\n /"
+  },
+  {
+    "objectID": "intro_r_en.html#manual",
+    "href": "intro_r_en.html#manual",
+    "title": "Introduction to R",
+    "section": "Manual",
+    "text": "Manual\nHere is a link to the the introduction to R manual: On the R-way to hell"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Biostats uOttawa",
     "section": "",
     "text": "EnglishFrançais\n\n\n\nBiostatistic resources for uOttawa students\nThis regroup the different resources developed for the biostatistic courses at the university of Ottawa by Julien Martin\n\nCourses at uOttawa\n\nUndergraduate courses (BIO 4X58):\n\nBIO4158 Applied biostatistics with R (course site / course manual)\nBIO4558 Biostatistiques appliquées avec R(course site / course manual)\n\nGraduate courses\n\nBIO8940: Advanced biostatistics and open science (course site / course manual)\n\n\n\n\nExtra resources\n\nAn introduction to R\n\nenglish (course / course manual)\nfrench (course / course manual)\n\n\n\n\n\n\n\nResources de biostatistique pour les étudiants de uOttawa\nLe site regroupe les différentes ressources développées par Julien Martin pour les cours de biostatistiques à uOttawa\n\nCours\n\nCours de baccalauréat (BIO 4X58)\n\nBIO4158 Applied biostatistics with R (cours / manuel)\nBIO4558 Biostatistiques appliquées avec R (cours / manuel)\n\nCours gradués\n\nBIO8940: Advanced biostatistics and open science (cours / manuel)\n\n\n\n\nTutoriels\n\nIntroduction à R\n\nanglais (cours / manuel)\nfrançais (cours / manuel)"
+  },
+  {
+    "objectID": "intro_r_fr.html",
+    "href": "intro_r_fr.html",
+    "title": "Introduction à R",
+    "section": "",
+    "text": "Quelques présentations pour s’initier à R.\n\n\n\n\n\n\nWarning\n\n\n\nEn anglais seulement, traduction à venir\n\n\n\n\n\n\n\nTopic\nSlides\n\n\n\n\nIntroduction R\nNA\n\n\nData in R\nNA\n\n\nSimple stats in R\nNA"
+  },
+  {
+    "objectID": "intro_r_fr.html#diapos",
+    "href": "intro_r_fr.html#diapos",
+    "title": "Introduction à R",
+    "section": "",
+    "text": "Quelques présentations pour s’initier à R.\n\n\n\n\n\n\nWarning\n\n\n\nEn anglais seulement, traduction à venir\n\n\n\n\n\n\n\nTopic\nSlides\n\n\n\n\nIntroduction R\nNA\n\n\nData in R\nNA\n\n\nSimple stats in R\nNA"
+  },
+  {
+    "objectID": "intro_r_fr.html#manuel",
+    "href": "intro_r_fr.html#manuel",
+    "title": "Introduction à R",
+    "section": "Manuel",
+    "text": "Manuel\nEt voila un manuel d’introduction à R: Sur le chemin de l’enf-R"
   }
 ]
