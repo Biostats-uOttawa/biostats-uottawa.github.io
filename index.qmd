@@ -30,22 +30,21 @@ by [Julien Martin](people.qmd)
 
 #### Applied biostatistics with R (BIO 4X58):
 
-  * BIO4158 english ([course site][4158_course] / [course manual][4158_manual])
-  * BIO4558 french ([course site][4558_course] / [course manual][4558_manual])
   * Offered to both undergraduate and graduate students
   * Prerequisite:
     * an introduction class to statisticis is good to have
     * No (or limited) knowledge of R and no (or limited) knowledge of stats expected.
-
+  * BIO4158 english ([Course site][4158_course] / [Course manual][4158_manual])
+  * BIO4558 french ([Course site][4558_course] / [Course manual][4558_manual])
 
 #### Advanced biostatistics and open science (BIO 8940)
 
-  * [course site][8940_course] / [course manual][8940_manual]
   * Bilingual course for graduate students
   * Prerequisite:
     * a functional knowledge of R (loading data, running basic linear models, and making plots) 
     * a good understanding of linear models
     * essentially Bio8940 is a great next steps after completing Bio4x58.
+  * [Course site][8940_course] / [Course manual][8940_manual]
 
 ### Extra resources
 
