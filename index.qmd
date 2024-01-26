@@ -23,23 +23,31 @@ ggplot(dat, aes(a))+geom_density(color="blue", fill="red") +theme_classic()+xlab
 
 ## English
 
-### Biostatistic resources for uOttawa students
+### Biostatistic courses at uOttawa
 
 This regroup the different resources developed for the biostatistic courses at the university of Ottawa
 by [Julien Martin](people.qmd)  
 
-#### Courses at uOttawa
+#### Applied biostatistics with R (BIO 4X58):
 
-* Undergraduate courses (BIO 4X58):
-  * BIO4158 Applied biostatistics with R ([course site][4158_course] / [course manual][4158_manual])
-  * BIO4558 Biostatistiques appliquées avec R([course site][4558_course] / [course manual][4558_manual])
+  * BIO4158 english ([course site][4158_course] / [course manual][4158_manual])
+  * BIO4558 french ([course site][4558_course] / [course manual][4558_manual])
+  * Offered to both undergraduate and graduate students
+  * Prerequisite:
+    * an introduction class to statisticis is good to have
+    * No (or limited) knowledge of R and no (or limited) knowledge of stats expected.
 
-* Graduate courses
-  * BIO8940: Advanced biostatistics and open science ([course site][8940_course] / [course manual][8940_manual])
 
-Graduate students can take both courses. Bio4x58 are intro classes that expect no or limited knowledge of R and no or limited knowledge of stats. Bio8940 expect a functional knowledge of R (loading data, running basic linear models, and making plots) as well as a good understanding of linear models (i.e. Bio8940 is a great next steps after completing Bio4x58).
+#### Advanced biostatistics and open science (BIO 8940)
 
-#### Extra resources
+  * [course site][8940_course] / [course manual][8940_manual]
+  * Bilingual course for graduate students
+  * Prerequisite:
+    * a functional knowledge of R (loading data, running basic linear models, and making plots) 
+    * a good understanding of linear models
+    * essentially Bio8940 is a great next steps after completing Bio4x58.
+
+### Extra resources
 
 * An introduction to R
   * english ([course][Rintro] / [course manual][R_way])
@@ -47,21 +55,29 @@ Graduate students can take both courses. Bio4x58 are intro classes that expect n
 
 ## Français
 
-### Resources de biostatistique pour les étudiants de uOttawa
+### Cours de biostatistique à uOttawa
 
 Le site regroupe les différentes ressources développées par [Julien Martin](people.qmd) pour les cours de biostatistiques à uOttawa
 
+#### Biostatistiques appliquées avec R (BIO 4X58)
 
-#### Cours
+  * BIO4158 anglais ([cours][4158_course] / [manuel][4158_manual])
+  * BIO4558 français ([cours][4558_course] / [manuel][4558_manual])
+  * Cours offerts aux étudiant au baccaulauréat et aux étudiants gradués
+  * Pré-requis:
+    * cours d'introduction au statistiques recommandée
+    * Aucune connaissance de R et des statistiques requises
 
-* Cours de baccalauréat (BIO 4X58)
-  * BIO4158 Applied biostatistics with R ([cours][4158_course] / [manuel][4158_manual])
-  * BIO4558 Biostatistiques appliquées avec R ([cours][4558_course] / [manuel][4558_manual])
+#### Biostatistiques avancées et science ouverte (BIO8940)
 
-* Cours gradués
-  * BIO8940: Advanced biostatistics and open science ([cours][8940_course] / [manuel][8940_manual])
+  * [cours][8940_course] / [manuel][8940_manual]
+  * Cours bilingues offerts aux étudiants gradués
+  * Pré-requis:
+    * connaissances fonctionelle de R (chargement de données, graphique et statistiques de bases)
+    * bonne compréhension des modèles linéaires
+    * Essentiellement Bio4x58
 
-#### Tutoriels
+### Tutoriels
 
 * Introduction à R
   * anglais ([cours][Rintro] / [manuel][R_way])
