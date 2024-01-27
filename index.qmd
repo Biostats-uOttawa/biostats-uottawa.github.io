@@ -30,7 +30,7 @@ by [Julien Martin](people.qmd)
 
 #### Applied biostatistics with R (BIO 4X58):
 
-  * Offered to both undergraduate and graduate students
+  * Offered to both undergraduate and graduate students in english and french
   * Prerequisite:
     * an introduction class to statisticis is good to have
     * No (or limited) knowledge of R and no (or limited) knowledge of stats expected.
@@ -60,21 +60,21 @@ Le site regroupe les différentes ressources développées par [Julien Martin](p
 
 #### Biostatistiques appliquées avec R (BIO 4X58)
 
-  * BIO4158 anglais ([cours][4158_course] / [manuel][4158_manual])
-  * BIO4558 français ([cours][4558_course] / [manuel][4558_manual])
-  * Cours offerts aux étudiant au baccaulauréat et aux étudiants gradués
+  * Cours offerts aux étudiant au baccaulauréat et aux étudiants gradués en anglais et en français
   * Pré-requis:
     * cours d'introduction au statistiques recommandée
     * Aucune connaissance de R et des statistiques requises
+  * BIO4158 anglais ([cours][4158_course] / [manuel][4158_manual])
+  * BIO4558 français ([cours][4558_course] / [manuel][4558_manual])
 
 #### Biostatistiques avancées et science ouverte (BIO8940)
 
-  * [cours][8940_course] / [manuel][8940_manual]
   * Cours bilingues offerts aux étudiants gradués
   * Pré-requis:
     * connaissances fonctionelle de R (chargement de données, graphique et statistiques de bases)
     * bonne compréhension des modèles linéaires
     * Essentiellement Bio4x58
+  * [cours][8940_course] / [manuel][8940_manual]
 
 ### Tutoriels
 
