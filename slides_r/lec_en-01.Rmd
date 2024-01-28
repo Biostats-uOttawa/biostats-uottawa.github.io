@@ -1,0 +1,425 @@
+---
+title: "An Introduction to R"
+subtitle: "Why Learn to Code?"
+author: "Julien Martin"
+institute: "University of Ottawa"
+output:
+  xaringan::moon_reader:
+    css: ["assets/css/rutgers-img.css", "assets/css/rutgers-fonts_og.css"]
+    lib_dir: "assets/libs"
+    nature:
+      highlightStyle: github
+      highlightLanguage: ["r", "yaml", "markdown"]
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+knit: pagedown::chrome_print
+---
+
+```{css, echo=FALSE}
+.title-slide {
+  background-image: url(assets/img/Rlogo.png);
+}
+```
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+# Learning outcomes
+
+.medium[
+**this course (hopefully) will ...** 
+
+- introduce you to using R `r emo::ji("heavy_check_mark")`
+
+- help your research become more robust and reproducible `r emo::ji("heavy_check_mark")`
+
+- show you how to import your data `r emo::ji("heavy_check_mark")`
+
+- show you how to summarise, visualise and analyse your data `r emo::ji("heavy_check_mark")` 
+
+**this course (definitely) won't ...**
+
+- teach you everything there is to know about R `r emo::ji("x")`
+
+- make you feel completely comfortable with R `r emo::ji("x")`
+
+]
+
+---
+background-image: url(assets/img/Rlogo.png)
+background-size: 200px
+background-position: 90% 90%
+
+class: left, top
+
+# What is R?
+
+.medium[
+
+- answer depends on who you ask and what they use R for
+
+- environment for statistical computing, graphics and programming
+
+- originally created by Ross Ihaka and Robert Gentleman (1996) 
+
+- currently maintained by international R-core development team 
+
+- many, many people also contribute to R and the wider  
+R community
+
+]
+
+---
+background-image: url(assets/img/r-project.png)
+background-size: 500px
+background-position: 95% 50%
+
+class: left
+# extra R information
+
+.medium[
+
+- more information can be found at  
+https://www.r-project.com
+
+- download R from the CRAN website  
+https://cran.r-project.org/
+
+]
+
+---
+# why is R considered hard?
+
+.medium[
+
+- high initial investment in time to learn R
+
+- unfamiliar command line environment
+
+- frustrating (and sometimes) inconsistent syntax
+
+- analysis and figures can take longer (initially!)
+
+- relatively steep learning curve
+
+- it's not actually that hard, just unfamiliar
+]
+---
+class: top, left
+
+# why you should learn R
+
+.medium[
+-  it’s free and platform independent
+
+- it’s the software of choice for many students,  
+academics, industries and charities worldwide
+
+- highly flexible and extensive
+
+- encourages you think about your research  
+questions, data and analyses
+
+]
+
+---
+background-image: url(assets/img/repo2.png)
+background-size: 1000px
+background-position: 90% 90%
+class: top, left
+
+# why you should learn R
+
+.medium[
+-  it allows you to keep an exact and reproducible  
+record of your analyses
+
+- transparent
+
+- other people* can reproduce your analysis
+
+- easily share your code (GitHub)
+
+- [open science](https://en.wikipedia.org/wiki/Open_science)
+]
+
+.footnote[
+<sup>* including the future you!
+]
+
+---
+background-image: url(assets/img/plots.png)
+background-size: 850px
+background-position: 50% 95%
+class: top, left
+
+# why you should learn R
+
+.medium[
+-  excellent graphics capabilities
+]
+
+.footnote[
+[ggplot2](https://github.com/tidyverse/ggplot2)
+]
+
+---
+background-image: url(assets/img/jobs.png)
+background-size: 1000px
+background-position: 95% 80%
+class: top, left
+
+# why you should learn R
+
+.medium[
+-  employability
+
+- opportunity to get involved  
+with a fantastic and supportive  
+community
+]
+
+---
+background-image: url(assets/img/rconsole.png)
+background-size: 850px
+background-position: 50% 70%
+.center[
+# using R - GUI
+]
+
+---
+class: center, middle
+
+.pull-left[
+.large[
+R
+]
+<img src = "assets/img/engine.png" width = 425px>
+]
+
+.pull-right[
+.large[
+RStudio
+]
+<img src = "assets/img/car.png" width = 425px>
+]
+
+---
+
+background-image: url(assets/img/Rstudio_2.png)
+background-size: 1000px
+background-position: 50% 95%
+
+class: top, top
+.center[
+# using R - RStudio
+]
+---
+
+class: left, top
+
+# using R - objects
+
+
+.medium[
+
+- commands are typed in the editor and then sourced into the console  
+at the > prompt
+
+```{r, simple, prompt=TRUE, collapse=TRUE}
+2 + 2
+```
+
+- R is object orientated. You can create variable and assign value(s) to them
+
+```{r, simple2, prompt=TRUE, collapse=TRUE}
+a <- 2 + 2
+a
+```
+]
+
+---
+
+class: left, top
+
+# using R - objects
+
+.medium[
+
+- once created, operations can be performed on variables 
+
+```{r, simple3, prompt=TRUE, collapse=TRUE}
+a <- 2 + 2
+b <- 3 * 2
+
+a + b
+```
+
+- very powerful and flexible 
+
+]
+---
+class: left, top
+
+# using R - functions
+
+.medium[
+- functions contain a set of instructions that allow you to perform a specific task(s)
+
+- you can use functions that are inbuilt in R
+
+```{r, simple4, prompt=TRUE, collapse=TRUE}
+numbers <- c(2, 3, 4, 5, 6)   # use the concatenate function
+numbers
+
+mean(numbers)                 # use mean function
+
+var(numbers)                  # use variance function
+```
+
+- comments (#) are ignored by R
+]
+
+---
+
+background-image: url(assets/img/packages.png)
+background-size: 800px
+background-position: 50% 45%
+
+class: left, top
+
+# using R - functions
+
+
+.medium[
+- or you can install user contributed packages to increase versatility and power
+
+- there are packages for almost anything
+
+<br><br><br><br><br><br>
+
+- install packages from [CRAN](https://cran.r-project.org/), [Bioconductor](https://www.bioconductor.org/) and [GitHub](https://github.com/)
+
+- packages are easy to install in R
+]
+
+.footnote[
+[RDocumentation (2019)](https://www.rdocumentation.org/trends)
+]
+
+---
+class: left, top
+# using R - functions
+
+.medium[
+- or write your own functions
+
+- example: function to calculate standard error
+
+<br>
+
+```{r, simple5, prompt=TRUE, collapse=TRUE}
+se.fnc <- function(x){         # start function for se
+ std.x <- sd(x)		             # calculate SD
+ nos.x <- length(x)		         # calculate number obs
+ se.x <- std.x/(sqrt(nos.x))   # calculate SE
+ print(se.x)	
+}
+
+se.fnc(c(2, 3, 4, 5, 6)) # use your new function
+```
+
+]
+
+---
+class: left, top
+
+# using R - syntax 
+
+.medium[
+
+- R is case sensitive `A` is not the same as `a` 
+
+- commands are generally separated by a new line, but you can also use a `;` (rare)
+
+- anything that follows the hash symbol (#) will be ignored by R. Use this to comment your code 
+
+- a series of commands can be grouped using braces `{ }`
+
+- write pretty code by following a [code style guide](https://google.github.io/styleguide/Rguide.html) 
+
+]
+
+---
+class: left, top
+# using R - help 
+
+.medium[
+
+- R has extensive help facilities
+
+- when you need help for a function use `help()` or `?`
+
+```{r, simple6, prompt=TRUE, eval=FALSE, collapse=TRUE}
+help("plot")    # open help file for the function plot
+```
+
+or equivalently
+
+```{r, simple7, prompt=TRUE, eval=FALSE, collapse=TRUE}
+?plot
+```
+
+- or to search across all help files use `help.search("plot")` or `??plot`
+]
+---
+class: left, top
+# using R - help 
+
+.medium[
+
+- [Duckduckgo_it](https://duckduckgo.com/): Try online search of any error messages you get. It's not cheating and everyone does it! You'll be surprised how many other people have probably had the same problem and solved it.
+
+- [Stack Overflow](http://stackoverflow.com/questions/tagged/r): There are many thousands of questions relevant to R on Stack Overflow
+
+- [Here](https://stackoverflow.com/questions/tagged/r?sort=votes) are the most popular ones, ranked by vote. Make sure you search for similar questions before asking your own
+
+- make sure you include a [reproducible example](http://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example/5963610#5963610) to get the most useful advice. A reproducible example is a minimal example that lets others who are trying to help you to see the error themselves.
+]
+
+---
+class: left, top
+
+# tips for learning R
+
+.medium[
+
+- use R often and use it regularly
+
+- learning R is not a memory test, you have your R scripts
+
+- you don’t need to know everything there is to know about R to use it productively
+
+- don't stare at code for hours.
+
+- there are many ways to tackle a particular problem. See what others have done
+
+- when stuck, and frustrated don't throw your computer by the window
+]
+
+???
+
+the time and energy you invest now will be more than payed back in the not too distant future.
+
+
+---
+class: title-slide-final, middle
+background-size: 55px
+background-position: 9% 15%
+
+# Thanks!
+
+### I created these slides with [xaringan](https://github.com/yihui/xaringan) and [R Markdown](https://rmarkdown.rstudio.com/) using the [rutgers css](https://github.com/jvcasillas/ru_xaringan) that I slightly modified.
+
+### Credit: I borrowed slides from [Alex Douglas](https://github.com/alexd106/).

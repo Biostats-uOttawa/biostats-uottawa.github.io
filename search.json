@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "people.html",
+    "href": "people.html",
+    "title": "Julien Martin",
+    "section": "",
+    "text": "Julien is an Associate Professor at the University of Ottawa and has been teaching (and learning) R for the last 15 years."
+  },
+  {
+    "objectID": "intro_r_en.html",
+    "href": "intro_r_en.html",
+    "title": "On the R-way to hell",
+    "section": "",
+    "text": "A few presentations to take as an easy intro to R.\n\n\n\n\n\nTopic\nSlides\n\n\n\n\nIntroduction R\n / \n\n\nData in R\n / \n\n\nSimple stats in R\n /"
+  },
+  {
+    "objectID": "intro_r_en.html#slides",
+    "href": "intro_r_en.html#slides",
+    "title": "On the R-way to hell",
+    "section": "",
+    "text": "A few presentations to take as an easy intro to R.\n\n\n\n\n\nTopic\nSlides\n\n\n\n\nIntroduction R\n / \n\n\nData in R\n / \n\n\nSimple stats in R\n /"
+  },
+  {
+    "objectID": "intro_r_en.html#manual",
+    "href": "intro_r_en.html#manual",
+    "title": "On the R-way to hell",
+    "section": "Manual",
+    "text": "Manual\nHere is a link to the the introduction to R manual: On the R-way to hell"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Biostats uOttawa",
+    "section": "",
+    "text": "EnglishFrançais\n\n\n\nBiostatistic courses at uOttawa\nThis regroup the different resources developed for the biostatistic courses at the university of Ottawa by Julien Martin\n\nApplied biostatistics with R (BIO 4X58):\n\nOffered to both undergraduate and graduate students in english and french\nPrerequisite:\n\nan introduction class to statisticis is good to have\nNo (or limited) knowledge of R and no (or limited) knowledge of stats expected.\n\nBIO4158 english (Course site / Course manual)\nBIO4558 french (Course site / Course manual)\n\n\n\nAdvanced biostatistics and open science (BIO 8940)\n\nBilingual course for graduate students\nPrerequisite:\n\na functional knowledge of R (loading data, running basic linear models, and making plots)\na good understanding of linear models\nessentially Bio8940 is a great next steps after completing Bio4x58.\n\nCourse site / Course manual\n\n\n\n\nExtra resources\n\nAn introduction to R\n\nenglish (course / course manual)\nfrench (course / course manual)\n\n\n\n\n\n\nCours de biostatistique à uOttawa\nLe site regroupe les différentes ressources développées par Julien Martin pour les cours de biostatistiques à uOttawa\n\nBiostatistiques appliquées avec R (BIO 4X58)\n\nCours offerts aux étudiant au baccaulauréat et aux étudiants gradués en anglais et en français\nPré-requis:\n\ncours d’introduction au statistiques recommandée\nAucune connaissance de R et des statistiques requises\n\nBIO4158 anglais (cours / manuel)\nBIO4558 français (cours / manuel)\n\n\n\nBiostatistiques avancées et science ouverte (BIO8940)\n\nCours bilingues offerts aux étudiants gradués\nPré-requis:\n\nconnaissances fonctionelle de R (chargement de données, graphique et statistiques de bases)\nbonne compréhension des modèles linéaires\nEssentiellement Bio4x58\n\ncours / manuel\n\n\n\n\nTutoriels\n\nIntroduction à R\n\nanglais (cours / manuel)\nfrançais (cours / manuel)"
+  },
+  {
+    "objectID": "intro_r_fr.html",
+    "href": "intro_r_fr.html",
+    "title": "Sur le chemin de l’enf-R",
+    "section": "",
+    "text": "Quelques présentations pour s’initier à R.\n\n\n\n\n\n\nWarning\n\n\n\nEn anglais seulement, traduction à venir\n\n\n\n\n\n\n\nTopic\nSlides\n\n\n\n\nIntroduction R\nNA\n\n\nData in R\nNA\n\n\nSimple stats in R\nNA"
+  },
+  {
+    "objectID": "intro_r_fr.html#diapos",
+    "href": "intro_r_fr.html#diapos",
+    "title": "Sur le chemin de l’enf-R",
+    "section": "",
+    "text": "Quelques présentations pour s’initier à R.\n\n\n\n\n\n\nWarning\n\n\n\nEn anglais seulement, traduction à venir\n\n\n\n\n\n\n\nTopic\nSlides\n\n\n\n\nIntroduction R\nNA\n\n\nData in R\nNA\n\n\nSimple stats in R\nNA"
+  },
+  {
+    "objectID": "intro_r_fr.html#manuel",
+    "href": "intro_r_fr.html#manuel",
+    "title": "Sur le chemin de l’enf-R",
+    "section": "Manuel",
+    "text": "Manuel\nEt voila un manuel d’introduction à R: Sur le chemin de l’enf-R"
+  }
+]
