@@ -9,6 +9,7 @@ project:
     - "data/"
 
 website:
+  google-analytics: G-6LLMGL3T2Q
   title: "Biostats uOttawa"
   navbar:
     title: "Biostats uOttawa"
