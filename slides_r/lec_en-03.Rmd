@@ -30,13 +30,13 @@ knitr::opts_chunk$set(fig.retina = 3, warning = FALSE, message = FALSE)
 .pull-left[
 .medium[
 
-- introduce you to some basic statistics in R  `r emo::ji("heavy_check_mark")`
+- introduce you to some basic statistics in R  `r emoji::emoji("heavy_check_mark")`
 
-- focus on linear models `r emo::ji("heavy_check_mark")`
+- focus on linear models `r emoji::emoji("heavy_check_mark")`
 
-- fit simple linear models in R `r emo::ji("heavy_check_mark")`
+- fit simple linear models in R `r emoji::emoji("heavy_check_mark")`
 
-- check linear model assumptions in R `r emo::ji("heavy_check_mark")`
+- check linear model assumptions in R `r emoji::emoji("heavy_check_mark")`
 
 ]
 ]

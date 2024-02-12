@@ -31,15 +31,15 @@ knitr::opts_chunk$set(fig.retina = 3, warning = FALSE, message = FALSE)
 
 .medium[
 
-- recognise different types of data in R `r emo::ji("heavy_check_mark")`
+- recognise different types of data in R `r emoji::emoji("heavy_check_mark")`
 
-- understand some different data structures `r emo::ji("heavy_check_mark")`
+- understand some different data structures `r emoji::emoji("heavy_check_mark")`
 
-- learn how to import data into R `r emo::ji("heavy_check_mark")`
+- learn how to import data into R `r emoji::emoji("heavy_check_mark")`
 
-- learn how to manipulate data in R `r emo::ji("heavy_check_mark")`
+- learn how to manipulate data in R `r emoji::emoji("heavy_check_mark")`
 
-- learn how to export data from R `r emo::ji("heavy_check_mark")`
+- learn how to export data from R `r emoji::emoji("heavy_check_mark")`
 ]
 
 ---

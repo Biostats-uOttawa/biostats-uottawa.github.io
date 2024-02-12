@@ -30,19 +30,19 @@ options(htmltools.dir.version = FALSE)
 .medium[
 **this course (hopefully) will ...** 
 
-- introduce you to using R `r emo::ji("heavy_check_mark")`
+- introduce you to using R `r emoji::emoji("heavy_check_mark")`
 
-- help your research become more robust and reproducible `r emo::ji("heavy_check_mark")`
+- help your research become more robust and reproducible `r emoji::emoji("heavy_check_mark")`
 
-- show you how to import your data `r emo::ji("heavy_check_mark")`
+- show you how to import your data `r emoji::emoji("heavy_check_mark")`
 
-- show you how to summarise, visualise and analyse your data `r emo::ji("heavy_check_mark")` 
+- show you how to summarise, visualise and analyse your data `r emoji::emoji("heavy_check_mark")` 
 
 **this course (definitely) won't ...**
 
-- teach you everything there is to know about R `r emo::ji("x")`
+- teach you everything there is to know about R `r emoji::emoji("x")`
 
-- make you feel completely comfortable with R `r emo::ji("x")`
+- make you feel completely comfortable with R `r emoji::emoji("x")`
 
 ]
 
