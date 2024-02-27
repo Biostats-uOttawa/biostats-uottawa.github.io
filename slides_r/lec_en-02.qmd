@@ -1,0 +1,430 @@
+---
+title: "Getting the data in R"
+subtitle: "Source of 95% problems"
+author: "Julien Martin"
+institute: "University of Ottawa"
+date: today
+from: markdown+emoji
+format:
+  blackboard-revealjs: 
+    width: 1244
+    height: 700
+    chalkboard: true
+#    output-location: column-fragment
+#    logo: assets/MAD_logo_small_rb.png
+    footer: Data in R
+    show-notes: false
+    output-ext: slides.html
+  html:
+    self-contained: true
+    number-sections: true
+    format-links: false
+    css: assets/css/notes.css
+    number-depth: 2
+    output-ext: notes.html
+    comments:
+      hypothesis: true
+editor:
+  render-on-save: false
+---
+
+## Learning outcomes
+
+```{r setup1, include=FALSE}
+knitr::opts_chunk$set(fig.retina = 3, warning = FALSE, message = FALSE)
+```
+
+- recognise different types of data in R `r emoji::emoji("heavy_check_mark")`
+
+- understand some different data structures `r emoji::emoji("heavy_check_mark")`
+
+- learn how to import data into R `r emoji::emoji("heavy_check_mark")`
+
+- learn how to manipulate data in R `r emoji::emoji("heavy_check_mark")`
+
+- learn how to export data from R `r emoji::emoji("heavy_check_mark")`
+
+
+
+
+
+
+## types of data in R
+:::: {.columns}
+::: {.column}
+six types of data in R
+
+* **numeric** - 1.618, 3.14, 2.718 
+
+* **integers** - 1, 2, 3, 42, 101 
+
+* **logical** - TRUE or FALSE  
+
+* **character** - "BI5009", "Blue" 
+
+* **complex**
+
+* **raw**
+:::
+::: {.column}
+![](assets/img/data_types.png)
+:::
+::::
+
+## data structures
+
+:::: {.columns}
+::: {.column}
+five data structures
+
+* **vector** 
+
+* **matrix** 
+
+* **array** 
+
+* **data frame**  
+
+* **list** 
+:::
+::: {.column}
+![](assets/img/data_structures.png)
+:::
+::::
+
+
+## vectors
+
+:::: {.columns}
+::: {.column}
+- one dimensional collection elements 
+
+- can contain all data types  
+
+- all elements must be of the same type 
+
+```{r, vec, prompt=TRUE, eval=FALSE}
+num <- 42
+numbers <- c(2, 3, 4, 5, 6)
+char <- c("red", "green")
+log <- c(TRUE, TRUE, FALSE)
+my_na <- c(NA, NA, NA, NA)
+mix <- c(1, 2, 3, NA, 5)
+```
+:::
+::: {.column}
+![](assets/img/scal_vec.png)
+:::
+::::
+
+## matrices and arrays
+
+:::: {.columns}
+::: {.column}
+- a vector with extra dimensions
+
+- again, objects must be of the same type 
+
+- arrays are multidimensional matrices  
+
+```{r, mat, echo=TRUE}
+mat.1 <- matrix(1:12, nrow=4)
+mat.1
+```
+
+
+:::
+::: {.column}
+![](assets/img/mat_array.png)
+```{r, array, echo=TRUE}
+array.1 <- array(1:16, dim=c(2,4,2))
+```
+:::
+::::
+
+
+## data frames
+
+
+- most commonly used data structure for statistical data analysis
+
+- powerful 2-dimensional vector holding structure
+
+- dataframes can hold vectors of any of the basic classes of data 
+
+
+```{r, df1, echo=FALSE, comment=""}
+flowers <- read.csv('data/flower.csv')
+head(flowers, n = 10)
+```
+
+
+## tidy data
+![](assets/img/tidy-1.png){fig-align="center"}
+
+
+## importing data
+
+:::: {.columns}
+::: {.column}
+- simplest method is to use spreadsheet  
+and then import data into R 
+
+- save as a comma separated file (*.csv) 
+
+:::
+::: {.column}
+![](assets/img/excel.png)
+:::
+::::
+
+## Importing data tips
+
+- missing data represented with NA or empty cells. Do not mixed both
+
+- No spaces in names (use underscore if needed)
+
+- no uppercase
+
+- keep variable names short & informative
+
+
+## importing data
+
+- the `read.table()` function is the workhorse with format specified function to make coding faster
+
+
+```r
+  petunia <- read.table('data/flowers.csv', header = TRUE, sep = ',')
+```
+
+\
+
+|  |  |
+|------|-------------|
+| petunia | name of the new object |
+| read.table() | function use tot read tha data |
+| 'data/flowers.csv' | relative path name to the data file |
+| header = TRUE | first line contain columns names |
+| sep = ',' | columns sparated by commas |
+
+
+## importing data
+
+
+- sometimes columns are separated by tabs, `sep = "\t"`
+``` r
+petunia <- read.table('data/flowers.csv', header = TRUE, sep = '\t')
+```
+
+- you can use format specific functions
+```r
+petunia <- read.csv('flowers.csv')      # if comma-separated 
+petunia <- read.delim('flowers.txt')      # if tab-separated
+```
+
+- functions in the `foreign` package allows you to import files of other formats (i.e. from SAS, SPSS, Minitab etc)
+
+- use the `readxl` or `readODS` package to directly import MS Excel or LO calc spreadsheets directly
+
+
+
+## importing data
+
+
+- to view the contents of a data frame, type it's name
+
+- rarely a good idea as just fills up your console
+
+- use the `head()` and `tail()` to see first/last 6 lines
+
+
+```{r, flow1, echo=FALSE, eval=c(1,2,3),  prompt=TRUE, comment=""}
+print('flowers', quote = FALSE)
+flowers <- read.csv('data/flower.csv')
+head(flowers)
+```
+
+
+
+## data wrangling
+
+- `str()` function:  data frame dimensions, list of variables, type of variables
+
+```{r, flow2, echo=TRUE,   prompt=TRUE, comment=""}
+str(flowers)
+```
+
+## data wrangling
+
+- `names()` function: vector of variable names 
+
+```{r, flow3, echo=TRUE,   prompt=TRUE, comment=""}
+names(flowers)
+```
+
+## data wrangling
+
+
+- access variables in your data frame using the `$` notation
+
+
+```{r, flow4, echo=TRUE,   prompt=TRUE, comment=""}
+flowers$height
+```
+
+- you can extract elements using  the `[rowIndex, columnIndex]` method 
+
+- `Index` can either be a positional index or a logical index
+
+
+## positional index
+
+
+- provide the row and column position of the data you wish to extract 
+
+- `index` can either be a positional index or a logical index
+
+
+```{r, flow5, echo=TRUE}
+flowers[1, 4]      # extract value of first row and 4th column
+```
+
+
+- extract multiple elements by supplying vectors 
+
+```{r, flow6, echo=TRUE}
+flowers[1:3, 1:4]      # extract rows 1 to 3 and columns 1 to 4
+```
+
+
+## positional index
+
+
+- another example
+
+
+```{r, flow7, echo=TRUE}
+flowers[c(3, 8, 20), c(1, 4, 5, 6)] # <1>
+```
+1. rows 3, 8 and 20 and columns 1, 4, 5 and 6
+
+- can assign these extracted values to another object if you want
+
+- new object inherits `data.frame` class
+
+
+``` r
+flowers_red <- flowers[c(3, 8, 20), c(1, 4, 5, 6)]
+flowers_red
+```
+
+
+## positional index
+
+
+- we can use a short cut if we want all rows or all columns extracted
+
+- omitting the column index is shorthand for 'all columns'
+
+
+```{r, flow9, echo=TRUE, prompt=TRUE, comment=""}
+flowers[1:3, ]
+```
+
+
+- omitting the row index is shorthand for 'all rows'
+
+
+```{r, flow10, echo=TRUE, eval=FALSE, prompt=TRUE}
+flowers[, 1:3]
+```
+
+
+
+## positional index
+
+
+- an alternative method to select columns is to name the columns directly for `columnIndex`
+
+
+```{r, flow11, echo=TRUE, prompt=TRUE, comment=""}
+flowers[1:10, c('treat', 'nitrogen', 'leafarea', 'shootarea')]
+```
+
+
+## logical index
+
+
+- we can also extract rows based on a logical test
+
+- example, all rows where the `height` variable is greater than 12 
+
+
+```{r, flow12, echo=TRUE, prompt=TRUE, comment=""}
+flowers[flowers$height > 12,]
+```
+
+
+- or where `leafarea` is equal to 8.7
+
+
+```{r, flow13, echo=TRUE, eval=FALSE}
+flowers[flowers$leafarea == 8.7,]
+```
+
+## logical index
+
+
+- we can combine logical tests using the `&` symbol (AND) or the `|` symbol (OR)
+
+- example, extract all rows where `height` is > 10.5 and `nitrogen` is equal to `"medium"`
+
+
+```{r, flow14, echo=TRUE, eval=FALSE}
+flowers[flowers$height > 10.5 & flowers$nitrogen == 'medium',]
+```
+
+
+- or `height` is greater than 12.3 OR less than 1.8
+
+
+```{r, flow15, echo=TRUE, eval=FALSE}
+flowers[flowers$height > 12.3 | flowers$height < 1.8,]
+```
+
+## exporting data frames
+
+
+- the `write.csv()` function exports data frames to an external file
+
+\
+
+
+```r
+write.csv(flowers, 'flowers2.csv', row.names = FALSE)
+```
+
+\
+
+- saves `flowers` data frame to a file named 'flowers.csv'
+
+- `row.names = FALSE` argument supresses the row names in the file
+
+
+## other options
+
+- there are many other options for importing and exporting data in R
+
+- the `fread()` and `fwrite()` functions in the `read.table` package are blazingly fast
+
+- the `read_csv()` and `write_csv()` (and other related) functions from the `readr` package for tidyverse alternatives
+
+- if you have a lot of data (I mean alot!) then take a look at the `ff` and `bigmemory` packages
+
+
+
+
+# Thanks!
+
+Credit: I borrowed slides from [Alex Douglas](https://github.com/alexd106/)
