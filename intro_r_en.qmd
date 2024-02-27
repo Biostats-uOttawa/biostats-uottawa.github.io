@@ -31,11 +31,11 @@ schedule_df <- data.frame(
   weekno = 1:3
 ) %>%
   mutate(
-    lecture = file.exists(sprintf("slides_r/lec_en-%.2d.html", weekno)),
+    lecture = file.exists(sprintf("slides_r/lec_en-%.2d.qmd", weekno)),
   ) %>%
   mutate(
     slides = case_when(lecture == TRUE ~
-      glue("<a class='fa fa-link' href='slides_r/{sprintf(\"lec_en-%.2d.html\", weekno)}' target='_blank'></a> / <a class='fa fa-file-pdf' href='slides_r/{sprintf(\"lec_en-%.2d.pdf\", weekno)}' target='_blank'></a>"),
+      glue("<a class='fa fa-display' href='slides_r/{sprintf(\"lec_en-%.2d.slides.html\", weekno)}' target='_blank'></a> / <a class='fa fa-note-sticky' href='slides_r/{sprintf(\"lec_en-%.2d.notes.html\", weekno)}' target='_blank'></a>"),
       .default = NA),
     topic = ifelse(is.na(topic), "", topic)
   ) %>%
@@ -46,7 +46,8 @@ schedule_df %>%
     escape = FALSE, align = c("c", "c"),
     col.names = c(
       "Topic", "Slides"
-    )
+    ),
+    format = "html"
   ) %>%
   kable_styling(
     bootstrap_options = "striped",
@@ -57,3 +58,25 @@ schedule_df %>%
 ## Manual
 
 Here is a link to the the introduction to R manual: [On the R-way to hell][R_way] {{< fa thumbs-up >}} 
+
+
+## About slides {{< fa display >}} and notes {{< fa note-sticky >}}
+
+### Slides {{< fa display >}} 
+
+Slides in `revealjs` format (html). If you want then as a pdf (*note you might loose some functionality or contents due to tabs and scroll sections*):
+
+1. Open the slides in your browser from a link on this page
+2. Press `e` to get into the PDF export mode (*`?print-pdf` should appear near the end of the url and white borders should appear*)
+1. Open the in-browser print dialog (CTRL/CMD+P).
+1. Change the `Destination` setting to `Save as PDF`.
+1. Change the `Layout` to `Landscape`.
+1. Change the `Margins` to `None`.
+1. Enable the Background graphics option (if you want it)
+1. Click Save 🎉
+
+### Notes {{< fa note-sticky >}}
+
+Content of the slides in html format as a self-contained downloadable file and including tabs and scroll sections. 
+
+More importantly, notes have the commenting and annotateing tools activated via <https://hypothes.is/>. If you create a free account , you can annotate and comment slides as well as share your annotations/comments with the public or via private or public groups.

@@ -1,13 +1,14 @@
 project:
   type: website
-  output-dir: _site
+  output-dir: docs
   render:
     - "*.qmd"
     - "!slides/"
   resources:
     - "slides_r/"
     - "data/"
-
+execute:
+  freeze: auto
 website:
   google-analytics: G-6LLMGL3T2Q
   title: "Biostats uOttawa"

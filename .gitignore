@@ -1,3 +1,7 @@
 /.quarto/
 /docs/
 /_site/
+xar/
+*cache/
+*files/
+*freeze/

@@ -1,0 +1,292 @@
+---
+title: "Simple statistics using R"
+subtitle: "First steps"
+author: "Julien Martin"
+institute: "University of Ottawa"
+date: today
+from: markdown+emoji
+format:
+  blackboard-revealjs: 
+    width: 1244
+    height: 700
+    chalkboard: true
+#    output-location: column-fragment
+#    logo: assets/MAD_logo_small_rb.png
+    footer: Intro to R
+    show-notes: false
+    output-ext: slides.html
+  html:
+    self-contained: true
+    number-sections: true
+    format-links: false
+    css: assets/css/notes.css
+    number-depth: 2
+    output-ext: notes.html
+    comments:
+      hypothesis: true
+editor:
+  render-on-save: false
+---
+
+## learning outcomes
+
+```{r}
+#| label: setup
+#| include: false
+#| purl: false
+knitr::opts_chunk$set(
+  echo = TRUE,
+  message = FALSE,
+  warning = FALSE,
+  error = FALSE,
+  fig.align = "center",
+  dpi = 300,
+  fig.showtext = TRUE,
+  fig.width = 12,
+  fig.height = 6,
+  #  out.height = "100%",
+  dev.args = list(bg = "transparent"),
+  cache = FALSE
+)
+```
+
+```{r}
+#| label: setup-slides
+#| include: false
+#| purl: false
+#| eval: !expr 'ifelse(knitr::pandoc_to() == "revealjs", TRUE, FALSE)'
+source("themes_board.r")
+theme_set(theme_blackboard())
+def_col_geom("white")
+```
+
+```{r}
+#| label: setup-notes
+#| include: false
+#| purl: false
+#| eval: !expr 'ifelse(knitr::pandoc_to() == "revealjs", FALSE, TRUE)'
+source("themes_board.r")
+theme_set(theme_whiteboard())
+```
+
+- introduce you to some basic statistics in R  `r emoji::emoji("heavy_check_mark")`
+
+- focus on linear models `r emoji::emoji("heavy_check_mark")`
+
+- fit simple linear models in R `r emoji::emoji("heavy_check_mark")`
+
+- check linear model assumptions in R `r emoji::emoji("heavy_check_mark")`
+
+
+# statistics using R
+
+## Scratching the surface
+- many, many statistical tests available in R 
+
+- range from the simple to the highly complex
+
+- many are included in standard base installation  of R
+
+- you can extend the range of statistics by installing additional packages
+
+
+
+## an example 
+
+:::: {.columns}
+::: {.column}
+- does seeding clouds with dimethylsulphate alter the moisture content of clouds (can we make it rain!)
+
+- 10 random clouds were seeded and 10 random clouds unseeded
+
+-  what’s the null hypothesis?
+
+:::
+::: {.column}
+![](assets/img/clouds.gif)
+:::
+::::
+
+::: {.content-visible when-format="revealjs"}
+. . .
+:::
+
+- no difference in mean moisture content between seeded and unseeded clouds
+
+## Plotting the data
+
+::: {.panel-tabset}
+## Data
+- plot these data
+
+- interpretation?
+
+-  what type of statistical test do you want to use?
+
+```{r import, echo=TRUE}
+clouds <- read.csv('data/clouds.csv')
+str(clouds)
+```
+## Plot
+
+```{r plot, echo=FALSE}
+ggplot(clouds, aes(x = treatment, y = moisture, fill = treatment)) +
+  geom_boxplot() +
+  labs(y = "Moisture content", x = "Treatment")
+```
+:::
+
+
+
+## t-test
+
+```{r, stats1, echo=TRUE, eval=TRUE}
+t.test(clouds$moisture~clouds$treatment, var.equal=TRUE)
+
+
+```
+
+- reject or fail to reject the null hypothesis?
+
+
+## linear models in R
+
+
+
+- an alternative, but equivalent approach is to use a linear model to compare the means in each group
+
+- general linear models are generally thought of as simple models, but can be used to model a wide variety of data and exp. designs
+
+- traditionally statistics is performed (and taught) like using a recipe book (ANOVA, *t*-test, ANCOVA etc) 
+
+- general linear models provide a coherent and theoretically satisfying framework on which to conduct your analyses 
+
+## what are linear models?
+
+- *t*-test
+
+- ANOVA
+
+- factorial ANOVA
+
+- ANCOVA
+
+- linear regression
+
+- multiple regression
+
+- etc, etc
+
+
+## model formula
+
+
+- general linear modelling is based around the concept of model formulae
+
+\
+
+[`response variable ~ explanatory variable(s) + error`]{.center}
+
+\
+
+- literally read as *‘variation in response variable modelled as a 
+  function of the explanatory variable(s) plus variation not explained
+  by the explanatory variables’*
+  
+- it's the attributes of the response and explanatory variables that determines the type of linear model fitted 
+
+
+## linear models in R
+
+
+
+-  the function for carrying out linear regression in R is `lm()`
+
+-the response variable comes first, then the tilde `~` then the name of the explanatory variable
+
+```{r, stats5}
+clouds.lm <- lm(moisture ~ treatment, data=clouds)
+```
+
+- how does R know that you want to perform a *t*-test (ANOVA)?
+
+```{r, stats6}
+class(clouds$treatment)
+```
+
+- here the explanatory variable is a factor
+
+
+
+## linear models in R
+
+
+- to display the ANOVA table use the `anova()` function
+
+```{r, stats7, eval=TRUE}
+anova(clouds.lm)
+```
+
+- do you notice anything familiar about the p value? 
+
+- (hint: see the output from the *t*-test we did earlier)
+
+
+
+
+
+## linear models in R
+
+
+- we have sufficient evidence to reject the null hypothesis (as before) 
+
+- therefore, there is a significant difference in the mean moisture content between clouds that were seeded and unseeded clouds
+
+- do we accept this inference?
+
+- what about assumptions?
+
+- we could use Shapiro-Wilks and *F* tests as before
+
+- much better to assess visually by plotting the residuals
+
+
+## Plotting residuals
+
+
+- `clouds.lm` is a linear model object we can do stuff with it
+
+- we can use the `plot()` function directly to display residual plots
+
+- normality assumption
+
+- equal variance assumption
+
+- unusual or influential observations
+
+## Plotting residuals
+
+```{r, stats8, eval=TRUE}
+par(mfrow = c(2, 2), bg = "#FFFFFFCC")
+plot(clouds.lm)
+```
+
+
+## other linear models
+
+
+
+| traditional name       |   model formula           |   R code                 |
+| :----------------------|:--------------------------|:-------------------------|
+| simple linear regression   |   Y ~ X1 (continuous)     |   `lm(Y ~ X)` |
+| one-way ANOVA          |  Y ~ X1 (categorical)     | `lm(Y ~ X)` |
+| two-way ANOVA          | Y ~ X1 (cat) + X2 (cat)   | `lm(Y ~ X1 + X2)` | 
+| ANCOVA                 | Y ~ X1 (cat) + X2 (cont)  | `lm(Y ~ X1 * X2)` |
+| multiple regression    | Y ~ X1 (cont) + X2 (cont) | `lm(Y ~ X1 + X2)` |
+| factorial ANOVA        | Y ~ X1 (cat) * X2 (cat)   | `lm(Y ~ X1 * X2)` |
+
+
+
+# Thanks!
+
+Credit: I borrowed slides from [Alex Douglas](https://github.com/alexd106/).
