@@ -13,8 +13,8 @@
 [4558_manual]: https://biostats-uottawa.github.io/bio4558_manuel/ 
 [4558_course]: https://biostats-uottawa.github.io/bio4558_cours/
 
-[R_way]: https://biostats-uottawa.github.io/R_way/ 
-[chemin_R]: https://biostats-uottawa.github.io/chemin_R/
+[R_way]: https://biostats-uottawa.github.io/R/en/ 
+[chemin_R]: https://biostats-uottawa.github.io/R/fr/
 
 [lab_website]: https://juliengamartin.github.io/
 [moi_uo]: https://www.uottawa.ca/faculty-science/professors/julien-martin
