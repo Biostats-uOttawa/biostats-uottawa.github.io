@@ -46,11 +46,15 @@ by [Julien Martin](people.qmd)
     * essentially Bio8940 is a great next steps after completing Bio4x58.
   * [Course site][8940_course] / [Course manual][8940_manual]
 
-### Extra resources
+### Intro to R book: On the R-way to hell
 
-* An introduction to R
-  * english ([course][Rintro] / [course manual][R_way])
-  * french ([course][introR] / [course manual][chemin_R])
+This is an introduction to R book with a multilingual approach.
+The book is covering an intorduction to the basic use of R (data loading, wrangling and plotting), as well as simple stats, programming, use of github and R markdown /Quarto with R Studio and VS code.
+
+The book (still under development) is available in [English][R_way] and [French][chemin_R].
+I will add more languages later this year hopefully with help of volunteers.
+
+Here are also a few slides about an intro to R only in english ([slides][Rintro]).
 
 ### Statistical consulting {#consult}
 
@@ -89,11 +93,15 @@ Le site regroupe les différentes ressources développées par [Julien Martin](p
     * Essentiellement Bio4x58
   * [cours][8940_course] / [manuel][8940_manual]
 
-### Tutoriels
+### Livre d'introduction à R: Sur le chemin de l'enf-R
 
-* Introduction à R
-  * anglais ([cours][Rintro] / [manuel][R_way])
-  * français ([cours][introR] / [manuel][chemin_R])
+Il s'agit d'un livre d'introduction à R avec une approche multilingue.
+Le livre couvre une introduction à l'utilisation de base de R (chargement de données, manipulation et traçage), ainsi que des statistiques simples, la programmation, l'utilisation de github et de R markdown /Quarto avec R Studio et VS code.
+
+Le livre (encore en développement) est disponible en [anglais][R_way] et [français][chemin_R].
+J'ajouterai d'autres langues plus tard dans l'année, avec l'aide de volontaires.
+
+Voici également quelques diapositives sur une introduction à R uniquement en anglais ([slides][Rintro]).
 
 ### Consultations en statistique
 
