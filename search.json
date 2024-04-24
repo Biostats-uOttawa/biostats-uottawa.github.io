@@ -1,208 +1,5 @@
 [
   {
-    "objectID": "slides_r/lec_en-03.slides.html#learning-outcomes",
-    "href": "slides_r/lec_en-03.slides.html#learning-outcomes",
-    "title": "Simple statistics using R",
-    "section": "learning outcomes",
-    "text": "learning outcomes\n\nintroduce you to some basic statistics in R ✔️\nfocus on linear models ✔️\nfit simple linear models in R ✔️\ncheck linear model assumptions in R ✔️"
-  },
-  {
-    "objectID": "slides_r/lec_en-03.slides.html#scratching-the-surface",
-    "href": "slides_r/lec_en-03.slides.html#scratching-the-surface",
-    "title": "Simple statistics using R",
-    "section": "Scratching the surface",
-    "text": "Scratching the surface\n\nmany, many statistical tests available in R\nrange from the simple to the highly complex\nmany are included in standard base installation of R\nyou can extend the range of statistics by installing additional packages"
-  },
-  {
-    "objectID": "slides_r/lec_en-03.slides.html#an-example",
-    "href": "slides_r/lec_en-03.slides.html#an-example",
-    "title": "Simple statistics using R",
-    "section": "an example",
-    "text": "an example\n\n\n\ndoes seeding clouds with dimethylsulphate alter the moisture content of clouds (can we make it rain!)\n10 random clouds were seeded and 10 random clouds unseeded\nwhat’s the null hypothesis?\n\n\n\n\n\n\n\nno difference in mean moisture content between seeded and unseeded clouds"
-  },
-  {
-    "objectID": "slides_r/lec_en-03.slides.html#plotting-the-data",
-    "href": "slides_r/lec_en-03.slides.html#plotting-the-data",
-    "title": "Simple statistics using R",
-    "section": "Plotting the data",
-    "text": "Plotting the data\n\nDataPlot\n\n\n\nplot these data\ninterpretation?\nwhat type of statistical test do you want to use?\n\n\nclouds &lt;- read.csv('data/clouds.csv')\nstr(clouds)\n\n'data.frame':   20 obs. of  2 variables:\n $ moisture : num  301 302 299 316 307 ...\n $ treatment: chr  \"seeded\" \"seeded\" \"seeded\" \"seeded\" ..."
-  },
-  {
-    "objectID": "slides_r/lec_en-03.slides.html#t-test",
-    "href": "slides_r/lec_en-03.slides.html#t-test",
-    "title": "Simple statistics using R",
-    "section": "t-test",
-    "text": "t-test\n\nt.test(clouds$moisture~clouds$treatment, var.equal=TRUE)\n\n\n    Two Sample t-test\n\ndata:  clouds$moisture by clouds$treatment\nt = 2.5404, df = 18, p-value = 0.02051\nalternative hypothesis: true difference in means between group seeded and group unseeded is not equal to 0\n95 percent confidence interval:\n  1.482679 15.657321\nsample estimates:\n  mean in group seeded mean in group unseeded \n                303.63                 295.06 \n\n\n\nreject or fail to reject the null hypothesis?"
-  },
-  {
-    "objectID": "slides_r/lec_en-03.slides.html#linear-models-in-r",
-    "href": "slides_r/lec_en-03.slides.html#linear-models-in-r",
-    "title": "Simple statistics using R",
-    "section": "linear models in R",
-    "text": "linear models in R\n\nan alternative, but equivalent approach is to use a linear model to compare the means in each group\ngeneral linear models are generally thought of as simple models, but can be used to model a wide variety of data and exp. designs\ntraditionally statistics is performed (and taught) like using a recipe book (ANOVA, t-test, ANCOVA etc)\ngeneral linear models provide a coherent and theoretically satisfying framework on which to conduct your analyses"
-  },
-  {
-    "objectID": "slides_r/lec_en-03.slides.html#what-are-linear-models",
-    "href": "slides_r/lec_en-03.slides.html#what-are-linear-models",
-    "title": "Simple statistics using R",
-    "section": "what are linear models?",
-    "text": "what are linear models?\n\nt-test\nANOVA\nfactorial ANOVA\nANCOVA\nlinear regression\nmultiple regression\netc, etc"
-  },
-  {
-    "objectID": "slides_r/lec_en-03.slides.html#model-formula",
-    "href": "slides_r/lec_en-03.slides.html#model-formula",
-    "title": "Simple statistics using R",
-    "section": "model formula",
-    "text": "model formula\n\ngeneral linear modelling is based around the concept of model formulae\n\n\n\nresponse variable ~ explanatory variable(s) + error\n\n\n\nliterally read as ‘variation in response variable modelled as a function of the explanatory variable(s) plus variation not explained by the explanatory variables’\nit’s the attributes of the response and explanatory variables that determines the type of linear model fitted"
-  },
-  {
-    "objectID": "slides_r/lec_en-03.slides.html#linear-models-in-r-1",
-    "href": "slides_r/lec_en-03.slides.html#linear-models-in-r-1",
-    "title": "Simple statistics using R",
-    "section": "linear models in R",
-    "text": "linear models in R\n\nthe function for carrying out linear regression in R is lm()\n\n-the response variable comes first, then the tilde ~ then the name of the explanatory variable\n\nclouds.lm &lt;- lm(moisture ~ treatment, data=clouds)\n\n\nhow does R know that you want to perform a t-test (ANOVA)?\n\n\nclass(clouds$treatment)\n\n[1] \"character\"\n\n\n\nhere the explanatory variable is a factor"
-  },
-  {
-    "objectID": "slides_r/lec_en-03.slides.html#linear-models-in-r-2",
-    "href": "slides_r/lec_en-03.slides.html#linear-models-in-r-2",
-    "title": "Simple statistics using R",
-    "section": "linear models in R",
-    "text": "linear models in R\n\nto display the ANOVA table use the anova() function\n\n\nanova(clouds.lm)\n\nAnalysis of Variance Table\n\nResponse: moisture\n          Df  Sum Sq Mean Sq F value  Pr(&gt;F)  \ntreatment  1  367.22  367.22  6.4538 0.02051 *\nResiduals 18 1024.20   56.90                  \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\n\n\ndo you notice anything familiar about the p value?\n(hint: see the output from the t-test we did earlier)"
-  },
-  {
-    "objectID": "slides_r/lec_en-03.slides.html#linear-models-in-r-3",
-    "href": "slides_r/lec_en-03.slides.html#linear-models-in-r-3",
-    "title": "Simple statistics using R",
-    "section": "linear models in R",
-    "text": "linear models in R\n\nwe have sufficient evidence to reject the null hypothesis (as before)\ntherefore, there is a significant difference in the mean moisture content between clouds that were seeded and unseeded clouds\ndo we accept this inference?\nwhat about assumptions?\nwe could use Shapiro-Wilks and F tests as before\nmuch better to assess visually by plotting the residuals"
-  },
-  {
-    "objectID": "slides_r/lec_en-03.slides.html#plotting-residuals",
-    "href": "slides_r/lec_en-03.slides.html#plotting-residuals",
-    "title": "Simple statistics using R",
-    "section": "Plotting residuals",
-    "text": "Plotting residuals\n\nclouds.lm is a linear model object we can do stuff with it\nwe can use the plot() function directly to display residual plots\nnormality assumption\nequal variance assumption\nunusual or influential observations"
-  },
-  {
-    "objectID": "slides_r/lec_en-03.slides.html#plotting-residuals-1",
-    "href": "slides_r/lec_en-03.slides.html#plotting-residuals-1",
-    "title": "Simple statistics using R",
-    "section": "Plotting residuals",
-    "text": "Plotting residuals\n\npar(mfrow = c(2, 2), bg = \"#FFFFFFCC\")\nplot(clouds.lm)"
-  },
-  {
-    "objectID": "slides_r/lec_en-03.slides.html#other-linear-models",
-    "href": "slides_r/lec_en-03.slides.html#other-linear-models",
-    "title": "Simple statistics using R",
-    "section": "other linear models",
-    "text": "other linear models\n\n\n\n\n\n\n\n\ntraditional name\nmodel formula\nR code\n\n\n\n\nsimple linear regression\nY ~ X1 (continuous)\nlm(Y ~ X)\n\n\none-way ANOVA\nY ~ X1 (categorical)\nlm(Y ~ X)\n\n\ntwo-way ANOVA\nY ~ X1 (cat) + X2 (cat)\nlm(Y ~ X1 + X2)\n\n\nANCOVA\nY ~ X1 (cat) + X2 (cont)\nlm(Y ~ X1 * X2)\n\n\nmultiple regression\nY ~ X1 (cont) + X2 (cont)\nlm(Y ~ X1 + X2)\n\n\nfactorial ANOVA\nY ~ X1 (cat) * X2 (cat)\nlm(Y ~ X1 * X2)"
-  },
-  {
-    "objectID": "slides_r/lec_en-03.notes.html",
-    "href": "slides_r/lec_en-03.notes.html",
-    "title": "Simple statistics using R",
-    "section": "",
-    "text": "introduce you to some basic statistics in R ✔️\nfocus on linear models ✔️\nfit simple linear models in R ✔️\ncheck linear model assumptions in R ✔️"
-  },
-  {
-    "objectID": "slides_r/lec_en-03.notes.html#learning-outcomes",
-    "href": "slides_r/lec_en-03.notes.html#learning-outcomes",
-    "title": "Simple statistics using R",
-    "section": "",
-    "text": "introduce you to some basic statistics in R ✔️\nfocus on linear models ✔️\nfit simple linear models in R ✔️\ncheck linear model assumptions in R ✔️"
-  },
-  {
-    "objectID": "slides_r/lec_en-03.notes.html#scratching-the-surface",
-    "href": "slides_r/lec_en-03.notes.html#scratching-the-surface",
-    "title": "Simple statistics using R",
-    "section": "1.1 Scratching the surface",
-    "text": "1.1 Scratching the surface\n\nmany, many statistical tests available in R\nrange from the simple to the highly complex\nmany are included in standard base installation of R\nyou can extend the range of statistics by installing additional packages"
-  },
-  {
-    "objectID": "slides_r/lec_en-03.notes.html#an-example",
-    "href": "slides_r/lec_en-03.notes.html#an-example",
-    "title": "Simple statistics using R",
-    "section": "1.2 an example",
-    "text": "1.2 an example\n\n\n\ndoes seeding clouds with dimethylsulphate alter the moisture content of clouds (can we make it rain!)\n10 random clouds were seeded and 10 random clouds unseeded\nwhat’s the null hypothesis?\n\n\n\n\n\n\nno difference in mean moisture content between seeded and unseeded clouds"
-  },
-  {
-    "objectID": "slides_r/lec_en-03.notes.html#plotting-the-data",
-    "href": "slides_r/lec_en-03.notes.html#plotting-the-data",
-    "title": "Simple statistics using R",
-    "section": "1.3 Plotting the data",
-    "text": "1.3 Plotting the data\n\nDataPlot\n\n\n\nplot these data\ninterpretation?\nwhat type of statistical test do you want to use?\n\n\nclouds &lt;- read.csv('data/clouds.csv')\nstr(clouds)\n\n'data.frame':   20 obs. of  2 variables:\n $ moisture : num  301 302 299 316 307 ...\n $ treatment: chr  \"seeded\" \"seeded\" \"seeded\" \"seeded\" ..."
-  },
-  {
-    "objectID": "slides_r/lec_en-03.notes.html#t-test",
-    "href": "slides_r/lec_en-03.notes.html#t-test",
-    "title": "Simple statistics using R",
-    "section": "1.4 t-test",
-    "text": "1.4 t-test\n\nt.test(clouds$moisture~clouds$treatment, var.equal=TRUE)\n\n\n    Two Sample t-test\n\ndata:  clouds$moisture by clouds$treatment\nt = 2.5404, df = 18, p-value = 0.02051\nalternative hypothesis: true difference in means between group seeded and group unseeded is not equal to 0\n95 percent confidence interval:\n  1.482679 15.657321\nsample estimates:\n  mean in group seeded mean in group unseeded \n                303.63                 295.06 \n\n\n\nreject or fail to reject the null hypothesis?"
-  },
-  {
-    "objectID": "slides_r/lec_en-03.notes.html#linear-models-in-r",
-    "href": "slides_r/lec_en-03.notes.html#linear-models-in-r",
-    "title": "Simple statistics using R",
-    "section": "1.5 linear models in R",
-    "text": "1.5 linear models in R\n\nan alternative, but equivalent approach is to use a linear model to compare the means in each group\ngeneral linear models are generally thought of as simple models, but can be used to model a wide variety of data and exp. designs\ntraditionally statistics is performed (and taught) like using a recipe book (ANOVA, t-test, ANCOVA etc)\ngeneral linear models provide a coherent and theoretically satisfying framework on which to conduct your analyses"
-  },
-  {
-    "objectID": "slides_r/lec_en-03.notes.html#what-are-linear-models",
-    "href": "slides_r/lec_en-03.notes.html#what-are-linear-models",
-    "title": "Simple statistics using R",
-    "section": "1.6 what are linear models?",
-    "text": "1.6 what are linear models?\n\nt-test\nANOVA\nfactorial ANOVA\nANCOVA\nlinear regression\nmultiple regression\netc, etc"
-  },
-  {
-    "objectID": "slides_r/lec_en-03.notes.html#model-formula",
-    "href": "slides_r/lec_en-03.notes.html#model-formula",
-    "title": "Simple statistics using R",
-    "section": "1.7 model formula",
-    "text": "1.7 model formula\n\ngeneral linear modelling is based around the concept of model formulae\n\n\n\nresponse variable ~ explanatory variable(s) + error\n\n\n\nliterally read as ‘variation in response variable modelled as a function of the explanatory variable(s) plus variation not explained by the explanatory variables’\nit’s the attributes of the response and explanatory variables that determines the type of linear model fitted"
-  },
-  {
-    "objectID": "slides_r/lec_en-03.notes.html#linear-models-in-r-1",
-    "href": "slides_r/lec_en-03.notes.html#linear-models-in-r-1",
-    "title": "Simple statistics using R",
-    "section": "1.8 linear models in R",
-    "text": "1.8 linear models in R\n\nthe function for carrying out linear regression in R is lm()\n\n-the response variable comes first, then the tilde ~ then the name of the explanatory variable\n\nclouds.lm &lt;- lm(moisture ~ treatment, data=clouds)\n\n\nhow does R know that you want to perform a t-test (ANOVA)?\n\n\nclass(clouds$treatment)\n\n[1] \"character\"\n\n\n\nhere the explanatory variable is a factor"
-  },
-  {
-    "objectID": "slides_r/lec_en-03.notes.html#linear-models-in-r-2",
-    "href": "slides_r/lec_en-03.notes.html#linear-models-in-r-2",
-    "title": "Simple statistics using R",
-    "section": "1.9 linear models in R",
-    "text": "1.9 linear models in R\n\nto display the ANOVA table use the anova() function\n\n\nanova(clouds.lm)\n\nAnalysis of Variance Table\n\nResponse: moisture\n          Df  Sum Sq Mean Sq F value  Pr(&gt;F)  \ntreatment  1  367.22  367.22  6.4538 0.02051 *\nResiduals 18 1024.20   56.90                  \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\n\n\ndo you notice anything familiar about the p value?\n(hint: see the output from the t-test we did earlier)"
-  },
-  {
-    "objectID": "slides_r/lec_en-03.notes.html#linear-models-in-r-3",
-    "href": "slides_r/lec_en-03.notes.html#linear-models-in-r-3",
-    "title": "Simple statistics using R",
-    "section": "1.10 linear models in R",
-    "text": "1.10 linear models in R\n\nwe have sufficient evidence to reject the null hypothesis (as before)\ntherefore, there is a significant difference in the mean moisture content between clouds that were seeded and unseeded clouds\ndo we accept this inference?\nwhat about assumptions?\nwe could use Shapiro-Wilks and F tests as before\nmuch better to assess visually by plotting the residuals"
-  },
-  {
-    "objectID": "slides_r/lec_en-03.notes.html#plotting-residuals",
-    "href": "slides_r/lec_en-03.notes.html#plotting-residuals",
-    "title": "Simple statistics using R",
-    "section": "1.11 Plotting residuals",
-    "text": "1.11 Plotting residuals\n\nclouds.lm is a linear model object we can do stuff with it\nwe can use the plot() function directly to display residual plots\nnormality assumption\nequal variance assumption\nunusual or influential observations"
-  },
-  {
-    "objectID": "slides_r/lec_en-03.notes.html#plotting-residuals-1",
-    "href": "slides_r/lec_en-03.notes.html#plotting-residuals-1",
-    "title": "Simple statistics using R",
-    "section": "1.12 Plotting residuals",
-    "text": "1.12 Plotting residuals\n\npar(mfrow = c(2, 2), bg = \"#FFFFFFCC\")\nplot(clouds.lm)"
-  },
-  {
-    "objectID": "slides_r/lec_en-03.notes.html#other-linear-models",
-    "href": "slides_r/lec_en-03.notes.html#other-linear-models",
-    "title": "Simple statistics using R",
-    "section": "1.13 other linear models",
-    "text": "1.13 other linear models\n\n\n\n\n\n\n\n\ntraditional name\nmodel formula\nR code\n\n\n\n\nsimple linear regression\nY ~ X1 (continuous)\nlm(Y ~ X)\n\n\none-way ANOVA\nY ~ X1 (categorical)\nlm(Y ~ X)\n\n\ntwo-way ANOVA\nY ~ X1 (cat) + X2 (cat)\nlm(Y ~ X1 + X2)\n\n\nANCOVA\nY ~ X1 (cat) + X2 (cont)\nlm(Y ~ X1 * X2)\n\n\nmultiple regression\nY ~ X1 (cont) + X2 (cont)\nlm(Y ~ X1 + X2)\n\n\nfactorial ANOVA\nY ~ X1 (cat) * X2 (cat)\nlm(Y ~ X1 * X2)"
-  },
-  {
     "objectID": "slides_r/lec_en-01.slides.html#learning-outcomes",
     "href": "slides_r/lec_en-01.slides.html#learning-outcomes",
     "title": "An Introduction to R",
@@ -497,6 +294,209 @@
     "text": "Footnotes\n\n\nincluding the future you!↩︎"
   },
   {
+    "objectID": "slides_r/lec_en-03.slides.html#learning-outcomes",
+    "href": "slides_r/lec_en-03.slides.html#learning-outcomes",
+    "title": "Simple statistics using R",
+    "section": "learning outcomes",
+    "text": "learning outcomes\n\nintroduce you to some basic statistics in R ✔️\nfocus on linear models ✔️\nfit simple linear models in R ✔️\ncheck linear model assumptions in R ✔️"
+  },
+  {
+    "objectID": "slides_r/lec_en-03.slides.html#scratching-the-surface",
+    "href": "slides_r/lec_en-03.slides.html#scratching-the-surface",
+    "title": "Simple statistics using R",
+    "section": "Scratching the surface",
+    "text": "Scratching the surface\n\nmany, many statistical tests available in R\nrange from the simple to the highly complex\nmany are included in standard base installation of R\nyou can extend the range of statistics by installing additional packages"
+  },
+  {
+    "objectID": "slides_r/lec_en-03.slides.html#an-example",
+    "href": "slides_r/lec_en-03.slides.html#an-example",
+    "title": "Simple statistics using R",
+    "section": "an example",
+    "text": "an example\n\n\n\ndoes seeding clouds with dimethylsulphate alter the moisture content of clouds (can we make it rain!)\n10 random clouds were seeded and 10 random clouds unseeded\nwhat’s the null hypothesis?\n\n\n\n\n\n\n\nno difference in mean moisture content between seeded and unseeded clouds"
+  },
+  {
+    "objectID": "slides_r/lec_en-03.slides.html#plotting-the-data",
+    "href": "slides_r/lec_en-03.slides.html#plotting-the-data",
+    "title": "Simple statistics using R",
+    "section": "Plotting the data",
+    "text": "Plotting the data\n\nDataPlot\n\n\n\nplot these data\ninterpretation?\nwhat type of statistical test do you want to use?\n\n\nclouds &lt;- read.csv('data/clouds.csv')\nstr(clouds)\n\n'data.frame':   20 obs. of  2 variables:\n $ moisture : num  301 302 299 316 307 ...\n $ treatment: chr  \"seeded\" \"seeded\" \"seeded\" \"seeded\" ..."
+  },
+  {
+    "objectID": "slides_r/lec_en-03.slides.html#t-test",
+    "href": "slides_r/lec_en-03.slides.html#t-test",
+    "title": "Simple statistics using R",
+    "section": "t-test",
+    "text": "t-test\n\nt.test(clouds$moisture~clouds$treatment, var.equal=TRUE)\n\n\n    Two Sample t-test\n\ndata:  clouds$moisture by clouds$treatment\nt = 2.5404, df = 18, p-value = 0.02051\nalternative hypothesis: true difference in means between group seeded and group unseeded is not equal to 0\n95 percent confidence interval:\n  1.482679 15.657321\nsample estimates:\n  mean in group seeded mean in group unseeded \n                303.63                 295.06 \n\n\n\nreject or fail to reject the null hypothesis?"
+  },
+  {
+    "objectID": "slides_r/lec_en-03.slides.html#linear-models-in-r",
+    "href": "slides_r/lec_en-03.slides.html#linear-models-in-r",
+    "title": "Simple statistics using R",
+    "section": "linear models in R",
+    "text": "linear models in R\n\nan alternative, but equivalent approach is to use a linear model to compare the means in each group\ngeneral linear models are generally thought of as simple models, but can be used to model a wide variety of data and exp. designs\ntraditionally statistics is performed (and taught) like using a recipe book (ANOVA, t-test, ANCOVA etc)\ngeneral linear models provide a coherent and theoretically satisfying framework on which to conduct your analyses"
+  },
+  {
+    "objectID": "slides_r/lec_en-03.slides.html#what-are-linear-models",
+    "href": "slides_r/lec_en-03.slides.html#what-are-linear-models",
+    "title": "Simple statistics using R",
+    "section": "what are linear models?",
+    "text": "what are linear models?\n\nt-test\nANOVA\nfactorial ANOVA\nANCOVA\nlinear regression\nmultiple regression\netc, etc"
+  },
+  {
+    "objectID": "slides_r/lec_en-03.slides.html#model-formula",
+    "href": "slides_r/lec_en-03.slides.html#model-formula",
+    "title": "Simple statistics using R",
+    "section": "model formula",
+    "text": "model formula\n\ngeneral linear modelling is based around the concept of model formulae\n\n\n\nresponse variable ~ explanatory variable(s) + error\n\n\n\nliterally read as ‘variation in response variable modelled as a function of the explanatory variable(s) plus variation not explained by the explanatory variables’\nit’s the attributes of the response and explanatory variables that determines the type of linear model fitted"
+  },
+  {
+    "objectID": "slides_r/lec_en-03.slides.html#linear-models-in-r-1",
+    "href": "slides_r/lec_en-03.slides.html#linear-models-in-r-1",
+    "title": "Simple statistics using R",
+    "section": "linear models in R",
+    "text": "linear models in R\n\nthe function for carrying out linear regression in R is lm()\n\n-the response variable comes first, then the tilde ~ then the name of the explanatory variable\n\nclouds.lm &lt;- lm(moisture ~ treatment, data=clouds)\n\n\nhow does R know that you want to perform a t-test (ANOVA)?\n\n\nclass(clouds$treatment)\n\n[1] \"character\"\n\n\n\nhere the explanatory variable is a factor"
+  },
+  {
+    "objectID": "slides_r/lec_en-03.slides.html#linear-models-in-r-2",
+    "href": "slides_r/lec_en-03.slides.html#linear-models-in-r-2",
+    "title": "Simple statistics using R",
+    "section": "linear models in R",
+    "text": "linear models in R\n\nto display the ANOVA table use the anova() function\n\n\nanova(clouds.lm)\n\nAnalysis of Variance Table\n\nResponse: moisture\n          Df  Sum Sq Mean Sq F value  Pr(&gt;F)  \ntreatment  1  367.22  367.22  6.4538 0.02051 *\nResiduals 18 1024.20   56.90                  \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\n\n\ndo you notice anything familiar about the p value?\n(hint: see the output from the t-test we did earlier)"
+  },
+  {
+    "objectID": "slides_r/lec_en-03.slides.html#linear-models-in-r-3",
+    "href": "slides_r/lec_en-03.slides.html#linear-models-in-r-3",
+    "title": "Simple statistics using R",
+    "section": "linear models in R",
+    "text": "linear models in R\n\nwe have sufficient evidence to reject the null hypothesis (as before)\ntherefore, there is a significant difference in the mean moisture content between clouds that were seeded and unseeded clouds\ndo we accept this inference?\nwhat about assumptions?\nwe could use Shapiro-Wilks and F tests as before\nmuch better to assess visually by plotting the residuals"
+  },
+  {
+    "objectID": "slides_r/lec_en-03.slides.html#plotting-residuals",
+    "href": "slides_r/lec_en-03.slides.html#plotting-residuals",
+    "title": "Simple statistics using R",
+    "section": "Plotting residuals",
+    "text": "Plotting residuals\n\nclouds.lm is a linear model object we can do stuff with it\nwe can use the plot() function directly to display residual plots\nnormality assumption\nequal variance assumption\nunusual or influential observations"
+  },
+  {
+    "objectID": "slides_r/lec_en-03.slides.html#plotting-residuals-1",
+    "href": "slides_r/lec_en-03.slides.html#plotting-residuals-1",
+    "title": "Simple statistics using R",
+    "section": "Plotting residuals",
+    "text": "Plotting residuals\n\npar(mfrow = c(2, 2), bg = \"#FFFFFFCC\")\nplot(clouds.lm)"
+  },
+  {
+    "objectID": "slides_r/lec_en-03.slides.html#other-linear-models",
+    "href": "slides_r/lec_en-03.slides.html#other-linear-models",
+    "title": "Simple statistics using R",
+    "section": "other linear models",
+    "text": "other linear models\n\n\n\n\n\n\n\n\ntraditional name\nmodel formula\nR code\n\n\n\n\nsimple linear regression\nY ~ X1 (continuous)\nlm(Y ~ X)\n\n\none-way ANOVA\nY ~ X1 (categorical)\nlm(Y ~ X)\n\n\ntwo-way ANOVA\nY ~ X1 (cat) + X2 (cat)\nlm(Y ~ X1 + X2)\n\n\nANCOVA\nY ~ X1 (cat) + X2 (cont)\nlm(Y ~ X1 * X2)\n\n\nmultiple regression\nY ~ X1 (cont) + X2 (cont)\nlm(Y ~ X1 + X2)\n\n\nfactorial ANOVA\nY ~ X1 (cat) * X2 (cat)\nlm(Y ~ X1 * X2)"
+  },
+  {
+    "objectID": "slides_r/lec_en-03.notes.html",
+    "href": "slides_r/lec_en-03.notes.html",
+    "title": "Simple statistics using R",
+    "section": "",
+    "text": "introduce you to some basic statistics in R ✔️\nfocus on linear models ✔️\nfit simple linear models in R ✔️\ncheck linear model assumptions in R ✔️"
+  },
+  {
+    "objectID": "slides_r/lec_en-03.notes.html#learning-outcomes",
+    "href": "slides_r/lec_en-03.notes.html#learning-outcomes",
+    "title": "Simple statistics using R",
+    "section": "",
+    "text": "introduce you to some basic statistics in R ✔️\nfocus on linear models ✔️\nfit simple linear models in R ✔️\ncheck linear model assumptions in R ✔️"
+  },
+  {
+    "objectID": "slides_r/lec_en-03.notes.html#scratching-the-surface",
+    "href": "slides_r/lec_en-03.notes.html#scratching-the-surface",
+    "title": "Simple statistics using R",
+    "section": "1.1 Scratching the surface",
+    "text": "1.1 Scratching the surface\n\nmany, many statistical tests available in R\nrange from the simple to the highly complex\nmany are included in standard base installation of R\nyou can extend the range of statistics by installing additional packages"
+  },
+  {
+    "objectID": "slides_r/lec_en-03.notes.html#an-example",
+    "href": "slides_r/lec_en-03.notes.html#an-example",
+    "title": "Simple statistics using R",
+    "section": "1.2 an example",
+    "text": "1.2 an example\n\n\n\ndoes seeding clouds with dimethylsulphate alter the moisture content of clouds (can we make it rain!)\n10 random clouds were seeded and 10 random clouds unseeded\nwhat’s the null hypothesis?\n\n\n\n\n\n\nno difference in mean moisture content between seeded and unseeded clouds"
+  },
+  {
+    "objectID": "slides_r/lec_en-03.notes.html#plotting-the-data",
+    "href": "slides_r/lec_en-03.notes.html#plotting-the-data",
+    "title": "Simple statistics using R",
+    "section": "1.3 Plotting the data",
+    "text": "1.3 Plotting the data\n\nDataPlot\n\n\n\nplot these data\ninterpretation?\nwhat type of statistical test do you want to use?\n\n\nclouds &lt;- read.csv('data/clouds.csv')\nstr(clouds)\n\n'data.frame':   20 obs. of  2 variables:\n $ moisture : num  301 302 299 316 307 ...\n $ treatment: chr  \"seeded\" \"seeded\" \"seeded\" \"seeded\" ..."
+  },
+  {
+    "objectID": "slides_r/lec_en-03.notes.html#t-test",
+    "href": "slides_r/lec_en-03.notes.html#t-test",
+    "title": "Simple statistics using R",
+    "section": "1.4 t-test",
+    "text": "1.4 t-test\n\nt.test(clouds$moisture~clouds$treatment, var.equal=TRUE)\n\n\n    Two Sample t-test\n\ndata:  clouds$moisture by clouds$treatment\nt = 2.5404, df = 18, p-value = 0.02051\nalternative hypothesis: true difference in means between group seeded and group unseeded is not equal to 0\n95 percent confidence interval:\n  1.482679 15.657321\nsample estimates:\n  mean in group seeded mean in group unseeded \n                303.63                 295.06 \n\n\n\nreject or fail to reject the null hypothesis?"
+  },
+  {
+    "objectID": "slides_r/lec_en-03.notes.html#linear-models-in-r",
+    "href": "slides_r/lec_en-03.notes.html#linear-models-in-r",
+    "title": "Simple statistics using R",
+    "section": "1.5 linear models in R",
+    "text": "1.5 linear models in R\n\nan alternative, but equivalent approach is to use a linear model to compare the means in each group\ngeneral linear models are generally thought of as simple models, but can be used to model a wide variety of data and exp. designs\ntraditionally statistics is performed (and taught) like using a recipe book (ANOVA, t-test, ANCOVA etc)\ngeneral linear models provide a coherent and theoretically satisfying framework on which to conduct your analyses"
+  },
+  {
+    "objectID": "slides_r/lec_en-03.notes.html#what-are-linear-models",
+    "href": "slides_r/lec_en-03.notes.html#what-are-linear-models",
+    "title": "Simple statistics using R",
+    "section": "1.6 what are linear models?",
+    "text": "1.6 what are linear models?\n\nt-test\nANOVA\nfactorial ANOVA\nANCOVA\nlinear regression\nmultiple regression\netc, etc"
+  },
+  {
+    "objectID": "slides_r/lec_en-03.notes.html#model-formula",
+    "href": "slides_r/lec_en-03.notes.html#model-formula",
+    "title": "Simple statistics using R",
+    "section": "1.7 model formula",
+    "text": "1.7 model formula\n\ngeneral linear modelling is based around the concept of model formulae\n\n\n\nresponse variable ~ explanatory variable(s) + error\n\n\n\nliterally read as ‘variation in response variable modelled as a function of the explanatory variable(s) plus variation not explained by the explanatory variables’\nit’s the attributes of the response and explanatory variables that determines the type of linear model fitted"
+  },
+  {
+    "objectID": "slides_r/lec_en-03.notes.html#linear-models-in-r-1",
+    "href": "slides_r/lec_en-03.notes.html#linear-models-in-r-1",
+    "title": "Simple statistics using R",
+    "section": "1.8 linear models in R",
+    "text": "1.8 linear models in R\n\nthe function for carrying out linear regression in R is lm()\n\n-the response variable comes first, then the tilde ~ then the name of the explanatory variable\n\nclouds.lm &lt;- lm(moisture ~ treatment, data=clouds)\n\n\nhow does R know that you want to perform a t-test (ANOVA)?\n\n\nclass(clouds$treatment)\n\n[1] \"character\"\n\n\n\nhere the explanatory variable is a factor"
+  },
+  {
+    "objectID": "slides_r/lec_en-03.notes.html#linear-models-in-r-2",
+    "href": "slides_r/lec_en-03.notes.html#linear-models-in-r-2",
+    "title": "Simple statistics using R",
+    "section": "1.9 linear models in R",
+    "text": "1.9 linear models in R\n\nto display the ANOVA table use the anova() function\n\n\nanova(clouds.lm)\n\nAnalysis of Variance Table\n\nResponse: moisture\n          Df  Sum Sq Mean Sq F value  Pr(&gt;F)  \ntreatment  1  367.22  367.22  6.4538 0.02051 *\nResiduals 18 1024.20   56.90                  \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\n\n\ndo you notice anything familiar about the p value?\n(hint: see the output from the t-test we did earlier)"
+  },
+  {
+    "objectID": "slides_r/lec_en-03.notes.html#linear-models-in-r-3",
+    "href": "slides_r/lec_en-03.notes.html#linear-models-in-r-3",
+    "title": "Simple statistics using R",
+    "section": "1.10 linear models in R",
+    "text": "1.10 linear models in R\n\nwe have sufficient evidence to reject the null hypothesis (as before)\ntherefore, there is a significant difference in the mean moisture content between clouds that were seeded and unseeded clouds\ndo we accept this inference?\nwhat about assumptions?\nwe could use Shapiro-Wilks and F tests as before\nmuch better to assess visually by plotting the residuals"
+  },
+  {
+    "objectID": "slides_r/lec_en-03.notes.html#plotting-residuals",
+    "href": "slides_r/lec_en-03.notes.html#plotting-residuals",
+    "title": "Simple statistics using R",
+    "section": "1.11 Plotting residuals",
+    "text": "1.11 Plotting residuals\n\nclouds.lm is a linear model object we can do stuff with it\nwe can use the plot() function directly to display residual plots\nnormality assumption\nequal variance assumption\nunusual or influential observations"
+  },
+  {
+    "objectID": "slides_r/lec_en-03.notes.html#plotting-residuals-1",
+    "href": "slides_r/lec_en-03.notes.html#plotting-residuals-1",
+    "title": "Simple statistics using R",
+    "section": "1.12 Plotting residuals",
+    "text": "1.12 Plotting residuals\n\npar(mfrow = c(2, 2), bg = \"#FFFFFFCC\")\nplot(clouds.lm)"
+  },
+  {
+    "objectID": "slides_r/lec_en-03.notes.html#other-linear-models",
+    "href": "slides_r/lec_en-03.notes.html#other-linear-models",
+    "title": "Simple statistics using R",
+    "section": "1.13 other linear models",
+    "text": "1.13 other linear models\n\n\n\n\n\n\n\n\ntraditional name\nmodel formula\nR code\n\n\n\n\nsimple linear regression\nY ~ X1 (continuous)\nlm(Y ~ X)\n\n\none-way ANOVA\nY ~ X1 (categorical)\nlm(Y ~ X)\n\n\ntwo-way ANOVA\nY ~ X1 (cat) + X2 (cat)\nlm(Y ~ X1 + X2)\n\n\nANCOVA\nY ~ X1 (cat) + X2 (cont)\nlm(Y ~ X1 * X2)\n\n\nmultiple regression\nY ~ X1 (cont) + X2 (cont)\nlm(Y ~ X1 + X2)\n\n\nfactorial ANOVA\nY ~ X1 (cat) * X2 (cat)\nlm(Y ~ X1 * X2)"
+  },
+  {
     "objectID": "intro_r_en.html",
     "href": "intro_r_en.html",
     "title": "On the R-way to hell",
@@ -525,18 +525,18 @@
     "text": "About slides  and notes \n\nSlides \nSlides in revealjs format (html). If you want then as a pdf (note you might loose some functionality or contents due to tabs and scroll sections):\n\nOpen the slides in your browser from a link on this page\nPress e to get into the PDF export mode (?print-pdf should appear near the end of the url and white borders should appear)\nOpen the in-browser print dialog (CTRL/CMD+P).\nChange the Destination setting to Save as PDF.\nChange the Layout to Landscape.\nChange the Margins to None.\nEnable the Background graphics option (if you want it)\nClick Save 🎉\n\n\n\nNotes \nContent of the slides in html format as a self-contained downloadable file and including tabs and scroll sections.\nMore importantly, notes have the commenting and annotateing tools activated via https://hypothes.is/. If you create a free account , you can annotate and comment slides as well as share your annotations/comments with the public or via private or public groups."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Biostats uOttawa",
-    "section": "",
-    "text": "EnglishFrançais\n\n\n\nBiostatistic courses at uOttawa\nThis regroup the different resources developed for the biostatistic courses at the university of Ottawa by Julien Martin\n\nApplied biostatistics with R (BIO 4X58):\n\nOffered to both undergraduate and graduate students in english and french\nPrerequisite:\n\nan introduction class to statisticis is good to have\nNo (or limited) knowledge of R and no (or limited) knowledge of stats expected.\n\nBIO4158 english (Course site / Course manual)\nBIO4558 french (Course site / Course manual)\n\n\n\nAdvanced biostatistics and open science (BIO 8940)\n\nBilingual course for graduate students\nPrerequisite:\n\na functional knowledge of R (loading data, running basic linear models, and making plots)\na good understanding of linear models\nessentially Bio8940 is a great next steps after completing Bio4x58.\n\nCourse site / Course manual\n\n\n\n\nIntro to R book: On the R-way to hell\nThis is an introduction to R book with a multilingual approach. The book is covering an intorduction to the basic use of R (data loading, wrangling and plotting), as well as simple stats, programming, use of github and R markdown /Quarto with R Studio and VS code.\nThe book (still under development) is available in English and French. I will add more languages later this year hopefully with help of volunteers.\nHere are also a few slides about an intro to R only in english (slides).\n\n\nStatistical consulting\nAs Part of my service in the Biology department, I provide statistical consulting. Please just contact me to book an appointment to discuss your stat problems.\nPlease bring with you (or send me in advance):\n\nyour data\nyour R code (should at least load the data into R)\na clear working hypothesis\n\nStatistical consulting does not mean that you have to add me as a co-author. I just ask that you add me to the “Acknowledgements” of your thesis and manuscript/article. Repeated consulting on the same problem and my implication on developing project specific coding/analysis might lead to co-authorship, but this usually all comes naturally and is always discussed openly with the student(s) and PI(s). As yet, I have never requested to become a co-author and I was offered co-authorship for 3 manuscripts over &gt; 50 projects discussed.\n\n\n\n\nCours de biostatistique à uOttawa\nLe site regroupe les différentes ressources développées par Julien Martin pour les cours de biostatistiques à uOttawa\n\nBiostatistiques appliquées avec R (BIO 4X58)\n\nCours offerts aux étudiant au baccaulauréat et aux étudiants gradués en anglais et en français\nPré-requis:\n\ncours d’introduction au statistiques recommandée\nAucune connaissance de R et des statistiques requises\n\nBIO4158 anglais (cours / manuel)\nBIO4558 français (cours / manuel)\n\n\n\nBiostatistiques avancées et science ouverte (BIO8940)\n\nCours bilingues offerts aux étudiants gradués\nPré-requis:\n\nconnaissances fonctionelle de R (chargement de données, graphique et statistiques de bases)\nbonne compréhension des modèles linéaires\nEssentiellement Bio4x58\n\ncours / manuel\n\n\n\n\nLivre d’introduction à R: Sur le chemin de l’enf-R\nIl s’agit d’un livre d’introduction à R avec une approche multilingue. Le livre couvre une introduction à l’utilisation de base de R (chargement de données, manipulation et traçage), ainsi que des statistiques simples, la programmation, l’utilisation de github et de R markdown /Quarto avec R Studio et VS code.\nLe livre (encore en développement) est disponible en anglais et français. J’ajouterai d’autres langues plus tard dans l’année, avec l’aide de volontaires.\nVoici également quelques diapositives sur une introduction à R uniquement en anglais (slides).\n\n\nConsultations en statistique\nJe fournis des services de consultation en biostatistique dans le cadre de mon service au département de Biologie. Pour discuter de vos problèmes en statistiques, veuillez simplement me contacter pour prendre un rendez-vous.\nVeuillez avoir avec vous (ou me l’envoyer en avance):\n\nvos données\nvotre code R (au minimum capable de charger les données)\nune hypothèse de travail ou question biologique claire\n\nUne consultation statistiques n’implique pas de m’ajouter en tant ue que co-auteur. Je demande simplement que vous m’ajoutiez au Remerciements/Acknowledgements de votre thèse et/ou manuscript. Je reconnais que dans certains cas, e.g. nombres répétées de consultations sur le même projet incluant le développement de code et analyse spécifique au projet, je peux devenir co-auteur sur un projet. Cette discussion a habituellement lieu de manière naturelle et à toujours lieu de manière ouverte et ransparente avec les personnes impliquées, étudiant.e.s et PI.s. Jusqu’à maintenant, je n’ai jamais demandé à être co-auteur, et je suis devenu co-auteur sur 3 articles et j’ai été consulté pour plus de 50 projets."
-  },
-  {
     "objectID": "people.html",
     "href": "people.html",
     "title": "Julien Martin",
     "section": "",
     "text": "Julien is an Associate Professor at the University of Ottawa and has been teaching (and learning) R for the last 15 years.\nI created the websites using Quarto, R, revealjs, mermaid.js and graphViz. I developed the theme for the slides based on the xaringan blackboard theme."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Biostats uOttawa",
+    "section": "",
+    "text": "EnglishFrançais\n\n\n\nBiostatistic courses at uOttawa\nThis regroup the different resources developed for the biostatistic courses at the university of Ottawa by Julien Martin\n\nApplied biostatistics with R (BIO 4X58) \n\nOffered to both undergraduate and graduate students in english and french\nPrerequisite:\n\nan introduction class to statisticis is good to have\nNo (or limited) knowledge of R and no (or limited) knowledge of stats expected.\n\nBIO4158 english (Course site / Course manual)\nBIO4558 french (Course site / Course manual)\n\n\n\nAdvanced biostatistics and open science (BIO 8940) \n\nBilingual course for graduate students\nPrerequisite:\n\na functional knowledge of R (loading data, running basic linear models, and making plots)\na good understanding of linear models\nessentially Bio8940 is a great next steps after completing Bio4x58.\n\nCourse site / Course manual\n\n\n\n\nIntro to R book: On the R-way to hell \nThis is an introduction to R book with a multilingual approach. The book is covering an intorduction to the basic use of R (data loading, wrangling and plotting), as well as simple stats, programming, use of github and R markdown /Quarto with R Studio and VS code.\nThe book (still under development) is available in English and French. I will add more languages later this year hopefully with help of volunteers.\nHere are also a few slides about an intro to R only in english (slides).\n\n\nStatistical consulting \nAs Part of my service in the Biology department, I provide statistical consulting. Please just contact me to book an appointment to discuss your stat problems.\nPlease bring with you (or send me in advance):\n\nyour data\nyour R code (should at least load the data into R)\na clear working hypothesis\n\nStatistical consulting does not mean that you have to add me as a co-author. I just ask that you add me to the “Acknowledgements” of your thesis and manuscript/article. Repeated consulting on the same problem and my implication on developing project specific coding/analysis might lead to co-authorship, but this usually all comes naturally and is always discussed openly with the student(s) and PI(s). As yet, I have never requested to become a co-author and I was offered co-authorship for 3 manuscripts over &gt; 50 projects discussed.\n\n\n\n\nCours de biostatistique à uOttawa\nLe site regroupe les différentes ressources développées par Julien Martin pour les cours de biostatistiques à uOttawa\n\nBiostatistiques appliquées avec R (BIO 4X58) \n\nCours offerts aux étudiant au baccaulauréat et aux étudiants gradués en anglais et en français\nPré-requis:\n\ncours d’introduction au statistiques recommandée\nAucune connaissance de R et des statistiques requises\n\nBIO4158 anglais (cours / manuel)\nBIO4558 français (cours / manuel)\n\n\n\nBiostatistiques avancées et science ouverte (BIO8940) \n\nCours bilingues offerts aux étudiants gradués\nPré-requis:\n\nconnaissances fonctionelle de R (chargement de données, graphique et statistiques de bases)\nbonne compréhension des modèles linéaires\nEssentiellement Bio4x58\n\ncours / manuel\n\n\n\n\nLivre d’introduction à R: Sur le chemin de l’enf-R \nIl s’agit d’un livre d’introduction à R avec une approche multilingue. Le livre couvre une introduction à l’utilisation de base de R (chargement de données, manipulation et traçage), ainsi que des statistiques simples, la programmation, l’utilisation de github et de R markdown /Quarto avec R Studio et VS code.\nLe livre (encore en développement) est disponible en anglais et français. J’ajouterai d’autres langues plus tard dans l’année, avec l’aide de volontaires.\nVoici également quelques diapositives sur une introduction à R uniquement en anglais (slides).\n\n\nConsultations en statistique \nJe fournis des services de consultation en biostatistique dans le cadre de mon service au département de Biologie. Pour discuter de vos problèmes en statistiques, veuillez simplement me contacter pour prendre un rendez-vous.\nVeuillez avoir avec vous (ou me l’envoyer en avance):\n\nvos données\nvotre code R (au minimum capable de charger les données)\nune hypothèse de travail ou question biologique claire\n\nUne consultation statistiques n’implique pas de m’ajouter en tant ue que co-auteur. Je demande simplement que vous m’ajoutiez au Remerciements/Acknowledgements de votre thèse et/ou manuscript. Je reconnais que dans certains cas, e.g. nombres répétées de consultations sur le même projet incluant le développement de code et analyse spécifique au projet, je peux devenir co-auteur sur un projet. Cette discussion a habituellement lieu de manière naturelle et à toujours lieu de manière ouverte et ransparente avec les personnes impliquées, étudiant.e.s et PI.s. Jusqu’à maintenant, je n’ai jamais demandé à être co-auteur, et je suis devenu co-auteur sur 3 articles et j’ai été consulté pour plus de 50 projets."
   },
   {
     "objectID": "slides_r/lec_en-02.notes.html",
