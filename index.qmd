@@ -28,7 +28,8 @@ ggplot(dat, aes(a))+geom_density(color="blue", fill="red") +theme_classic()+xlab
 This regroup the different resources developed for the biostatistic courses at the university of Ottawa
 by [Julien Martin](people.qmd)  
 
-#### Applied biostatistics with R (BIO 4X58):
+#### Applied biostatistics with R (BIO 4X58) ![](img/hex/bio4x58_logo_hex.png){width="150"}
+
 
   * Offered to both undergraduate and graduate students in english and french
   * Prerequisite:
@@ -37,7 +38,8 @@ by [Julien Martin](people.qmd)
   * BIO4158 english ([Course site][4158_course] / [Course manual][4158_manual])
   * BIO4558 french ([Course site][4558_course] / [Course manual][4558_manual])
 
-#### Advanced biostatistics and open science (BIO 8940)
+
+#### Advanced biostatistics and open science (BIO 8940) ![](img/hex/bio8940_logo_hex.png){width="150"}
 
   * Bilingual course for graduate students
   * Prerequisite:
@@ -46,7 +48,7 @@ by [Julien Martin](people.qmd)
     * essentially Bio8940 is a great next steps after completing Bio4x58.
   * [Course site][8940_course] / [Course manual][8940_manual]
 
-### Intro to R book: On the R-way to hell
+### Intro to R book: On the R-way to hell ![](img/hex/Rway_logo_hex_en.png){width="150"}
 
 This is an introduction to R book with a multilingual approach.
 The book is covering an intorduction to the basic use of R (data loading, wrangling and plotting), as well as simple stats, programming, use of github and R markdown /Quarto with R Studio and VS code.
@@ -56,7 +58,7 @@ I will add more languages later this year hopefully with help of volunteers.
 
 Here are also a few slides about an intro to R only in english ([slides][Rintro]).
 
-### Statistical consulting {#consult}
+### Statistical consulting ![](img/hex/consult_logo_hex.png){fig-align="right" width="150"}  {#consult} 
 
 As Part of my service in the Biology department, I provide statistical consulting.
 Please just contact me to book an appointment to discuss your stat problems.
@@ -75,7 +77,7 @@ Statistical consulting does not mean that you have to add me as a co-author. I j
 
 Le site regroupe les différentes ressources développées par [Julien Martin](people.qmd) pour les cours de biostatistiques à uOttawa
 
-#### Biostatistiques appliquées avec R (BIO 4X58)
+#### Biostatistiques appliquées avec R (BIO 4X58) ![](img/hex/bio4x58_logo_hex.png){width="150"}
 
   * Cours offerts aux étudiant au baccaulauréat et aux étudiants gradués en anglais et en français
   * Pré-requis:
@@ -84,7 +86,7 @@ Le site regroupe les différentes ressources développées par [Julien Martin](p
   * BIO4158 anglais ([cours][4158_course] / [manuel][4158_manual])
   * BIO4558 français ([cours][4558_course] / [manuel][4558_manual])
 
-#### Biostatistiques avancées et science ouverte (BIO8940)
+#### Biostatistiques avancées et science ouverte (BIO8940) ![](img/hex/bio8940_logo_hex.png){width="150"}
 
   * Cours bilingues offerts aux étudiants gradués
   * Pré-requis:
@@ -93,7 +95,7 @@ Le site regroupe les différentes ressources développées par [Julien Martin](p
     * Essentiellement Bio4x58
   * [cours][8940_course] / [manuel][8940_manual]
 
-### Livre d'introduction à R: Sur le chemin de l'enf-R
+### Livre d'introduction à R: Sur le chemin de l'enf-R ![](img/hex/Rway_logo_hex_en.png){width="150"}
 
 Il s'agit d'un livre d'introduction à R avec une approche multilingue.
 Le livre couvre une introduction à l'utilisation de base de R (chargement de données, manipulation et traçage), ainsi que des statistiques simples, la programmation, l'utilisation de github et de R markdown /Quarto avec R Studio et VS code.
@@ -103,7 +105,7 @@ J'ajouterai d'autres langues plus tard dans l'année, avec l'aide de volontaires
 
 Voici également quelques diapositives sur une introduction à R uniquement en anglais ([slides][Rintro]).
 
-### Consultations en statistique
+### Consultations en statistique ![](img/hex/consult_logo_hex.png){width="150"}
 
 Je fournis des services de consultation en biostatistique dans le cadre de mon service au département de Biologie.
 Pour discuter de vos problèmes en statistiques, veuillez simplement me contacter pour prendre un rendez-vous.
