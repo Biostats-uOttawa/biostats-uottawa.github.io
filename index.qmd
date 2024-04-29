@@ -18,48 +18,84 @@ library(ggplot2)
 ggplot(dat, aes(a))+geom_density(color="blue", fill="red") +theme_classic()+xlab("Gaussian distribution")
 ```
 
-::: {.panel-tabset }
+Contenu disponible en [**français**](#fr) ci-dessous / Content available in [**english**](#en)
 
+# English
 
-## English
-
-### Biostatistic courses at uOttawa
+## Biostatistic courses at uOttawa
 
 This regroup the different resources developed for the biostatistic courses at the university of Ottawa
 by [Julien Martin](people.qmd)  
 
-#### Applied biostatistics with R (BIO 4X58) ![](img/hex/bio4x58_logo_hex.png){width="150"}
+### Applied biostatistics with R (BIO 4X58)
 
 
+::: {layout=[22,78]}
+
+[![](img/hex/bio4x58_logo_hex.png){width="150"}][4158_course] 
+
+::::{}
   * Offered to both undergraduate and graduate students in english and french
   * Prerequisite:
     * an introduction class to statisticis is good to have
     * No (or limited) knowledge of R and no (or limited) knowledge of stats expected.
   * BIO4158 english ([Course site][4158_course] / [Course manual][4158_manual])
   * BIO4558 french ([Course site][4558_course] / [Course manual][4558_manual])
+::::
 
+:::
 
-#### Advanced biostatistics and open science (BIO 8940) ![](img/hex/bio8940_logo_hex.png){width="150"}
+### Advanced biostatistics and open science (BIO 8940)
 
+::: {layout=[22,78]}
+[![](img/hex/bio8940_logo_hex.png){width="150"}][8940_course] 
+
+::::{}
   * Bilingual course for graduate students
   * Prerequisite:
     * a functional knowledge of R (loading data, running basic linear models, and making plots) 
     * a good understanding of linear models
     * essentially Bio8940 is a great next steps after completing Bio4x58.
   * [Course site][8940_course] / [Course manual][8940_manual]
+::::
 
-### Intro to R book: On the R-way to hell ![](img/hex/Rway_logo_hex_en.png){width="150"}
+:::
 
-This is an introduction to R book with a multilingual approach.
-The book is covering an intorduction to the basic use of R (data loading, wrangling and plotting), as well as simple stats, programming, use of github and R markdown /Quarto with R Studio and VS code.
+## Book and tutorials
+
+### Statistics with R: On the R-way to hell
+
+::: {layout=[22,78]}
+[![](img/hex/Rway_logo_hex_en.png){width="150"}][R_way] 
+
+::::{}
+This is an introduction to statistics and R book with a multilingual approach.
+The book is covering an introduction to the basic use of R (data loading, wrangling and plotting), as well as programming, use of github and R markdown /Quarto with R Studio and VS code. It then covers a lot of statistical subjects.
 
 The book (still under development) is available in [English][R_way] and [French][chemin_R].
 I will add more languages later this year hopefully with help of volunteers.
+::::
 
-Here are also a few slides about an intro to R only in english ([slides][Rintro]).
+:::
 
-### Statistical consulting ![](img/hex/consult_logo_hex.png){fig-align="right" width="150"}  {#consult} 
+### How to fit an animal model {#wam_tuto}
 
+::: {layout=[22,78]}
+  
+[![](img/hex/wam_logo_hex.png){width="150"}](https://juliengamartin.github.io/wam_tuto/)
+
+::::{}
+The [book](https://juliengamartin.github.io/wam_tuto/) is tutorial on how to fit an animal model using multiple R packages. This is essentially an updated and extended version of the tutorials from "An ecologist guide to animal model" paper by @wilson2010.
+::::
+
+:::
+
+## Statistical consulting {#consult}
+
+::: {layout=[22,78]}
+[![](img/hex/consult_logo_hex.png){fig-align="right" width="150"}](people.qmd)   
+
+::::{}
 As Part of my service in the Biology department, I provide statistical consulting.
 Please just contact me to book an appointment to discuss your stat problems.
 
@@ -68,17 +104,35 @@ Please bring with you (or send me in advance):
 * your data
 * your R code (should at least load the data into R)
 * a clear working hypothesis
+::::
+
+:::
 
 Statistical consulting does not mean that you have to add me as a co-author. I just ask that you add me to the **"Acknowledgements"** of your thesis and manuscript/article. Repeated consulting on the same problem and my implication on developing project specific coding/analysis might lead to co-authorship, but this usually all comes naturally and is always discussed openly with the student(s) and PI(s). As yet, I have never requested to become a co-author and I was offered co-authorship for 3 manuscripts over > 50 projects discussed.
 
-## Français
+## Quarto templates for reproducible science {#quarto}
 
-### Cours de biostatistique à uOttawa
+A few quarto templates I developed to facilitate open-science for students at uOttawa
+
+* [bio-uo-proposal](https://github.com/JulienGAMartin/quarto-bio-uo-proposal):  
+  quarto extension providing 1 new pdf output format (`bio-uo-proposal-pdf`). I am working on a docx version but tweaking the frontpage is tricky with word document.
+
+* [bio-uo-thesis](https://github.com/JulienGAMartin/quarto-bio-uo-thesis):  
+  quarto extension  providing two new output formats for book projects: an html (`bio-uo-thesis-html`) and a pdf (`bio-uo-thesis-pdf`) generating a website (to be hosted on github pages or similar) and a pdf of the thesis adequately formatted for uOttawa (at least biology)
+
+
+# Français
+
+## Cours de biostatistique à uOttawa
 
 Le site regroupe les différentes ressources développées par [Julien Martin](people.qmd) pour les cours de biostatistiques à uOttawa
 
-#### Biostatistiques appliquées avec R (BIO 4X58) ![](img/hex/bio4x58_logo_hex.png){width="150"}
+### Biostatistiques appliquées avec R (BIO 4X58)
 
+::: {layout=[22,78]}
+![](img/hex/bio4x58_logo_hex.png){width="150"}
+
+::::{}
   * Cours offerts aux étudiant au baccaulauréat et aux étudiants gradués en anglais et en français
   * Pré-requis:
     * cours d'introduction au statistiques recommandée
@@ -86,27 +140,66 @@ Le site regroupe les différentes ressources développées par [Julien Martin](p
   * BIO4158 anglais ([cours][4158_course] / [manuel][4158_manual])
   * BIO4558 français ([cours][4558_course] / [manuel][4558_manual])
 
-#### Biostatistiques avancées et science ouverte (BIO8940) ![](img/hex/bio8940_logo_hex.png){width="150"}
+::::
 
+:::
+
+### Biostatistiques avancées et science ouverte (BIO8940)
+
+::: {layout=[22,78]}
+
+![](img/hex/bio8940_logo_hex.png){width="150"}
+
+::::{}
   * Cours bilingues offerts aux étudiants gradués
   * Pré-requis:
     * connaissances fonctionelle de R (chargement de données, graphique et statistiques de bases)
     * bonne compréhension des modèles linéaires
     * Essentiellement Bio4x58
   * [cours][8940_course] / [manuel][8940_manual]
+::::
 
-### Livre d'introduction à R: Sur le chemin de l'enf-R ![](img/hex/Rway_logo_hex_en.png){width="150"}
+:::
 
-Il s'agit d'un livre d'introduction à R avec une approche multilingue.
+## Livres et tutoriels
+
+### Sur le chemin de l'enf-R (intro aux stats avec R)
+
+::: {layout=[22,78]}
+
+![](img/hex/Rway_logo_hex_en.png){width="150"}
+
+::::{}
+Il s'agit d'un livre d'introduction aux statistiques et à R avec une approche multilingue.
 Le livre couvre une introduction à l'utilisation de base de R (chargement de données, manipulation et traçage), ainsi que des statistiques simples, la programmation, l'utilisation de github et de R markdown /Quarto avec R Studio et VS code.
 
 Le livre (encore en développement) est disponible en [anglais][R_way] et [français][chemin_R].
 J'ajouterai d'autres langues plus tard dans l'année, avec l'aide de volontaires.
 
 Voici également quelques diapositives sur une introduction à R uniquement en anglais ([slides][Rintro]).
+::::
 
-### Consultations en statistique ![](img/hex/consult_logo_hex.png){width="150"}
+:::
 
+### Comment f-R un modèle animal {#wam_tuto-fr}
+
+::: {layout=[22,78]}
+  
+[![](img/hex/wam_logo_hex.png){width="150"}](https://juliengamartin.github.io/wam_tuto/)
+
+::::{}
+Le [livre](https://juliengamartin.github.io/wam_tuto/) est un tutoriel sur comment faire un un modèle animal avec R en utilisant plusieurs paquets R. Le projet est basé sur les tutoriels fournis dans "An ecologist guide to animal model" par Wilson et al. (2010), mis à jour et étendus.
+::::
+
+:::
+
+## Consultations en statistique {#consult-fr}
+
+::: {layout=[22,78]}
+
+![](img/hex/consult_logo_hex.png){width="150"}
+
+::::{}
 Je fournis des services de consultation en biostatistique dans le cadre de mon service au département de Biologie.
 Pour discuter de vos problèmes en statistiques, veuillez simplement me contacter pour prendre un rendez-vous.
 
@@ -116,11 +209,23 @@ Veuillez avoir avec vous (ou me l'envoyer en avance):
 * votre code R (au minimum capable de charger les données)
 * une hypothèse de travail ou question biologique claire
 
+::::
+
+:::
+
 Une consultation statistiques n'implique pas de m'ajouter en tant ue que co-auteur.
 Je demande simplement que vous m'ajoutiez au **Remerciements/Acknowledgements** de votre thèse et/ou manuscript.
 Je reconnais que dans certains cas, e.g. nombres répétées de consultations sur le même projet incluant le développement de code et analyse spécifique au projet, je peux devenir co-auteur sur un projet.
 Cette discussion a habituellement lieu de manière naturelle et à toujours lieu de manière ouverte et ransparente avec les personnes impliquées, étudiant.e.s et PI.s.
 Jusqu'à maintenant, je n'ai jamais demandé à être co-auteur, et je suis devenu co-auteur sur 3 articles et j'ai été consulté pour plus de 50 projets.
 
-:::
+
+## Extension Quarto pour une science reproduisible {#quarto-fr}
+
+Extensions Quarto pour faciliter la production de document reproduisible pour les étudiants gradués en Biologie de l'Université d'Ottawa
+
+* [bio-uo-proposal](https://github.com/JulienGAMartin/quarto-bio-uo-proposal):  
+  donne la structure nécessaire pour un proposé de recherche avec la mise en page adéquate (format pdf seulement pour l'instant, format docx en développement).
+* [bio-uo-thesis](https://github.com/JulienGAMartin/quarto-bio-uo-thesis):  
+  donne la structure et le formatage requit pour produire une thèse en format html et pdf pour l'université d'Ottawa. Le format html peut être rendu disponible via un site github.
 

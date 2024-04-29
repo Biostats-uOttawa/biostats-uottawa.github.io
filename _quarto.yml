@@ -38,6 +38,10 @@ website:
         - text: Issues
           href: https://github.com/Biostats-uOttawa/biostats-uottawa.github.io/issues
 
+bibliography: [biblio/book.bib, biblio/grateful-refs.bib]
+biblio-style: apalike
+csl: biblio/ecology.csl
+
 format:
   html:
     theme: 
@@ -45,5 +49,5 @@ format:
       dark: [cosmo, css/theme-dark.scss]
     highlight: kate
     fig_align: center
-    css: css/styles.css
+#    css: css/styles.css
     toc: true
