@@ -20,27 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -61,6 +41,7 @@ div.csl-indent {
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/quarto-contrib/bootstrap-icons-1.11.1/all.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -97,6 +78,8 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-6LLMGL3T2Q', { 'anonymize_ip': true});
 </script>
+<meta http-equiv="refresh" content="0; URL=./en/index.html">
+<link rel="canonical" href="./en/index.html">
 
 
 </head>
@@ -148,10 +131,25 @@ gtag('config', 'G-6LLMGL3T2Q', { 'anonymize_ip': true});
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools tools-wide">
+    <div class="dropdown">
+      <a href="" title="" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label=""><i class="bi bi-flag"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item quarto-navbar-tools-item" href="./fr/index.html">
+            Français
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item quarto-navbar-tools-item" href="./en/index.html">
+            English
+            </a>
+          </li>
+      </ul>
+    </div>
     <a href="./people.html" title="Contact" class="quarto-navigation-tool px-1" aria-label="Contact"><i class="bi bi-envelope"></i></a>
     <div class="dropdown">
-      <a href="" title="" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label=""><i class="bi bi-github"></i></a>
-      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+      <a href="" title="" id="quarto-navigation-tool-dropdown-1" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label=""><i class="bi bi-github"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-1">
           <li>
             <a class="dropdown-item quarto-navbar-tools-item" href="https://github.com/biostats-uOttawa/biostats-uottawa.github.io">
             Code
@@ -173,43 +171,8 @@ gtag('config', 'G-6LLMGL3T2Q', { 'anonymize_ip': true});
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#english" id="toc-english" class="nav-link active" data-scroll-target="#english">English</a>
-  <ul class="collapse">
-  <li><a href="#biostatistic-courses-at-uottawa" id="toc-biostatistic-courses-at-uottawa" class="nav-link" data-scroll-target="#biostatistic-courses-at-uottawa">Biostatistic courses at uOttawa</a>
-  <ul class="collapse">
-  <li><a href="#applied-biostatistics-with-r-bio-4x58" id="toc-applied-biostatistics-with-r-bio-4x58" class="nav-link" data-scroll-target="#applied-biostatistics-with-r-bio-4x58">Applied biostatistics with R (BIO 4X58)</a></li>
-  <li><a href="#advanced-biostatistics-and-open-science-bio-8940" id="toc-advanced-biostatistics-and-open-science-bio-8940" class="nav-link" data-scroll-target="#advanced-biostatistics-and-open-science-bio-8940">Advanced biostatistics and open science (BIO 8940)</a></li>
-  </ul></li>
-  <li><a href="#book-and-tutorials" id="toc-book-and-tutorials" class="nav-link" data-scroll-target="#book-and-tutorials">Book and tutorials</a>
-  <ul class="collapse">
-  <li><a href="#statistics-with-r-on-the-r-way-to-hell" id="toc-statistics-with-r-on-the-r-way-to-hell" class="nav-link" data-scroll-target="#statistics-with-r-on-the-r-way-to-hell">Statistics with R: On the R-way to hell</a></li>
-  <li><a href="#wam_tuto" id="toc-wam_tuto" class="nav-link" data-scroll-target="#wam_tuto">How to fit an animal model</a></li>
-  </ul></li>
-  <li><a href="#consult" id="toc-consult" class="nav-link" data-scroll-target="#consult">Statistical consulting</a></li>
-  <li><a href="#quarto" id="toc-quarto" class="nav-link" data-scroll-target="#quarto">Quarto templates for reproducible science</a></li>
-  </ul></li>
-  <li><a href="#français" id="toc-français" class="nav-link" data-scroll-target="#français">Français</a>
-  <ul class="collapse">
-  <li><a href="#cours-de-biostatistique-à-uottawa" id="toc-cours-de-biostatistique-à-uottawa" class="nav-link" data-scroll-target="#cours-de-biostatistique-à-uottawa">Cours de biostatistique à uOttawa</a>
-  <ul class="collapse">
-  <li><a href="#biostatistiques-appliquées-avec-r-bio-4x58" id="toc-biostatistiques-appliquées-avec-r-bio-4x58" class="nav-link" data-scroll-target="#biostatistiques-appliquées-avec-r-bio-4x58">Biostatistiques appliquées avec R (BIO 4X58)</a></li>
-  <li><a href="#biostatistiques-avancées-et-science-ouverte-bio8940" id="toc-biostatistiques-avancées-et-science-ouverte-bio8940" class="nav-link" data-scroll-target="#biostatistiques-avancées-et-science-ouverte-bio8940">Biostatistiques avancées et science ouverte (BIO8940)</a></li>
-  </ul></li>
-  <li><a href="#livres-et-tutoriels" id="toc-livres-et-tutoriels" class="nav-link" data-scroll-target="#livres-et-tutoriels">Livres et tutoriels</a>
-  <ul class="collapse">
-  <li><a href="#sur-le-chemin-de-lenf-r-intro-aux-stats-avec-r" id="toc-sur-le-chemin-de-lenf-r-intro-aux-stats-avec-r" class="nav-link" data-scroll-target="#sur-le-chemin-de-lenf-r-intro-aux-stats-avec-r">Sur le chemin de l’enf-R (intro aux stats avec R)</a></li>
-  <li><a href="#wam_tuto-fr" id="toc-wam_tuto-fr" class="nav-link" data-scroll-target="#wam_tuto-fr">Comment f-R un modèle animal</a></li>
-  </ul></li>
-  <li><a href="#consult-fr" id="toc-consult-fr" class="nav-link" data-scroll-target="#consult-fr">Consultations en statistique</a></li>
-  <li><a href="#quarto-fr" id="toc-quarto-fr" class="nav-link" data-scroll-target="#quarto-fr">Extension Quarto pour une science reproduisible</a></li>
-  </ul></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -238,293 +201,23 @@ gtag('config', 'G-6LLMGL3T2Q', { 'anonymize_ip': true});
 
 
 
-
-
-
-
-
-
-
-
-
-
 -->
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="index_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:25.0%"></p>
+<p><img src="index_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:30.0%"></p>
 </figure>
 </div>
 </div>
 </div>
-<p>Contenu disponible en <a href="#fr"><strong>français</strong></a> ci-dessous / Content available in <a href="#en"><strong>english</strong></a></p>
-<section id="english" class="level1">
-<h1>English</h1>
-<section id="biostatistic-courses-at-uottawa" class="level2">
-<h2 class="anchored" data-anchor-id="biostatistic-courses-at-uottawa">Biostatistic courses at uOttawa</h2>
-<p>This regroup the different resources developed for the biostatistic courses at the university of Ottawa by <a href="./people.html">Julien Martin</a></p>
-<section id="applied-biostatistics-with-r-bio-4x58" class="level3">
-<h3 class="anchored" data-anchor-id="applied-biostatistics-with-r-bio-4x58">Applied biostatistics with R (BIO 4X58)</h3>
-<div>
-
+<div style="text-align: center;">
+<p><i class="bi-flag " style="" role="img" aria-hidden="true"></i> <a href="./fr/index.html">Contenu disponible en <strong>français</strong></a> / <a href="./en/index.html">Content available in <strong>english</strong></a> <i class="bi-flag " style="" role="img" aria-hidden="true"></i></p>
 </div>
-<div class="quarto-layout-panel" data-layout="[22,78]">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 22.0%;justify-content: center;">
-<p><a href="https://biostats-uottawa.github.io/bio4158_course/"><img src="img/hex/bio4x58_logo_hex.png" class="img-fluid" width="150"></a></p>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 78.0%;justify-content: flex-start;">
-<ul>
-<li>Offered to both undergraduate and graduate students in english and french</li>
-<li>Prerequisite:
-<ul>
-<li>an introduction class to statisticis is good to have</li>
-<li>No (or limited) knowledge of R and no (or limited) knowledge of stats expected.</li>
-</ul></li>
-<li>BIO4158 english (<a href="https://biostats-uottawa.github.io/bio4158_course/">Course site</a> / <a href="https://biostats-uottawa.github.io/bio4158_manual/">Course manual</a>)</li>
-<li>BIO4558 french (<a href="https://biostats-uottawa.github.io/bio4558_cours/">Course site</a> / <a href="https://biostats-uottawa.github.io/bio4558_manuel/">Course manual</a>)</li>
-</ul>
-</div>
-</div>
-</div>
-</section>
-<section id="advanced-biostatistics-and-open-science-bio-8940" class="level3">
-<h3 class="anchored" data-anchor-id="advanced-biostatistics-and-open-science-bio-8940">Advanced biostatistics and open science (BIO 8940)</h3>
-<div>
-
-</div>
-<div class="quarto-layout-panel" data-layout="[22,78]">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 22.0%;justify-content: center;">
-<p><a href="https://biostats-uottawa.github.io/bio8940_course/"><img src="img/hex/bio8940_logo_hex.png" class="img-fluid" width="150"></a></p>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 78.0%;justify-content: flex-start;">
-<ul>
-<li>Bilingual course for graduate students</li>
-<li>Prerequisite:
-<ul>
-<li>a functional knowledge of R (loading data, running basic linear models, and making plots)</li>
-<li>a good understanding of linear models</li>
-<li>essentially Bio8940 is a great next steps after completing Bio4x58.</li>
-</ul></li>
-<li><a href="https://biostats-uottawa.github.io/bio8940_course/">Course site</a> / <a href="https://biostats-uottawa.github.io/bio8940_manual/">Course manual</a></li>
-</ul>
-</div>
-</div>
-</div>
-</section>
-</section>
-<section id="book-and-tutorials" class="level2">
-<h2 class="anchored" data-anchor-id="book-and-tutorials">Book and tutorials</h2>
-<section id="statistics-with-r-on-the-r-way-to-hell" class="level3">
-<h3 class="anchored" data-anchor-id="statistics-with-r-on-the-r-way-to-hell">Statistics with R: On the R-way to hell</h3>
-<div>
-
-</div>
-<div class="quarto-layout-panel" data-layout="[22,78]">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 22.0%;justify-content: center;">
-<p><a href="https://biostats-uottawa.github.io/R/en/"><img src="img/hex/Rway_logo_hex_en.png" class="img-fluid" width="150"></a></p>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 78.0%;justify-content: flex-start;">
-<p>This is an introduction to statistics and R book with a multilingual approach. The book is covering an introduction to the basic use of R (data loading, wrangling and plotting), as well as programming, use of github and R markdown /Quarto with R Studio and VS code. It then covers a lot of statistical subjects.</p>
-<p>The book (still under development) is available in <a href="https://biostats-uottawa.github.io/R/en/">English</a> and <a href="https://biostats-uottawa.github.io/R/fr/">French</a>. I will add more languages later this year hopefully with help of volunteers.</p>
-</div>
-</div>
-</div>
-</section>
-<section id="wam_tuto" class="level3">
-<h3 class="anchored" data-anchor-id="wam_tuto">How to fit an animal model</h3>
-<div>
-
-</div>
-<div class="quarto-layout-panel" data-layout="[22,78]">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 22.0%;justify-content: center;">
-<p><a href="https://juliengamartin.github.io/wam_tuto/"><img src="img/hex/wam_logo_hex.png" class="img-fluid" width="150"></a></p>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 78.0%;justify-content: flex-start;">
-<p>The <a href="https://juliengamartin.github.io/wam_tuto/">book</a> is tutorial on how to fit an animal model using multiple R packages. This is essentially an updated and extended version of the tutorials from “An ecologist guide to animal model” paper by <span class="citation" data-cites="wilson2010">Wilson et al. (<a href="#ref-wilson2010" role="doc-biblioref">2010</a>)</span>.</p>
-</div>
-</div>
-</div>
-</section>
-</section>
-<section id="consult" class="level2">
-<h2 class="anchored" data-anchor-id="consult">Statistical consulting</h2>
-<div>
-
-</div>
-<div class="quarto-layout-panel" data-layout="[22,78]">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 22.0%;justify-content: center;">
-<div class="quarto-figure quarto-figure-right">
-<figure class="figure">
-<p><a href="./people.html"><img src="img/hex/consult_logo_hex.png" class="img-fluid quarto-figure quarto-figure-right figure-img" width="150"></a></p>
-</figure>
-</div>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 78.0%;justify-content: flex-start;">
-<p>As Part of my service in the Biology department, I provide statistical consulting. Please just contact me to book an appointment to discuss your stat problems.</p>
-<p>Please bring with you (or send me in advance):</p>
-<ul>
-<li>your data</li>
-<li>your R code (should at least load the data into R)</li>
-<li>a clear working hypothesis</li>
-</ul>
-</div>
-</div>
-</div>
-<p>Statistical consulting does not mean that you have to add me as a co-author. I just ask that you add me to the <strong>“Acknowledgements”</strong> of your thesis and manuscript/article. Repeated consulting on the same problem and my implication on developing project specific coding/analysis might lead to co-authorship, but this usually all comes naturally and is always discussed openly with the student(s) and PI(s). As yet, I have never requested to become a co-author and I was offered co-authorship for 3 manuscripts over &gt; 50 projects discussed.</p>
-</section>
-<section id="quarto" class="level2">
-<h2 class="anchored" data-anchor-id="quarto">Quarto templates for reproducible science</h2>
-<p>A few quarto templates I developed to facilitate open-science for students at uOttawa</p>
-<ul>
-<li><p><a href="https://github.com/JulienGAMartin/quarto-bio-uo-proposal">bio-uo-proposal</a>:<br>
-quarto extension providing 1 new pdf output format (<code>bio-uo-proposal-pdf</code>). I am working on a docx version but tweaking the frontpage is tricky with word document.</p></li>
-<li><p><a href="https://github.com/JulienGAMartin/quarto-bio-uo-thesis">bio-uo-thesis</a>:<br>
-quarto extension providing two new output formats for book projects: an html (<code>bio-uo-thesis-html</code>) and a pdf (<code>bio-uo-thesis-pdf</code>) generating a website (to be hosted on github pages or similar) and a pdf of the thesis adequately formatted for uOttawa (at least biology)</p></li>
-</ul>
-</section>
-</section>
-<section id="français" class="level1">
-<h1>Français</h1>
-<section id="cours-de-biostatistique-à-uottawa" class="level2">
-<h2 class="anchored" data-anchor-id="cours-de-biostatistique-à-uottawa">Cours de biostatistique à uOttawa</h2>
-<p>Le site regroupe les différentes ressources développées par <a href="./people.html">Julien Martin</a> pour les cours de biostatistiques à uOttawa</p>
-<section id="biostatistiques-appliquées-avec-r-bio-4x58" class="level3">
-<h3 class="anchored" data-anchor-id="biostatistiques-appliquées-avec-r-bio-4x58">Biostatistiques appliquées avec R (BIO 4X58)</h3>
-<div>
-
-</div>
-<div class="quarto-layout-panel" data-layout="[22,78]">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 22.0%;justify-content: center;">
-<p><img src="img/hex/bio4x58_logo_hex.png" class="img-fluid" width="150"></p>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 78.0%;justify-content: flex-start;">
-<ul>
-<li>Cours offerts aux étudiant au baccaulauréat et aux étudiants gradués en anglais et en français</li>
-<li>Pré-requis:
-<ul>
-<li>cours d’introduction au statistiques recommandée</li>
-<li>Aucune connaissance de R et des statistiques requises</li>
-</ul></li>
-<li>BIO4158 anglais (<a href="https://biostats-uottawa.github.io/bio4158_course/">cours</a> / <a href="https://biostats-uottawa.github.io/bio4158_manual/">manuel</a>)</li>
-<li>BIO4558 français (<a href="https://biostats-uottawa.github.io/bio4558_cours/">cours</a> / <a href="https://biostats-uottawa.github.io/bio4558_manuel/">manuel</a>)</li>
-</ul>
-</div>
-</div>
-</div>
-</section>
-<section id="biostatistiques-avancées-et-science-ouverte-bio8940" class="level3">
-<h3 class="anchored" data-anchor-id="biostatistiques-avancées-et-science-ouverte-bio8940">Biostatistiques avancées et science ouverte (BIO8940)</h3>
-<div>
-
-</div>
-<div class="quarto-layout-panel" data-layout="[22,78]">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 22.0%;justify-content: center;">
-<p><img src="img/hex/bio8940_logo_hex.png" class="img-fluid" width="150"></p>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 78.0%;justify-content: flex-start;">
-<ul>
-<li>Cours bilingues offerts aux étudiants gradués</li>
-<li>Pré-requis:
-<ul>
-<li>connaissances fonctionelle de R (chargement de données, graphique et statistiques de bases)</li>
-<li>bonne compréhension des modèles linéaires</li>
-<li>Essentiellement Bio4x58</li>
-</ul></li>
-<li><a href="https://biostats-uottawa.github.io/bio8940_course/">cours</a> / <a href="https://biostats-uottawa.github.io/bio8940_manual/">manuel</a></li>
-</ul>
-</div>
-</div>
-</div>
-</section>
-</section>
-<section id="livres-et-tutoriels" class="level2">
-<h2 class="anchored" data-anchor-id="livres-et-tutoriels">Livres et tutoriels</h2>
-<section id="sur-le-chemin-de-lenf-r-intro-aux-stats-avec-r" class="level3">
-<h3 class="anchored" data-anchor-id="sur-le-chemin-de-lenf-r-intro-aux-stats-avec-r">Sur le chemin de l’enf-R (intro aux stats avec R)</h3>
-<div>
-
-</div>
-<div class="quarto-layout-panel" data-layout="[22,78]">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 22.0%;justify-content: center;">
-<p><img src="img/hex/Rway_logo_hex_en.png" class="img-fluid" width="150"></p>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 78.0%;justify-content: flex-start;">
-<p>Il s’agit d’un livre d’introduction aux statistiques et à R avec une approche multilingue. Le livre couvre une introduction à l’utilisation de base de R (chargement de données, manipulation et traçage), ainsi que des statistiques simples, la programmation, l’utilisation de github et de R markdown /Quarto avec R Studio et VS code.</p>
-<p>Le livre (encore en développement) est disponible en <a href="https://biostats-uottawa.github.io/R/en/">anglais</a> et <a href="https://biostats-uottawa.github.io/R/fr/">français</a>. J’ajouterai d’autres langues plus tard dans l’année, avec l’aide de volontaires.</p>
-<p>Voici également quelques diapositives sur une introduction à R uniquement en anglais (<a href="https://biostats-uottawa.github.io/intro_r_en.html">slides</a>).</p>
-</div>
-</div>
-</div>
-</section>
-<section id="wam_tuto-fr" class="level3">
-<h3 class="anchored" data-anchor-id="wam_tuto-fr">Comment f-R un modèle animal</h3>
-<div>
-
-</div>
-<div class="quarto-layout-panel" data-layout="[22,78]">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 22.0%;justify-content: center;">
-<p><a href="https://juliengamartin.github.io/wam_tuto/"><img src="img/hex/wam_logo_hex.png" class="img-fluid" width="150"></a></p>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 78.0%;justify-content: flex-start;">
-<p>Le <a href="https://juliengamartin.github.io/wam_tuto/">livre</a> est un tutoriel sur comment faire un un modèle animal avec R en utilisant plusieurs paquets R. Le projet est basé sur les tutoriels fournis dans “An ecologist guide to animal model” par Wilson et al.&nbsp;(2010), mis à jour et étendus.</p>
-</div>
-</div>
-</div>
-</section>
-</section>
-<section id="consult-fr" class="level2">
-<h2 class="anchored" data-anchor-id="consult-fr">Consultations en statistique</h2>
-<div>
-
-</div>
-<div class="quarto-layout-panel" data-layout="[22,78]">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 22.0%;justify-content: center;">
-<p><img src="img/hex/consult_logo_hex.png" class="img-fluid" width="150"></p>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 78.0%;justify-content: flex-start;">
-<p>Je fournis des services de consultation en biostatistique dans le cadre de mon service au département de Biologie. Pour discuter de vos problèmes en statistiques, veuillez simplement me contacter pour prendre un rendez-vous.</p>
-<p>Veuillez avoir avec vous (ou me l’envoyer en avance):</p>
-<ul>
-<li>vos données</li>
-<li>votre code R (au minimum capable de charger les données)</li>
-<li>une hypothèse de travail ou question biologique claire</li>
-</ul>
-</div>
-</div>
-</div>
-<p>Une consultation statistiques n’implique pas de m’ajouter en tant ue que co-auteur. Je demande simplement que vous m’ajoutiez au <strong>Remerciements/Acknowledgements</strong> de votre thèse et/ou manuscript. Je reconnais que dans certains cas, e.g.&nbsp;nombres répétées de consultations sur le même projet incluant le développement de code et analyse spécifique au projet, je peux devenir co-auteur sur un projet. Cette discussion a habituellement lieu de manière naturelle et à toujours lieu de manière ouverte et ransparente avec les personnes impliquées, étudiant.e.s et PI.s. Jusqu’à maintenant, je n’ai jamais demandé à être co-auteur, et je suis devenu co-auteur sur 3 articles et j’ai été consulté pour plus de 50 projets.</p>
-</section>
-<section id="quarto-fr" class="level2">
-<h2 class="anchored" data-anchor-id="quarto-fr">Extension Quarto pour une science reproduisible</h2>
-<p>Extensions Quarto pour faciliter la production de document reproduisible pour les étudiants gradués en Biologie de l’Université d’Ottawa</p>
-<ul>
-<li><a href="https://github.com/JulienGAMartin/quarto-bio-uo-proposal">bio-uo-proposal</a>:<br>
-donne la structure nécessaire pour un proposé de recherche avec la mise en page adéquate (format pdf seulement pour l’instant, format docx en développement).</li>
-<li><a href="https://github.com/JulienGAMartin/quarto-bio-uo-thesis">bio-uo-thesis</a>:<br>
-donne la structure et le formatage requit pour produire une thèse en format html et pdf pour l’université d’Ottawa. Le format html peut être rendu disponible via un site github.</li>
-</ul>
 
 
 
-</section>
-</section>
-
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
-<div id="ref-wilson2010" class="csl-entry" role="listitem">
-Wilson, A. J., D. Réale, M. N. Clements, M. M. Morrissey, E. Postma, C. A. Walling, L. E. B. Kruuk, and D. H. Nussey. 2010. <a href="https://doi.org/10.1111/j.1365-2656.2009.01639.x">An ecologist’s guide to the animal model</a>. Journal of Animal Ecology 79:13–26.
-</div>
-</div></section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

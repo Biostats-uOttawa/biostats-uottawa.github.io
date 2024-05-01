@@ -1,500 +1,59 @@
 [
   {
-    "objectID": "slides_r/lec_en-01.slides.html#learning-outcomes",
-    "href": "slides_r/lec_en-01.slides.html#learning-outcomes",
-    "title": "An Introduction to R",
-    "section": "Learning outcomes",
-    "text": "Learning outcomes\nthis course (hopefully) will …\n\nintroduce you to using R ✔️\nhelp your research become more robust and reproducible ✔️\n\n\nthis course (definitely) won’t …\n\nteach you everything there is to know about R ❌\nmake you feel completely comfortable with R ❌"
-  },
-  {
-    "objectID": "slides_r/lec_en-01.slides.html#what-is-r",
-    "href": "slides_r/lec_en-01.slides.html#what-is-r",
-    "title": "An Introduction to R",
-    "section": "What is R?",
-    "text": "What is R?\n\n\nenvironment for statistical computing, graphics and programming\ncreated by Ross Ihaka and Robert Gentleman (1996)\nmaintained by international R-core development team\nmany, people contribute to R and the wider R community"
-  },
-  {
-    "objectID": "slides_r/lec_en-01.slides.html#extra-r-information",
-    "href": "slides_r/lec_en-01.slides.html#extra-r-information",
-    "title": "An Introduction to R",
-    "section": "extra R information",
-    "text": "extra R information\n\n\n\nmore information can be found at\nhttps://www.r-project.com\ndownload R from the CRAN website\nhttps://cran.r-project.org/"
-  },
-  {
-    "objectID": "slides_r/lec_en-01.slides.html#why-is-r-considered-hard",
-    "href": "slides_r/lec_en-01.slides.html#why-is-r-considered-hard",
-    "title": "An Introduction to R",
-    "section": "why is R considered hard?",
-    "text": "why is R considered hard?\n\nhigh initial investment in time to learn R\nunfamiliar command line environment\nfrustrating (and sometimes) inconsistent syntax\nanalysis and figures can take longer (initially!)\nrelatively steep learning curve\nit’s not actually that hard, just unfamiliar"
-  },
-  {
-    "objectID": "slides_r/lec_en-01.slides.html#why-you-should-learn-r",
-    "href": "slides_r/lec_en-01.slides.html#why-you-should-learn-r",
-    "title": "An Introduction to R",
-    "section": "why you should learn R",
-    "text": "why you should learn R\n\nit’s free and platform independent\nit’s the software of choice for many students, academics, industries and charities worldwide\nhighly flexible and extensive\nencourages you think about your research\nquestions, data and analyses"
-  },
-  {
-    "objectID": "slides_r/lec_en-01.slides.html#why-you-should-learn-r-1",
-    "href": "slides_r/lec_en-01.slides.html#why-you-should-learn-r-1",
-    "title": "An Introduction to R",
-    "section": "why you should learn R",
-    "text": "why you should learn R\n\n\nit allows you to keep an exact and reproducible record of your analyses\ntransparent\nother people1 can\nreproduce your analysis\neasily share your code (GitHub)\nopen science\n\nincluding the future you!"
-  },
-  {
-    "objectID": "slides_r/lec_en-01.slides.html#why-you-should-learn-r-2",
-    "href": "slides_r/lec_en-01.slides.html#why-you-should-learn-r-2",
-    "title": "An Introduction to R",
-    "section": "why you should learn R",
-    "text": "why you should learn R\n\n\nexcellent graphics capabilities"
-  },
-  {
-    "objectID": "slides_r/lec_en-01.slides.html#why-you-should-learn-r-3",
-    "href": "slides_r/lec_en-01.slides.html#why-you-should-learn-r-3",
-    "title": "An Introduction to R",
-    "section": "why you should learn R",
-    "text": "why you should learn R\n\n\nemployability\nopportunity to get involved\nwith a fantastic and supportive\ncommunity"
-  },
-  {
-    "objectID": "slides_r/lec_en-01.slides.html#gui",
-    "href": "slides_r/lec_en-01.slides.html#gui",
-    "title": "An Introduction to R",
-    "section": "GUI",
-    "text": "GUI\n#"
-  },
-  {
-    "objectID": "slides_r/lec_en-01.slides.html#rstudio",
-    "href": "slides_r/lec_en-01.slides.html#rstudio",
-    "title": "An Introduction to R",
-    "section": "RStudio",
-    "text": "RStudio"
-  },
-  {
-    "objectID": "slides_r/lec_en-01.slides.html#vs-code",
-    "href": "slides_r/lec_en-01.slides.html#vs-code",
-    "title": "An Introduction to R",
-    "section": "VS Code",
-    "text": "VS Code"
-  },
-  {
-    "objectID": "slides_r/lec_en-01.slides.html#objects",
-    "href": "slides_r/lec_en-01.slides.html#objects",
-    "title": "An Introduction to R",
-    "section": "objects",
-    "text": "objects\n\ncommands are typed in the editor and then sourced into the console\nat the &gt; prompt\n\n\n2 + 2\n\n[1] 4\n\n\n\nR is object orientated. You can create variable and assign value(s) to them\n\n\na &lt;- 2 + 2\na\n\n[1] 4"
-  },
-  {
-    "objectID": "slides_r/lec_en-01.slides.html#objects-1",
-    "href": "slides_r/lec_en-01.slides.html#objects-1",
-    "title": "An Introduction to R",
-    "section": "objects",
-    "text": "objects\n\nonce created, operations can be performed on variables\n\n\na &lt;- 2 + 2\nb &lt;- 3 * 2\n\na + b\n\n[1] 10\n\n\n\nvery powerful and flexible"
-  },
-  {
-    "objectID": "slides_r/lec_en-01.slides.html#functions",
-    "href": "slides_r/lec_en-01.slides.html#functions",
-    "title": "An Introduction to R",
-    "section": "functions",
-    "text": "functions\n\nfunctions contain a set of instructions that allow you to perform a specific task(s)\n\n\n1numbers &lt;- c(2, 3, 4, 5, 6)\nnumbers\n\n2mean(numbers)\n3# estimating the variance\n4var(numbers)\n\n\n1\n\nuse the concatenate function\n\n2\n\nuse mean function\n\n3\n\nthis is a comment noted with #\n\n4\n\nuse variance function"
-  },
-  {
-    "objectID": "slides_r/lec_en-01.slides.html#functions-1",
-    "href": "slides_r/lec_en-01.slides.html#functions-1",
-    "title": "An Introduction to R",
-    "section": "functions",
-    "text": "functions\n\nyou can install user contributed packages to increase versatility and power\nthere are packages for almost anything\ninstall packages from CRAN, Bioconductor and GitHub\npackages are easy to install in R"
-  },
-  {
-    "objectID": "slides_r/lec_en-01.slides.html#functions-2",
-    "href": "slides_r/lec_en-01.slides.html#functions-2",
-    "title": "An Introduction to R",
-    "section": "functions",
-    "text": "functions\n\nWrite your own functions\nfunction to calculate standard error\n\n\n1se_fnc &lt;- function(x) {\n2  std.x &lt;- sd(x)\n  nos.x &lt;- length(x)\n  se.x &lt;- std.x / (sqrt(nos.x))\n3  print(se.x)\n}\n4se_fnc(c(2, 3, 4, 5, 6))\n\n\n1\n\ndefine function name and arguments\n\n2\n\ncalculate SD, number of obs, then SE\n\n3\n\ndefine function output\n\n4\n\nuse your new function"
-  },
-  {
-    "objectID": "slides_r/lec_en-01.slides.html#syntax",
-    "href": "slides_r/lec_en-01.slides.html#syntax",
-    "title": "An Introduction to R",
-    "section": "syntax",
-    "text": "syntax\n\nR is case sensitive A is not the same as a\ncommands are generally separated by a new line, but you can also use a ; (rare)\nanything that follows the hash symbol # will be ignored by R. Use this to comment your code\na series of commands can be grouped using braces { }\nwrite pretty code by following a code style guide"
-  },
-  {
-    "objectID": "slides_r/lec_en-01.slides.html#help",
-    "href": "slides_r/lec_en-01.slides.html#help",
-    "title": "An Introduction to R",
-    "section": "help",
-    "text": "help\n\nwhen you need help for a function use help() or ?\n\n\nhelp(\"plot\")    # open help file for the function plot\n\nor equivalently\n\n?plot\n\n\nor to search across all help files use help.search(\"plot\") or ??plot"
-  },
-  {
-    "objectID": "slides_r/lec_en-01.slides.html#help-1",
-    "href": "slides_r/lec_en-01.slides.html#help-1",
-    "title": "An Introduction to R",
-    "section": "help",
-    "text": "help\n\nDuckduckgo_it: Try online search You’ll be surprised how many other people have probably had the same problem and solved it.\nStack Overflow: There are thousands of questions relevant to R on Stack Overflow\nHere are the most popular ones, ranked by vote.\nmake sure you include a reproducible example to get the most useful advice. A reproducible example is a minimal example that lets others who are trying to help you to see the error themselves."
-  },
-  {
-    "objectID": "slides_r/lec_en-01.slides.html#tips",
-    "href": "slides_r/lec_en-01.slides.html#tips",
-    "title": "An Introduction to R",
-    "section": "tips",
-    "text": "tips\n\nuse R regularly\nlearning R is not a memory test, you have your R scripts\nyou don’t need to know everything about R\ndon’t stare at code for hours.\nthere are many ways to tackle a particular problem\n\nthe time invested now will be more than payed back in the future."
-  },
-  {
-    "objectID": "slides_r/lec_en-01.notes.html",
-    "href": "slides_r/lec_en-01.notes.html",
-    "title": "An Introduction to R",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Biostats uOttawa",
     "section": "",
-    "text": "this course (hopefully) will …\n\nintroduce you to using R ✔️\nhelp your research become more robust and reproducible ✔️\n\nthis course (definitely) won’t …\n\nteach you everything there is to know about R ❌\nmake you feel completely comfortable with R ❌"
+    "text": "Contenu disponible en français / Content available in english"
   },
   {
-    "objectID": "slides_r/lec_en-01.notes.html#learning-outcomes",
-    "href": "slides_r/lec_en-01.notes.html#learning-outcomes",
-    "title": "An Introduction to R",
+    "objectID": "en/index.html",
+    "href": "en/index.html",
+    "title": "Biostats uOttawa",
     "section": "",
-    "text": "this course (hopefully) will …\n\nintroduce you to using R ✔️\nhelp your research become more robust and reproducible ✔️\n\nthis course (definitely) won’t …\n\nteach you everything there is to know about R ❌\nmake you feel completely comfortable with R ❌"
+    "text": "This site regroup the different resources developed for the biostatistic courses at the university of Ottawa by Julien Martin"
   },
   {
-    "objectID": "slides_r/lec_en-01.notes.html#what-is-r",
-    "href": "slides_r/lec_en-01.notes.html#what-is-r",
-    "title": "An Introduction to R",
-    "section": "0.2 What is R?",
-    "text": "0.2 What is R?\n\n\nenvironment for statistical computing, graphics and programming\ncreated by Ross Ihaka and Robert Gentleman (1996)\nmaintained by international R-core development team\nmany, people contribute to R and the wider R community"
+    "objectID": "en/index.html#applied-biostatistics-with-r-bio-4x58",
+    "href": "en/index.html#applied-biostatistics-with-r-bio-4x58",
+    "title": "Biostats uOttawa",
+    "section": "Applied biostatistics with R (BIO 4X58)",
+    "text": "Applied biostatistics with R (BIO 4X58)\n\n\n\n\n\n\n\n\n\n\nOffered to both undergraduate and graduate students in english and french\nPrerequisite:\n\nan introduction class to statisticis is good to have\nNo (or limited) knowledge of R and no (or limited) knowledge of stats expected.\n\nBIO4158 english (Course site / Course manual)\nBIO4558 french (Course site / Course manual)"
   },
   {
-    "objectID": "slides_r/lec_en-01.notes.html#extra-r-information",
-    "href": "slides_r/lec_en-01.notes.html#extra-r-information",
-    "title": "An Introduction to R",
-    "section": "0.3 extra R information",
-    "text": "0.3 extra R information\n\n\n\nmore information can be found at\nhttps://www.r-project.com\ndownload R from the CRAN website\nhttps://cran.r-project.org/"
+    "objectID": "en/index.html#advanced-biostatistics-and-open-science-bio-8940",
+    "href": "en/index.html#advanced-biostatistics-and-open-science-bio-8940",
+    "title": "Biostats uOttawa",
+    "section": "Advanced biostatistics and open science (BIO 8940)",
+    "text": "Advanced biostatistics and open science (BIO 8940)\n\n\n\n\n\n\n\n\n\n\nBilingual course for graduate students\nPrerequisite:\n\na functional knowledge of R (loading data, running basic linear models, and making plots)\na good understanding of linear models\nessentially Bio8940 is a great next steps after completing Bio4x58.\n\nCourse site / Course manual"
   },
   {
-    "objectID": "slides_r/lec_en-01.notes.html#why-is-r-considered-hard",
-    "href": "slides_r/lec_en-01.notes.html#why-is-r-considered-hard",
-    "title": "An Introduction to R",
-    "section": "0.4 why is R considered hard?",
-    "text": "0.4 why is R considered hard?\n\nhigh initial investment in time to learn R\nunfamiliar command line environment\nfrustrating (and sometimes) inconsistent syntax\nanalysis and figures can take longer (initially!)\nrelatively steep learning curve\nit’s not actually that hard, just unfamiliar"
+    "objectID": "en/index.html#statistics-with-r-on-the-r-way-to-hell",
+    "href": "en/index.html#statistics-with-r-on-the-r-way-to-hell",
+    "title": "Biostats uOttawa",
+    "section": "Statistics with R: On the R-way to hell",
+    "text": "Statistics with R: On the R-way to hell\n\n\n\n\n\n\n\n\n\nThis is an introduction to statistics and R book with a multilingual approach. The book is covering an introduction to the basic use of R (data loading, wrangling and plotting), as well as programming, use of github and R markdown /Quarto with R Studio and VS code. It then covers a lot of statistical subjects.\nThe book (still under development) is available in English and French. I will add more languages later this year hopefully with help of volunteers."
   },
   {
-    "objectID": "slides_r/lec_en-01.notes.html#why-you-should-learn-r",
-    "href": "slides_r/lec_en-01.notes.html#why-you-should-learn-r",
-    "title": "An Introduction to R",
-    "section": "0.5 why you should learn R",
-    "text": "0.5 why you should learn R\n\nit’s free and platform independent\nit’s the software of choice for many students, academics, industries and charities worldwide\nhighly flexible and extensive\nencourages you think about your research\nquestions, data and analyses"
+    "objectID": "en/index.html#wam_tuto",
+    "href": "en/index.html#wam_tuto",
+    "title": "Biostats uOttawa",
+    "section": "How to fit an animal model",
+    "text": "How to fit an animal model\n\n\n\n\n\n\n\n\n\nThe book is tutorial on how to fit an animal model using multiple R packages. This is essentially an updated and extended version of the tutorials from “An ecologist guide to animal model” paper by Wilson et al. (2010)."
   },
   {
-    "objectID": "slides_r/lec_en-01.notes.html#why-you-should-learn-r-1",
-    "href": "slides_r/lec_en-01.notes.html#why-you-should-learn-r-1",
-    "title": "An Introduction to R",
-    "section": "0.6 why you should learn R",
-    "text": "0.6 why you should learn R\n\n\nit allows you to keep an exact and reproducible record of your analyses\ntransparent\nother people1 can\nreproduce your analysis\neasily share your code (GitHub)\nopen science"
-  },
-  {
-    "objectID": "slides_r/lec_en-01.notes.html#why-you-should-learn-r-2",
-    "href": "slides_r/lec_en-01.notes.html#why-you-should-learn-r-2",
-    "title": "An Introduction to R",
-    "section": "0.7 why you should learn R",
-    "text": "0.7 why you should learn R\n\n\nexcellent graphics capabilities"
-  },
-  {
-    "objectID": "slides_r/lec_en-01.notes.html#why-you-should-learn-r-3",
-    "href": "slides_r/lec_en-01.notes.html#why-you-should-learn-r-3",
-    "title": "An Introduction to R",
-    "section": "0.8 why you should learn R",
-    "text": "0.8 why you should learn R\n\n\nemployability\nopportunity to get involved\nwith a fantastic and supportive\ncommunity"
-  },
-  {
-    "objectID": "slides_r/lec_en-01.notes.html#gui",
-    "href": "slides_r/lec_en-01.notes.html#gui",
-    "title": "An Introduction to R",
-    "section": "1.1 GUI",
-    "text": "1.1 GUI\n#\n\n\n\nR \n\nIDE"
-  },
-  {
-    "objectID": "slides_r/lec_en-01.notes.html#rstudio",
-    "href": "slides_r/lec_en-01.notes.html#rstudio",
-    "title": "An Introduction to R",
-    "section": "1.2 RStudio",
-    "text": "1.2 RStudio"
-  },
-  {
-    "objectID": "slides_r/lec_en-01.notes.html#vs-code",
-    "href": "slides_r/lec_en-01.notes.html#vs-code",
-    "title": "An Introduction to R",
-    "section": "1.3 VS Code",
-    "text": "1.3 VS Code"
-  },
-  {
-    "objectID": "slides_r/lec_en-01.notes.html#objects",
-    "href": "slides_r/lec_en-01.notes.html#objects",
-    "title": "An Introduction to R",
-    "section": "2.1 objects",
-    "text": "2.1 objects\n\ncommands are typed in the editor and then sourced into the console\nat the &gt; prompt\n\n\n2 + 2\n\n[1] 4\n\n\n\nR is object orientated. You can create variable and assign value(s) to them\n\n\na &lt;- 2 + 2\na\n\n[1] 4"
-  },
-  {
-    "objectID": "slides_r/lec_en-01.notes.html#objects-1",
-    "href": "slides_r/lec_en-01.notes.html#objects-1",
-    "title": "An Introduction to R",
-    "section": "2.2 objects",
-    "text": "2.2 objects\n\nonce created, operations can be performed on variables\n\n\na &lt;- 2 + 2\nb &lt;- 3 * 2\n\na + b\n\n[1] 10\n\n\n\nvery powerful and flexible"
-  },
-  {
-    "objectID": "slides_r/lec_en-01.notes.html#functions",
-    "href": "slides_r/lec_en-01.notes.html#functions",
-    "title": "An Introduction to R",
-    "section": "2.3 functions",
-    "text": "2.3 functions\n\nfunctions contain a set of instructions that allow you to perform a specific task(s)\n\n\n1numbers &lt;- c(2, 3, 4, 5, 6)\nnumbers\n\n2mean(numbers)\n3# estimating the variance\n4var(numbers)\n\n\n1\n\nuse the concatenate function\n\n2\n\nuse mean function\n\n3\n\nthis is a comment noted with #\n\n4\n\nuse variance function"
-  },
-  {
-    "objectID": "slides_r/lec_en-01.notes.html#functions-1",
-    "href": "slides_r/lec_en-01.notes.html#functions-1",
-    "title": "An Introduction to R",
-    "section": "2.4 functions",
-    "text": "2.4 functions\n\nyou can install user contributed packages to increase versatility and power\nthere are packages for almost anything\ninstall packages from CRAN, Bioconductor and GitHub\npackages are easy to install in R"
-  },
-  {
-    "objectID": "slides_r/lec_en-01.notes.html#functions-2",
-    "href": "slides_r/lec_en-01.notes.html#functions-2",
-    "title": "An Introduction to R",
-    "section": "2.5 functions",
-    "text": "2.5 functions\n\nWrite your own functions\nfunction to calculate standard error\n\n\n1se_fnc &lt;- function(x) {\n2  std.x &lt;- sd(x)\n  nos.x &lt;- length(x)\n  se.x &lt;- std.x / (sqrt(nos.x))\n3  print(se.x)\n}\n4se_fnc(c(2, 3, 4, 5, 6))\n\n\n1\n\ndefine function name and arguments\n\n2\n\ncalculate SD, number of obs, then SE\n\n3\n\ndefine function output\n\n4\n\nuse your new function"
-  },
-  {
-    "objectID": "slides_r/lec_en-01.notes.html#syntax",
-    "href": "slides_r/lec_en-01.notes.html#syntax",
-    "title": "An Introduction to R",
-    "section": "2.6 syntax",
-    "text": "2.6 syntax\n\nR is case sensitive A is not the same as a\ncommands are generally separated by a new line, but you can also use a ; (rare)\nanything that follows the hash symbol # will be ignored by R. Use this to comment your code\na series of commands can be grouped using braces { }\nwrite pretty code by following a code style guide"
-  },
-  {
-    "objectID": "slides_r/lec_en-01.notes.html#help",
-    "href": "slides_r/lec_en-01.notes.html#help",
-    "title": "An Introduction to R",
-    "section": "2.7 help",
-    "text": "2.7 help\n\nwhen you need help for a function use help() or ?\n\n\nhelp(\"plot\")    # open help file for the function plot\n\nor equivalently\n\n?plot\n\n\nor to search across all help files use help.search(\"plot\") or ??plot"
-  },
-  {
-    "objectID": "slides_r/lec_en-01.notes.html#help-1",
-    "href": "slides_r/lec_en-01.notes.html#help-1",
-    "title": "An Introduction to R",
-    "section": "2.8 help",
-    "text": "2.8 help\n\nDuckduckgo_it: Try online search You’ll be surprised how many other people have probably had the same problem and solved it.\nStack Overflow: There are thousands of questions relevant to R on Stack Overflow\nHere are the most popular ones, ranked by vote.\nmake sure you include a reproducible example to get the most useful advice. A reproducible example is a minimal example that lets others who are trying to help you to see the error themselves."
-  },
-  {
-    "objectID": "slides_r/lec_en-01.notes.html#tips",
-    "href": "slides_r/lec_en-01.notes.html#tips",
-    "title": "An Introduction to R",
-    "section": "2.9 tips",
-    "text": "2.9 tips\n\nuse R regularly\nlearning R is not a memory test, you have your R scripts\nyou don’t need to know everything about R\ndon’t stare at code for hours.\nthere are many ways to tackle a particular problem\n\nthe time invested now will be more than payed back in the future."
-  },
-  {
-    "objectID": "slides_r/lec_en-01.notes.html#footnotes",
-    "href": "slides_r/lec_en-01.notes.html#footnotes",
-    "title": "An Introduction to R",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nincluding the future you!↩︎"
-  },
-  {
-    "objectID": "slides_r/lec_en-03.slides.html#learning-outcomes",
-    "href": "slides_r/lec_en-03.slides.html#learning-outcomes",
-    "title": "Simple statistics using R",
-    "section": "learning outcomes",
-    "text": "learning outcomes\n\nintroduce you to some basic statistics in R ✔️\nfocus on linear models ✔️\nfit simple linear models in R ✔️\ncheck linear model assumptions in R ✔️"
-  },
-  {
-    "objectID": "slides_r/lec_en-03.slides.html#scratching-the-surface",
-    "href": "slides_r/lec_en-03.slides.html#scratching-the-surface",
-    "title": "Simple statistics using R",
-    "section": "Scratching the surface",
-    "text": "Scratching the surface\n\nmany, many statistical tests available in R\nrange from the simple to the highly complex\nmany are included in standard base installation of R\nyou can extend the range of statistics by installing additional packages"
-  },
-  {
-    "objectID": "slides_r/lec_en-03.slides.html#an-example",
-    "href": "slides_r/lec_en-03.slides.html#an-example",
-    "title": "Simple statistics using R",
-    "section": "an example",
-    "text": "an example\n\n\n\ndoes seeding clouds with dimethylsulphate alter the moisture content of clouds (can we make it rain!)\n10 random clouds were seeded and 10 random clouds unseeded\nwhat’s the null hypothesis?\n\n\n\n\n\n\n\nno difference in mean moisture content between seeded and unseeded clouds"
-  },
-  {
-    "objectID": "slides_r/lec_en-03.slides.html#plotting-the-data",
-    "href": "slides_r/lec_en-03.slides.html#plotting-the-data",
-    "title": "Simple statistics using R",
-    "section": "Plotting the data",
-    "text": "Plotting the data\n\nDataPlot\n\n\n\nplot these data\ninterpretation?\nwhat type of statistical test do you want to use?\n\n\nclouds &lt;- read.csv('data/clouds.csv')\nstr(clouds)\n\n'data.frame':   20 obs. of  2 variables:\n $ moisture : num  301 302 299 316 307 ...\n $ treatment: chr  \"seeded\" \"seeded\" \"seeded\" \"seeded\" ..."
-  },
-  {
-    "objectID": "slides_r/lec_en-03.slides.html#t-test",
-    "href": "slides_r/lec_en-03.slides.html#t-test",
-    "title": "Simple statistics using R",
-    "section": "t-test",
-    "text": "t-test\n\nt.test(clouds$moisture~clouds$treatment, var.equal=TRUE)\n\n\n    Two Sample t-test\n\ndata:  clouds$moisture by clouds$treatment\nt = 2.5404, df = 18, p-value = 0.02051\nalternative hypothesis: true difference in means between group seeded and group unseeded is not equal to 0\n95 percent confidence interval:\n  1.482679 15.657321\nsample estimates:\n  mean in group seeded mean in group unseeded \n                303.63                 295.06 \n\n\n\nreject or fail to reject the null hypothesis?"
-  },
-  {
-    "objectID": "slides_r/lec_en-03.slides.html#linear-models-in-r",
-    "href": "slides_r/lec_en-03.slides.html#linear-models-in-r",
-    "title": "Simple statistics using R",
-    "section": "linear models in R",
-    "text": "linear models in R\n\nan alternative, but equivalent approach is to use a linear model to compare the means in each group\ngeneral linear models are generally thought of as simple models, but can be used to model a wide variety of data and exp. designs\ntraditionally statistics is performed (and taught) like using a recipe book (ANOVA, t-test, ANCOVA etc)\ngeneral linear models provide a coherent and theoretically satisfying framework on which to conduct your analyses"
-  },
-  {
-    "objectID": "slides_r/lec_en-03.slides.html#what-are-linear-models",
-    "href": "slides_r/lec_en-03.slides.html#what-are-linear-models",
-    "title": "Simple statistics using R",
-    "section": "what are linear models?",
-    "text": "what are linear models?\n\nt-test\nANOVA\nfactorial ANOVA\nANCOVA\nlinear regression\nmultiple regression\netc, etc"
-  },
-  {
-    "objectID": "slides_r/lec_en-03.slides.html#model-formula",
-    "href": "slides_r/lec_en-03.slides.html#model-formula",
-    "title": "Simple statistics using R",
-    "section": "model formula",
-    "text": "model formula\n\ngeneral linear modelling is based around the concept of model formulae\n\n\n\nresponse variable ~ explanatory variable(s) + error\n\n\n\nliterally read as ‘variation in response variable modelled as a function of the explanatory variable(s) plus variation not explained by the explanatory variables’\nit’s the attributes of the response and explanatory variables that determines the type of linear model fitted"
-  },
-  {
-    "objectID": "slides_r/lec_en-03.slides.html#linear-models-in-r-1",
-    "href": "slides_r/lec_en-03.slides.html#linear-models-in-r-1",
-    "title": "Simple statistics using R",
-    "section": "linear models in R",
-    "text": "linear models in R\n\nthe function for carrying out linear regression in R is lm()\n\n-the response variable comes first, then the tilde ~ then the name of the explanatory variable\n\nclouds.lm &lt;- lm(moisture ~ treatment, data=clouds)\n\n\nhow does R know that you want to perform a t-test (ANOVA)?\n\n\nclass(clouds$treatment)\n\n[1] \"character\"\n\n\n\nhere the explanatory variable is a factor"
-  },
-  {
-    "objectID": "slides_r/lec_en-03.slides.html#linear-models-in-r-2",
-    "href": "slides_r/lec_en-03.slides.html#linear-models-in-r-2",
-    "title": "Simple statistics using R",
-    "section": "linear models in R",
-    "text": "linear models in R\n\nto display the ANOVA table use the anova() function\n\n\nanova(clouds.lm)\n\nAnalysis of Variance Table\n\nResponse: moisture\n          Df  Sum Sq Mean Sq F value  Pr(&gt;F)  \ntreatment  1  367.22  367.22  6.4538 0.02051 *\nResiduals 18 1024.20   56.90                  \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\n\n\ndo you notice anything familiar about the p value?\n(hint: see the output from the t-test we did earlier)"
-  },
-  {
-    "objectID": "slides_r/lec_en-03.slides.html#linear-models-in-r-3",
-    "href": "slides_r/lec_en-03.slides.html#linear-models-in-r-3",
-    "title": "Simple statistics using R",
-    "section": "linear models in R",
-    "text": "linear models in R\n\nwe have sufficient evidence to reject the null hypothesis (as before)\ntherefore, there is a significant difference in the mean moisture content between clouds that were seeded and unseeded clouds\ndo we accept this inference?\nwhat about assumptions?\nwe could use Shapiro-Wilks and F tests as before\nmuch better to assess visually by plotting the residuals"
-  },
-  {
-    "objectID": "slides_r/lec_en-03.slides.html#plotting-residuals",
-    "href": "slides_r/lec_en-03.slides.html#plotting-residuals",
-    "title": "Simple statistics using R",
-    "section": "Plotting residuals",
-    "text": "Plotting residuals\n\nclouds.lm is a linear model object we can do stuff with it\nwe can use the plot() function directly to display residual plots\nnormality assumption\nequal variance assumption\nunusual or influential observations"
-  },
-  {
-    "objectID": "slides_r/lec_en-03.slides.html#plotting-residuals-1",
-    "href": "slides_r/lec_en-03.slides.html#plotting-residuals-1",
-    "title": "Simple statistics using R",
-    "section": "Plotting residuals",
-    "text": "Plotting residuals\n\npar(mfrow = c(2, 2), bg = \"#FFFFFFCC\")\nplot(clouds.lm)"
-  },
-  {
-    "objectID": "slides_r/lec_en-03.slides.html#other-linear-models",
-    "href": "slides_r/lec_en-03.slides.html#other-linear-models",
-    "title": "Simple statistics using R",
-    "section": "other linear models",
-    "text": "other linear models\n\n\n\n\n\n\n\n\ntraditional name\nmodel formula\nR code\n\n\n\n\nsimple linear regression\nY ~ X1 (continuous)\nlm(Y ~ X)\n\n\none-way ANOVA\nY ~ X1 (categorical)\nlm(Y ~ X)\n\n\ntwo-way ANOVA\nY ~ X1 (cat) + X2 (cat)\nlm(Y ~ X1 + X2)\n\n\nANCOVA\nY ~ X1 (cat) + X2 (cont)\nlm(Y ~ X1 * X2)\n\n\nmultiple regression\nY ~ X1 (cont) + X2 (cont)\nlm(Y ~ X1 + X2)\n\n\nfactorial ANOVA\nY ~ X1 (cat) * X2 (cat)\nlm(Y ~ X1 * X2)"
-  },
-  {
-    "objectID": "slides_r/lec_en-03.notes.html",
-    "href": "slides_r/lec_en-03.notes.html",
-    "title": "Simple statistics using R",
+    "objectID": "people.html",
+    "href": "people.html",
+    "title": "Julien Martin",
     "section": "",
-    "text": "introduce you to some basic statistics in R ✔️\nfocus on linear models ✔️\nfit simple linear models in R ✔️\ncheck linear model assumptions in R ✔️"
+    "text": "Julien is an Associate Professor at the University of Ottawa and has been teaching (and learning) R for the last 15 years.\nI created the websites using Quarto, R, revealjs, mermaid.js and graphViz. I developed the theme for the slides based on the xaringan blackboard theme.\n\nJulien est Professeur agrégé à l’Université d’Ottawa en biologie évolutive et quantitative et il enseigne R (et l’apprend) depuis plus de 15 ans.\nJ’ai créé le site internet en utilisant Quarto, R, revealjs, mermaid.js et graphViz. J’ai développé le thème de mes présentations à partir de du theme “blackboard” pour xaringan."
   },
   {
-    "objectID": "slides_r/lec_en-03.notes.html#learning-outcomes",
-    "href": "slides_r/lec_en-03.notes.html#learning-outcomes",
-    "title": "Simple statistics using R",
+    "objectID": "en/images.html",
+    "href": "en/images.html",
+    "title": "Note on images",
     "section": "",
-    "text": "introduce you to some basic statistics in R ✔️\nfocus on linear models ✔️\nfit simple linear models in R ✔️\ncheck linear model assumptions in R ✔️"
-  },
-  {
-    "objectID": "slides_r/lec_en-03.notes.html#scratching-the-surface",
-    "href": "slides_r/lec_en-03.notes.html#scratching-the-surface",
-    "title": "Simple statistics using R",
-    "section": "1.1 Scratching the surface",
-    "text": "1.1 Scratching the surface\n\nmany, many statistical tests available in R\nrange from the simple to the highly complex\nmany are included in standard base installation of R\nyou can extend the range of statistics by installing additional packages"
-  },
-  {
-    "objectID": "slides_r/lec_en-03.notes.html#an-example",
-    "href": "slides_r/lec_en-03.notes.html#an-example",
-    "title": "Simple statistics using R",
-    "section": "1.2 an example",
-    "text": "1.2 an example\n\n\n\ndoes seeding clouds with dimethylsulphate alter the moisture content of clouds (can we make it rain!)\n10 random clouds were seeded and 10 random clouds unseeded\nwhat’s the null hypothesis?\n\n\n\n\n\n\nno difference in mean moisture content between seeded and unseeded clouds"
-  },
-  {
-    "objectID": "slides_r/lec_en-03.notes.html#plotting-the-data",
-    "href": "slides_r/lec_en-03.notes.html#plotting-the-data",
-    "title": "Simple statistics using R",
-    "section": "1.3 Plotting the data",
-    "text": "1.3 Plotting the data\n\nDataPlot\n\n\n\nplot these data\ninterpretation?\nwhat type of statistical test do you want to use?\n\n\nclouds &lt;- read.csv('data/clouds.csv')\nstr(clouds)\n\n'data.frame':   20 obs. of  2 variables:\n $ moisture : num  301 302 299 316 307 ...\n $ treatment: chr  \"seeded\" \"seeded\" \"seeded\" \"seeded\" ..."
-  },
-  {
-    "objectID": "slides_r/lec_en-03.notes.html#t-test",
-    "href": "slides_r/lec_en-03.notes.html#t-test",
-    "title": "Simple statistics using R",
-    "section": "1.4 t-test",
-    "text": "1.4 t-test\n\nt.test(clouds$moisture~clouds$treatment, var.equal=TRUE)\n\n\n    Two Sample t-test\n\ndata:  clouds$moisture by clouds$treatment\nt = 2.5404, df = 18, p-value = 0.02051\nalternative hypothesis: true difference in means between group seeded and group unseeded is not equal to 0\n95 percent confidence interval:\n  1.482679 15.657321\nsample estimates:\n  mean in group seeded mean in group unseeded \n                303.63                 295.06 \n\n\n\nreject or fail to reject the null hypothesis?"
-  },
-  {
-    "objectID": "slides_r/lec_en-03.notes.html#linear-models-in-r",
-    "href": "slides_r/lec_en-03.notes.html#linear-models-in-r",
-    "title": "Simple statistics using R",
-    "section": "1.5 linear models in R",
-    "text": "1.5 linear models in R\n\nan alternative, but equivalent approach is to use a linear model to compare the means in each group\ngeneral linear models are generally thought of as simple models, but can be used to model a wide variety of data and exp. designs\ntraditionally statistics is performed (and taught) like using a recipe book (ANOVA, t-test, ANCOVA etc)\ngeneral linear models provide a coherent and theoretically satisfying framework on which to conduct your analyses"
-  },
-  {
-    "objectID": "slides_r/lec_en-03.notes.html#what-are-linear-models",
-    "href": "slides_r/lec_en-03.notes.html#what-are-linear-models",
-    "title": "Simple statistics using R",
-    "section": "1.6 what are linear models?",
-    "text": "1.6 what are linear models?\n\nt-test\nANOVA\nfactorial ANOVA\nANCOVA\nlinear regression\nmultiple regression\netc, etc"
-  },
-  {
-    "objectID": "slides_r/lec_en-03.notes.html#model-formula",
-    "href": "slides_r/lec_en-03.notes.html#model-formula",
-    "title": "Simple statistics using R",
-    "section": "1.7 model formula",
-    "text": "1.7 model formula\n\ngeneral linear modelling is based around the concept of model formulae\n\n\n\nresponse variable ~ explanatory variable(s) + error\n\n\n\nliterally read as ‘variation in response variable modelled as a function of the explanatory variable(s) plus variation not explained by the explanatory variables’\nit’s the attributes of the response and explanatory variables that determines the type of linear model fitted"
-  },
-  {
-    "objectID": "slides_r/lec_en-03.notes.html#linear-models-in-r-1",
-    "href": "slides_r/lec_en-03.notes.html#linear-models-in-r-1",
-    "title": "Simple statistics using R",
-    "section": "1.8 linear models in R",
-    "text": "1.8 linear models in R\n\nthe function for carrying out linear regression in R is lm()\n\n-the response variable comes first, then the tilde ~ then the name of the explanatory variable\n\nclouds.lm &lt;- lm(moisture ~ treatment, data=clouds)\n\n\nhow does R know that you want to perform a t-test (ANOVA)?\n\n\nclass(clouds$treatment)\n\n[1] \"character\"\n\n\n\nhere the explanatory variable is a factor"
-  },
-  {
-    "objectID": "slides_r/lec_en-03.notes.html#linear-models-in-r-2",
-    "href": "slides_r/lec_en-03.notes.html#linear-models-in-r-2",
-    "title": "Simple statistics using R",
-    "section": "1.9 linear models in R",
-    "text": "1.9 linear models in R\n\nto display the ANOVA table use the anova() function\n\n\nanova(clouds.lm)\n\nAnalysis of Variance Table\n\nResponse: moisture\n          Df  Sum Sq Mean Sq F value  Pr(&gt;F)  \ntreatment  1  367.22  367.22  6.4538 0.02051 *\nResiduals 18 1024.20   56.90                  \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\n\n\ndo you notice anything familiar about the p value?\n(hint: see the output from the t-test we did earlier)"
-  },
-  {
-    "objectID": "slides_r/lec_en-03.notes.html#linear-models-in-r-3",
-    "href": "slides_r/lec_en-03.notes.html#linear-models-in-r-3",
-    "title": "Simple statistics using R",
-    "section": "1.10 linear models in R",
-    "text": "1.10 linear models in R\n\nwe have sufficient evidence to reject the null hypothesis (as before)\ntherefore, there is a significant difference in the mean moisture content between clouds that were seeded and unseeded clouds\ndo we accept this inference?\nwhat about assumptions?\nwe could use Shapiro-Wilks and F tests as before\nmuch better to assess visually by plotting the residuals"
-  },
-  {
-    "objectID": "slides_r/lec_en-03.notes.html#plotting-residuals",
-    "href": "slides_r/lec_en-03.notes.html#plotting-residuals",
-    "title": "Simple statistics using R",
-    "section": "1.11 Plotting residuals",
-    "text": "1.11 Plotting residuals\n\nclouds.lm is a linear model object we can do stuff with it\nwe can use the plot() function directly to display residual plots\nnormality assumption\nequal variance assumption\nunusual or influential observations"
-  },
-  {
-    "objectID": "slides_r/lec_en-03.notes.html#plotting-residuals-1",
-    "href": "slides_r/lec_en-03.notes.html#plotting-residuals-1",
-    "title": "Simple statistics using R",
-    "section": "1.12 Plotting residuals",
-    "text": "1.12 Plotting residuals\n\npar(mfrow = c(2, 2), bg = \"#FFFFFFCC\")\nplot(clouds.lm)"
-  },
-  {
-    "objectID": "slides_r/lec_en-03.notes.html#other-linear-models",
-    "href": "slides_r/lec_en-03.notes.html#other-linear-models",
-    "title": "Simple statistics using R",
-    "section": "1.13 other linear models",
-    "text": "1.13 other linear models\n\n\n\n\n\n\n\n\ntraditional name\nmodel formula\nR code\n\n\n\n\nsimple linear regression\nY ~ X1 (continuous)\nlm(Y ~ X)\n\n\none-way ANOVA\nY ~ X1 (categorical)\nlm(Y ~ X)\n\n\ntwo-way ANOVA\nY ~ X1 (cat) + X2 (cat)\nlm(Y ~ X1 + X2)\n\n\nANCOVA\nY ~ X1 (cat) + X2 (cont)\nlm(Y ~ X1 * X2)\n\n\nmultiple regression\nY ~ X1 (cont) + X2 (cont)\nlm(Y ~ X1 + X2)\n\n\nfactorial ANOVA\nY ~ X1 (cat) * X2 (cat)\nlm(Y ~ X1 * X2)"
+    "text": "All photos, images and screenshot were produced by Julien Martin. Figures produced as code output were generated using R with code provided aither in teh document or available on github.\nImages were generated via NightCafé AI image generator (see image description and generating call below)."
   },
   {
     "objectID": "intro_r_en.html",
@@ -525,402 +84,38 @@
     "text": "About slides  and notes \n\nSlides \nSlides in revealjs format (html). If you want then as a pdf (note you might loose some functionality or contents due to tabs and scroll sections):\n\nOpen the slides in your browser from a link on this page\nPress e to get into the PDF export mode (?print-pdf should appear near the end of the url and white borders should appear)\nOpen the in-browser print dialog (CTRL/CMD+P).\nChange the Destination setting to Save as PDF.\nChange the Layout to Landscape.\nChange the Margins to None.\nEnable the Background graphics option (if you want it)\nClick Save 🎉\n\n\n\nNotes \nContent of the slides in html format as a self-contained downloadable file and including tabs and scroll sections.\nMore importantly, notes have the commenting and annotateing tools activated via https://hypothes.is/. If you create a free account , you can annotate and comment slides as well as share your annotations/comments with the public or via private or public groups."
   },
   {
-    "objectID": "people.html",
-    "href": "people.html",
-    "title": "Julien Martin",
-    "section": "",
-    "text": "Julien is an Associate Professor at the University of Ottawa and has been teaching (and learning) R for the last 15 years.\nI created the websites using Quarto, R, revealjs, mermaid.js and graphViz. I developed the theme for the slides based on the xaringan blackboard theme."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
+    "objectID": "fr/index.html",
+    "href": "fr/index.html",
     "title": "Biostats uOttawa",
     "section": "",
-    "text": "Contenu disponible en français ci-dessous / Content available in english"
+    "text": "Le site regroupe les différentes ressources développées par Julien Martin pour les cours de biostatistiques à uOttawa."
   },
   {
-    "objectID": "index.html#biostatistic-courses-at-uottawa",
-    "href": "index.html#biostatistic-courses-at-uottawa",
+    "objectID": "fr/index.html#biostatistiques-appliquées-avec-r-bio-4x58",
+    "href": "fr/index.html#biostatistiques-appliquées-avec-r-bio-4x58",
     "title": "Biostats uOttawa",
-    "section": "Biostatistic courses at uOttawa",
-    "text": "Biostatistic courses at uOttawa\nThis regroup the different resources developed for the biostatistic courses at the university of Ottawa by Julien Martin\n\nApplied biostatistics with R (BIO 4X58)\n\n\n\n\n\n\n\n\n\n\nOffered to both undergraduate and graduate students in english and french\nPrerequisite:\n\nan introduction class to statisticis is good to have\nNo (or limited) knowledge of R and no (or limited) knowledge of stats expected.\n\nBIO4158 english (Course site / Course manual)\nBIO4558 french (Course site / Course manual)\n\n\n\n\n\n\nAdvanced biostatistics and open science (BIO 8940)\n\n\n\n\n\n\n\n\n\n\nBilingual course for graduate students\nPrerequisite:\n\na functional knowledge of R (loading data, running basic linear models, and making plots)\na good understanding of linear models\nessentially Bio8940 is a great next steps after completing Bio4x58.\n\nCourse site / Course manual"
+    "section": "Biostatistiques appliquées avec R (BIO 4X58)",
+    "text": "Biostatistiques appliquées avec R (BIO 4X58)\n\n\n\n\n\n\n\n\n\n\nCours offerts aux étudiant au baccaulauréat et aux étudiants gradués en anglais et en français\nPré-requis:\n\ncours d’introduction au statistiques recommandée\nAucune connaissance de R et des statistiques requises\n\nBIO4158 anglais (cours / manuel)\nBIO4558 français (cours / manuel)"
   },
   {
-    "objectID": "index.html#book-and-tutorials",
-    "href": "index.html#book-and-tutorials",
+    "objectID": "fr/index.html#biostatistiques-avancées-et-science-ouverte-bio8940",
+    "href": "fr/index.html#biostatistiques-avancées-et-science-ouverte-bio8940",
     "title": "Biostats uOttawa",
-    "section": "Book and tutorials",
-    "text": "Book and tutorials\n\nStatistics with R: On the R-way to hell\n\n\n\n\n\n\n\n\n\nThis is an introduction to statistics and R book with a multilingual approach. The book is covering an introduction to the basic use of R (data loading, wrangling and plotting), as well as programming, use of github and R markdown /Quarto with R Studio and VS code. It then covers a lot of statistical subjects.\nThe book (still under development) is available in English and French. I will add more languages later this year hopefully with help of volunteers.\n\n\n\n\n\nHow to fit an animal model\n\n\n\n\n\n\n\n\n\nThe book is tutorial on how to fit an animal model using multiple R packages. This is essentially an updated and extended version of the tutorials from “An ecologist guide to animal model” paper by Wilson et al. (2010)."
+    "section": "Biostatistiques avancées et science ouverte (BIO8940)",
+    "text": "Biostatistiques avancées et science ouverte (BIO8940)\n\n\n\n\n\n\n\n\n\n\nCours bilingues offerts aux étudiants gradués\nPré-requis:\n\nconnaissances fonctionelle de R (chargement de données, graphique et statistiques de bases)\nbonne compréhension des modèles linéaires\nEssentiellement Bio4x58\n\ncours / manuel"
   },
   {
-    "objectID": "index.html#consult",
-    "href": "index.html#consult",
+    "objectID": "fr/index.html#sur-le-chemin-de-lenf-r-intro-aux-stats-avec-r",
+    "href": "fr/index.html#sur-le-chemin-de-lenf-r-intro-aux-stats-avec-r",
     "title": "Biostats uOttawa",
-    "section": "Statistical consulting",
-    "text": "Statistical consulting\n\n\n\n\n\n\n\n\n\n\n\n\n\nAs Part of my service in the Biology department, I provide statistical consulting. Please just contact me to book an appointment to discuss your stat problems.\nPlease bring with you (or send me in advance):\n\nyour data\nyour R code (should at least load the data into R)\na clear working hypothesis\n\n\n\n\nStatistical consulting does not mean that you have to add me as a co-author. I just ask that you add me to the “Acknowledgements” of your thesis and manuscript/article. Repeated consulting on the same problem and my implication on developing project specific coding/analysis might lead to co-authorship, but this usually all comes naturally and is always discussed openly with the student(s) and PI(s). As yet, I have never requested to become a co-author and I was offered co-authorship for 3 manuscripts over &gt; 50 projects discussed."
+    "section": "Sur le chemin de l’enf-R (intro aux stats avec R)",
+    "text": "Sur le chemin de l’enf-R (intro aux stats avec R)\n\n\n\n\n\n\n\n\n\nIl s’agit d’un livre d’introduction aux statistiques et à R avec une approche multilingue. Le livre couvre une introduction à l’utilisation de base de R (chargement de données, manipulation et traçage), ainsi que des statistiques simples, la programmation, l’utilisation de github et de R markdown /Quarto avec R Studio et VS code.\nLe livre (encore en développement) est disponible en anglais et français. J’ajouterai d’autres langues plus tard dans l’année, avec l’aide de volontaires.\nVoici également quelques diapositives sur une introduction à R uniquement en anglais (slides)."
   },
   {
-    "objectID": "index.html#quarto",
-    "href": "index.html#quarto",
+    "objectID": "fr/index.html#wam_tuto-fr",
+    "href": "fr/index.html#wam_tuto-fr",
     "title": "Biostats uOttawa",
-    "section": "Quarto templates for reproducible science",
-    "text": "Quarto templates for reproducible science\nA few quarto templates I developed to facilitate open-science for students at uOttawa\n\nbio-uo-proposal:\nquarto extension providing 1 new pdf output format (bio-uo-proposal-pdf). I am working on a docx version but tweaking the frontpage is tricky with word document.\nbio-uo-thesis:\nquarto extension providing two new output formats for book projects: an html (bio-uo-thesis-html) and a pdf (bio-uo-thesis-pdf) generating a website (to be hosted on github pages or similar) and a pdf of the thesis adequately formatted for uOttawa (at least biology)"
-  },
-  {
-    "objectID": "index.html#cours-de-biostatistique-à-uottawa",
-    "href": "index.html#cours-de-biostatistique-à-uottawa",
-    "title": "Biostats uOttawa",
-    "section": "Cours de biostatistique à uOttawa",
-    "text": "Cours de biostatistique à uOttawa\nLe site regroupe les différentes ressources développées par Julien Martin pour les cours de biostatistiques à uOttawa\n\nBiostatistiques appliquées avec R (BIO 4X58)\n\n\n\n\n\n\n\n\n\n\nCours offerts aux étudiant au baccaulauréat et aux étudiants gradués en anglais et en français\nPré-requis:\n\ncours d’introduction au statistiques recommandée\nAucune connaissance de R et des statistiques requises\n\nBIO4158 anglais (cours / manuel)\nBIO4558 français (cours / manuel)\n\n\n\n\n\n\nBiostatistiques avancées et science ouverte (BIO8940)\n\n\n\n\n\n\n\n\n\n\nCours bilingues offerts aux étudiants gradués\nPré-requis:\n\nconnaissances fonctionelle de R (chargement de données, graphique et statistiques de bases)\nbonne compréhension des modèles linéaires\nEssentiellement Bio4x58\n\ncours / manuel"
-  },
-  {
-    "objectID": "index.html#livres-et-tutoriels",
-    "href": "index.html#livres-et-tutoriels",
-    "title": "Biostats uOttawa",
-    "section": "Livres et tutoriels",
-    "text": "Livres et tutoriels\n\nSur le chemin de l’enf-R (intro aux stats avec R)\n\n\n\n\n\n\n\n\n\nIl s’agit d’un livre d’introduction aux statistiques et à R avec une approche multilingue. Le livre couvre une introduction à l’utilisation de base de R (chargement de données, manipulation et traçage), ainsi que des statistiques simples, la programmation, l’utilisation de github et de R markdown /Quarto avec R Studio et VS code.\nLe livre (encore en développement) est disponible en anglais et français. J’ajouterai d’autres langues plus tard dans l’année, avec l’aide de volontaires.\nVoici également quelques diapositives sur une introduction à R uniquement en anglais (slides).\n\n\n\n\n\nComment f-R un modèle animal\n\n\n\n\n\n\n\n\n\nLe livre est un tutoriel sur comment faire un un modèle animal avec R en utilisant plusieurs paquets R. Le projet est basé sur les tutoriels fournis dans “An ecologist guide to animal model” par Wilson et al. (2010), mis à jour et étendus."
-  },
-  {
-    "objectID": "index.html#consult-fr",
-    "href": "index.html#consult-fr",
-    "title": "Biostats uOttawa",
-    "section": "Consultations en statistique",
-    "text": "Consultations en statistique\n\n\n\n\n\n\n\n\n\nJe fournis des services de consultation en biostatistique dans le cadre de mon service au département de Biologie. Pour discuter de vos problèmes en statistiques, veuillez simplement me contacter pour prendre un rendez-vous.\nVeuillez avoir avec vous (ou me l’envoyer en avance):\n\nvos données\nvotre code R (au minimum capable de charger les données)\nune hypothèse de travail ou question biologique claire\n\n\n\n\nUne consultation statistiques n’implique pas de m’ajouter en tant ue que co-auteur. Je demande simplement que vous m’ajoutiez au Remerciements/Acknowledgements de votre thèse et/ou manuscript. Je reconnais que dans certains cas, e.g. nombres répétées de consultations sur le même projet incluant le développement de code et analyse spécifique au projet, je peux devenir co-auteur sur un projet. Cette discussion a habituellement lieu de manière naturelle et à toujours lieu de manière ouverte et ransparente avec les personnes impliquées, étudiant.e.s et PI.s. Jusqu’à maintenant, je n’ai jamais demandé à être co-auteur, et je suis devenu co-auteur sur 3 articles et j’ai été consulté pour plus de 50 projets."
-  },
-  {
-    "objectID": "index.html#quarto-fr",
-    "href": "index.html#quarto-fr",
-    "title": "Biostats uOttawa",
-    "section": "Extension Quarto pour une science reproduisible",
-    "text": "Extension Quarto pour une science reproduisible\nExtensions Quarto pour faciliter la production de document reproduisible pour les étudiants gradués en Biologie de l’Université d’Ottawa\n\nbio-uo-proposal:\ndonne la structure nécessaire pour un proposé de recherche avec la mise en page adéquate (format pdf seulement pour l’instant, format docx en développement).\nbio-uo-thesis:\ndonne la structure et le formatage requit pour produire une thèse en format html et pdf pour l’université d’Ottawa. Le format html peut être rendu disponible via un site github."
-  },
-  {
-    "objectID": "slides_r/lec_en-02.notes.html",
-    "href": "slides_r/lec_en-02.notes.html",
-    "title": "Getting the data in R",
-    "section": "",
-    "text": "recognise different types of data in R ✔️\nunderstand some different data structures ✔️\nlearn how to import data into R ✔️\nlearn how to manipulate data in R ✔️\nlearn how to export data from R ✔️"
-  },
-  {
-    "objectID": "slides_r/lec_en-02.notes.html#learning-outcomes",
-    "href": "slides_r/lec_en-02.notes.html#learning-outcomes",
-    "title": "Getting the data in R",
-    "section": "",
-    "text": "recognise different types of data in R ✔️\nunderstand some different data structures ✔️\nlearn how to import data into R ✔️\nlearn how to manipulate data in R ✔️\nlearn how to export data from R ✔️"
-  },
-  {
-    "objectID": "slides_r/lec_en-02.notes.html#types-of-data-in-r",
-    "href": "slides_r/lec_en-02.notes.html#types-of-data-in-r",
-    "title": "Getting the data in R",
-    "section": "0.2 types of data in R",
-    "text": "0.2 types of data in R\n\n\nsix types of data in R\n\nnumeric - 1.618, 3.14, 2.718\nintegers - 1, 2, 3, 42, 101\nlogical - TRUE or FALSE\ncharacter - “BI5009”, “Blue”\ncomplex\nraw"
-  },
-  {
-    "objectID": "slides_r/lec_en-02.notes.html#data-structures",
-    "href": "slides_r/lec_en-02.notes.html#data-structures",
-    "title": "Getting the data in R",
-    "section": "0.3 data structures",
-    "text": "0.3 data structures\n\n\nfive data structures\n\nvector\nmatrix\narray\ndata frame\nlist"
-  },
-  {
-    "objectID": "slides_r/lec_en-02.notes.html#vectors",
-    "href": "slides_r/lec_en-02.notes.html#vectors",
-    "title": "Getting the data in R",
-    "section": "0.4 vectors",
-    "text": "0.4 vectors\n\n\n\none dimensional collection elements\ncan contain all data types\nall elements must be of the same type"
-  },
-  {
-    "objectID": "slides_r/lec_en-02.notes.html#matrices-and-arrays",
-    "href": "slides_r/lec_en-02.notes.html#matrices-and-arrays",
-    "title": "Getting the data in R",
-    "section": "0.5 matrices and arrays",
-    "text": "0.5 matrices and arrays\n\n\n\na vector with extra dimensions\nagain, objects must be of the same type\narrays are multidimensional matrices\n\n\nmat.1 &lt;- matrix(1:12, nrow=4)\nmat.1\n\n     [,1] [,2] [,3]\n[1,]    1    5    9\n[2,]    2    6   10\n[3,]    3    7   11\n[4,]    4    8   12\n\n\n\n\n\narray.1 &lt;- array(1:16, dim=c(2,4,2))"
-  },
-  {
-    "objectID": "slides_r/lec_en-02.notes.html#data-frames",
-    "href": "slides_r/lec_en-02.notes.html#data-frames",
-    "title": "Getting the data in R",
-    "section": "0.6 data frames",
-    "text": "0.6 data frames\n\nmost commonly used data structure for statistical data analysis\npowerful 2-dimensional vector holding structure\ndataframes can hold vectors of any of the basic classes of data\n\n\n\n   treat nitrogen block height weight leafarea shootarea flowers\n1    tip   medium     1    7.5   7.62     11.7      31.9       1\n2    tip   medium     1   10.7  12.14     14.1      46.0      10\n3    tip   medium     1   11.2  12.76      7.1      66.7      10\n4    tip   medium     1   10.4   8.78     11.9      20.3       1\n5    tip   medium     1   10.4  13.58     14.5      26.9       4\n6    tip   medium     1    9.8  10.08     12.2      72.7       9\n7    tip   medium     1    6.9  10.11     13.2      43.1       7\n8    tip   medium     1    9.4  10.28     14.0      28.5       6\n9    tip   medium     2   10.4  10.48     10.5      57.8       5\n10   tip   medium     2   12.3  13.48     16.1      36.9       8"
-  },
-  {
-    "objectID": "slides_r/lec_en-02.notes.html#tidy-data",
-    "href": "slides_r/lec_en-02.notes.html#tidy-data",
-    "title": "Getting the data in R",
-    "section": "0.7 tidy data",
-    "text": "0.7 tidy data"
-  },
-  {
-    "objectID": "slides_r/lec_en-02.notes.html#importing-data",
-    "href": "slides_r/lec_en-02.notes.html#importing-data",
-    "title": "Getting the data in R",
-    "section": "0.8 importing data",
-    "text": "0.8 importing data\n\n\n\nsimplest method is to use spreadsheet\nand then import data into R\nsave as a comma separated file (*.csv)"
-  },
-  {
-    "objectID": "slides_r/lec_en-02.notes.html#importing-data-tips",
-    "href": "slides_r/lec_en-02.notes.html#importing-data-tips",
-    "title": "Getting the data in R",
-    "section": "0.9 Importing data tips",
-    "text": "0.9 Importing data tips\n\nmissing data represented with NA or empty cells. Do not mixed both\nNo spaces in names (use underscore if needed)\nno uppercase\nkeep variable names short & informative"
-  },
-  {
-    "objectID": "slides_r/lec_en-02.notes.html#importing-data-1",
-    "href": "slides_r/lec_en-02.notes.html#importing-data-1",
-    "title": "Getting the data in R",
-    "section": "0.10 importing data",
-    "text": "0.10 importing data\n\nthe read.table() function is the workhorse with format specified function to make coding faster\n\n  petunia &lt;- read.table('data/flowers.csv', header = TRUE, sep = ',')\n\n\n\n\n\npetunia\nname of the new object\n\n\nread.table()\nfunction use tot read tha data\n\n\n‘data/flowers.csv’\nrelative path name to the data file\n\n\nheader = TRUE\nfirst line contain columns names\n\n\nsep = ‘,’\ncolumns sparated by commas"
-  },
-  {
-    "objectID": "slides_r/lec_en-02.notes.html#importing-data-2",
-    "href": "slides_r/lec_en-02.notes.html#importing-data-2",
-    "title": "Getting the data in R",
-    "section": "0.11 importing data",
-    "text": "0.11 importing data\n\nsometimes columns are separated by tabs, sep = \"\\t\"\n\npetunia &lt;- read.table('data/flowers.csv', header = TRUE, sep = '\\t')\n\nyou can use format specific functions\n\npetunia &lt;- read.csv('flowers.csv')      # if comma-separated \npetunia &lt;- read.delim('flowers.txt')      # if tab-separated\n\nfunctions in the foreign package allows you to import files of other formats (i.e. from SAS, SPSS, Minitab etc)\nuse the readxl or readODS package to directly import MS Excel or LO calc spreadsheets directly"
-  },
-  {
-    "objectID": "slides_r/lec_en-02.notes.html#importing-data-3",
-    "href": "slides_r/lec_en-02.notes.html#importing-data-3",
-    "title": "Getting the data in R",
-    "section": "0.12 importing data",
-    "text": "0.12 importing data\n\nto view the contents of a data frame, type it’s name\nrarely a good idea as just fills up your console\nuse the head() and tail() to see first/last 6 lines\n\n\n\n[1] flowers\n\n\n  treat nitrogen block height weight leafarea shootarea flowers\n1   tip   medium     1    7.5   7.62     11.7      31.9       1\n2   tip   medium     1   10.7  12.14     14.1      46.0      10\n3   tip   medium     1   11.2  12.76      7.1      66.7      10\n4   tip   medium     1   10.4   8.78     11.9      20.3       1\n5   tip   medium     1   10.4  13.58     14.5      26.9       4\n6   tip   medium     1    9.8  10.08     12.2      72.7       9"
-  },
-  {
-    "objectID": "slides_r/lec_en-02.notes.html#data-wrangling",
-    "href": "slides_r/lec_en-02.notes.html#data-wrangling",
-    "title": "Getting the data in R",
-    "section": "0.13 data wrangling",
-    "text": "0.13 data wrangling\n\nstr() function: data frame dimensions, list of variables, type of variables\n\n\n&gt; str(flowers)\n\n'data.frame':   96 obs. of  8 variables:\n $ treat    : chr  \"tip\" \"tip\" \"tip\" \"tip\" ...\n $ nitrogen : chr  \" medium\" \" medium\" \" medium\" \" medium\" ...\n $ block    : int  1 1 1 1 1 1 1 1 2 2 ...\n $ height   : num  7.5 10.7 11.2 10.4 10.4 9.8 6.9 9.4 10.4 12.3 ...\n $ weight   : num  7.62 12.14 12.76 8.78 13.58 ...\n $ leafarea : num  11.7 14.1 7.1 11.9 14.5 12.2 13.2 14 10.5 16.1 ...\n $ shootarea: num  31.9 46 66.7 20.3 26.9 72.7 43.1 28.5 57.8 36.9 ...\n $ flowers  : int  1 10 10 1 4 9 7 6 5 8 ..."
-  },
-  {
-    "objectID": "slides_r/lec_en-02.notes.html#data-wrangling-1",
-    "href": "slides_r/lec_en-02.notes.html#data-wrangling-1",
-    "title": "Getting the data in R",
-    "section": "0.14 data wrangling",
-    "text": "0.14 data wrangling\n\nnames() function: vector of variable names\n\n\n&gt; names(flowers)\n\n[1] \"treat\"     \"nitrogen\"  \"block\"     \"height\"    \"weight\"    \"leafarea\" \n[7] \"shootarea\" \"flowers\""
-  },
-  {
-    "objectID": "slides_r/lec_en-02.notes.html#data-wrangling-2",
-    "href": "slides_r/lec_en-02.notes.html#data-wrangling-2",
-    "title": "Getting the data in R",
-    "section": "0.15 data wrangling",
-    "text": "0.15 data wrangling\n\naccess variables in your data frame using the $ notation\n\n\n&gt; flowers$height\n\n [1]  7.5 10.7 11.2 10.4 10.4  9.8  6.9  9.4 10.4 12.3 10.4 11.0  7.1  6.0  9.0\n[16]  4.5 12.6 10.0 10.0  8.5 14.1 10.1  8.5  6.5 11.5  7.7  6.4  8.8  9.2  6.2\n[31]  6.3 17.2  8.0  8.0  6.4  7.6  9.7 12.3  9.1  8.9  7.4  3.1  7.9  8.8  8.5\n[46]  5.6 11.5  5.8  5.6  5.3  7.5  4.1  3.5  8.5  4.9  2.5  5.4  3.9  5.8  4.5\n[61]  8.0  1.8  2.2  3.9  8.5  8.5  6.4  1.2  2.6 10.9  7.2  2.1  4.7  5.0  6.5\n[76]  2.6  6.0  9.3  4.6  5.2  3.9  2.3  5.2  2.2  4.5  1.8  3.0  3.7  2.4  5.7\n[91]  3.7  3.2  3.9  3.3  5.5  4.4\n\n\n\nyou can extract elements using the [rowIndex, columnIndex] method\nIndex can either be a positional index or a logical index"
-  },
-  {
-    "objectID": "slides_r/lec_en-02.notes.html#positional-index",
-    "href": "slides_r/lec_en-02.notes.html#positional-index",
-    "title": "Getting the data in R",
-    "section": "0.16 positional index",
-    "text": "0.16 positional index\n\nprovide the row and column position of the data you wish to extract\nindex can either be a positional index or a logical index\n\n\nflowers[1, 4]      # extract value of first row and 4th column\n\n[1] 7.5\n\n\n\nextract multiple elements by supplying vectors\n\n\nflowers[1:3, 1:4]      # extract rows 1 to 3 and columns 1 to 4\n\n  treat nitrogen block height\n1   tip   medium     1    7.5\n2   tip   medium     1   10.7\n3   tip   medium     1   11.2"
-  },
-  {
-    "objectID": "slides_r/lec_en-02.notes.html#positional-index-1",
-    "href": "slides_r/lec_en-02.notes.html#positional-index-1",
-    "title": "Getting the data in R",
-    "section": "0.17 positional index",
-    "text": "0.17 positional index\n\nanother example\n\n\n1flowers[c(3, 8, 20), c(1, 4, 5, 6)]\n\n\n1\n\nrows 3, 8 and 20 and columns 1, 4, 5 and 6\n\n\n\n\n   treat height weight leafarea\n3    tip   11.2  12.76      7.1\n8    tip    9.4  10.28     14.0\n20   tip    8.5  14.33     13.2\n\n\n\ncan assign these extracted values to another object if you want\nnew object inherits data.frame class\n\nflowers_red &lt;- flowers[c(3, 8, 20), c(1, 4, 5, 6)]\nflowers_red"
-  },
-  {
-    "objectID": "slides_r/lec_en-02.notes.html#positional-index-2",
-    "href": "slides_r/lec_en-02.notes.html#positional-index-2",
-    "title": "Getting the data in R",
-    "section": "0.18 positional index",
-    "text": "0.18 positional index\n\nwe can use a short cut if we want all rows or all columns extracted\nomitting the column index is shorthand for ‘all columns’\n\n\n&gt; flowers[1:3, ]\n\n  treat nitrogen block height weight leafarea shootarea flowers\n1   tip   medium     1    7.5   7.62     11.7      31.9       1\n2   tip   medium     1   10.7  12.14     14.1      46.0      10\n3   tip   medium     1   11.2  12.76      7.1      66.7      10\n\n\n\nomitting the row index is shorthand for ‘all rows’\n\n\n&gt; flowers[, 1:3]"
-  },
-  {
-    "objectID": "slides_r/lec_en-02.notes.html#positional-index-3",
-    "href": "slides_r/lec_en-02.notes.html#positional-index-3",
-    "title": "Getting the data in R",
-    "section": "0.19 positional index",
-    "text": "0.19 positional index\n\nan alternative method to select columns is to name the columns directly for columnIndex\n\n\n&gt; flowers[1:10, c('treat', 'nitrogen', 'leafarea', 'shootarea')]\n\n   treat nitrogen leafarea shootarea\n1    tip   medium     11.7      31.9\n2    tip   medium     14.1      46.0\n3    tip   medium      7.1      66.7\n4    tip   medium     11.9      20.3\n5    tip   medium     14.5      26.9\n6    tip   medium     12.2      72.7\n7    tip   medium     13.2      43.1\n8    tip   medium     14.0      28.5\n9    tip   medium     10.5      57.8\n10   tip   medium     16.1      36.9"
-  },
-  {
-    "objectID": "slides_r/lec_en-02.notes.html#logical-index",
-    "href": "slides_r/lec_en-02.notes.html#logical-index",
-    "title": "Getting the data in R",
-    "section": "0.20 logical index",
-    "text": "0.20 logical index\n\nwe can also extract rows based on a logical test\nexample, all rows where the height variable is greater than 12\n\n\n&gt; flowers[flowers$height &gt; 12,]\n\n   treat nitrogen block height weight leafarea shootarea flowers\n10   tip   medium     2   12.3  13.48     16.1      36.9       8\n17   tip     high     1   12.6  18.66     18.6      54.0       9\n21   tip     high     1   14.1  19.12     13.1     113.2      13\n32   tip     high     2   17.2  19.20     10.9      89.9      14\n38   tip      low     1   12.3  11.27     13.7      28.7       5\n\n\n\nor where leafarea is equal to 8.7\n\n\nflowers[flowers$leafarea == 8.7,]"
-  },
-  {
-    "objectID": "slides_r/lec_en-02.notes.html#logical-index-1",
-    "href": "slides_r/lec_en-02.notes.html#logical-index-1",
-    "title": "Getting the data in R",
-    "section": "0.21 logical index",
-    "text": "0.21 logical index\n\nwe can combine logical tests using the & symbol (AND) or the | symbol (OR)\nexample, extract all rows where height is &gt; 10.5 and nitrogen is equal to \"medium\"\n\n\nflowers[flowers$height &gt; 10.5 & flowers$nitrogen == 'medium',]\n\n\nor height is greater than 12.3 OR less than 1.8\n\n\nflowers[flowers$height &gt; 12.3 | flowers$height &lt; 1.8,]"
-  },
-  {
-    "objectID": "slides_r/lec_en-02.notes.html#exporting-data-frames",
-    "href": "slides_r/lec_en-02.notes.html#exporting-data-frames",
-    "title": "Getting the data in R",
-    "section": "0.22 exporting data frames",
-    "text": "0.22 exporting data frames\n\nthe write.csv() function exports data frames to an external file\n\n\n\nwrite.csv(flowers, 'flowers2.csv', row.names = FALSE)\n\n\n\nsaves flowers data frame to a file named ‘flowers.csv’\nrow.names = FALSE argument supresses the row names in the file"
-  },
-  {
-    "objectID": "slides_r/lec_en-02.notes.html#other-options",
-    "href": "slides_r/lec_en-02.notes.html#other-options",
-    "title": "Getting the data in R",
-    "section": "0.23 other options",
-    "text": "0.23 other options\n\nthere are many other options for importing and exporting data in R\nthe fread() and fwrite() functions in the read.table package are blazingly fast\nthe read_csv() and write_csv() (and other related) functions from the readr package for tidyverse alternatives\nif you have a lot of data (I mean alot!) then take a look at the ff and bigmemory packages"
-  },
-  {
-    "objectID": "slides_r/lec_en-02.slides.html#learning-outcomes",
-    "href": "slides_r/lec_en-02.slides.html#learning-outcomes",
-    "title": "Getting the data in R",
-    "section": "Learning outcomes",
-    "text": "Learning outcomes\n\nrecognise different types of data in R ✔️\nunderstand some different data structures ✔️\nlearn how to import data into R ✔️\nlearn how to manipulate data in R ✔️\nlearn how to export data from R ✔️"
-  },
-  {
-    "objectID": "slides_r/lec_en-02.slides.html#types-of-data-in-r",
-    "href": "slides_r/lec_en-02.slides.html#types-of-data-in-r",
-    "title": "Getting the data in R",
-    "section": "types of data in R",
-    "text": "types of data in R\n\n\nsix types of data in R\n\nnumeric - 1.618, 3.14, 2.718\nintegers - 1, 2, 3, 42, 101\nlogical - TRUE or FALSE\ncharacter - “BI5009”, “Blue”\ncomplex\nraw"
-  },
-  {
-    "objectID": "slides_r/lec_en-02.slides.html#data-structures",
-    "href": "slides_r/lec_en-02.slides.html#data-structures",
-    "title": "Getting the data in R",
-    "section": "data structures",
-    "text": "data structures\n\n\nfive data structures\n\nvector\nmatrix\narray\ndata frame\nlist"
-  },
-  {
-    "objectID": "slides_r/lec_en-02.slides.html#vectors",
-    "href": "slides_r/lec_en-02.slides.html#vectors",
-    "title": "Getting the data in R",
-    "section": "vectors",
-    "text": "vectors\n\n\n\none dimensional collection elements\ncan contain all data types\nall elements must be of the same type"
-  },
-  {
-    "objectID": "slides_r/lec_en-02.slides.html#matrices-and-arrays",
-    "href": "slides_r/lec_en-02.slides.html#matrices-and-arrays",
-    "title": "Getting the data in R",
-    "section": "matrices and arrays",
-    "text": "matrices and arrays\n\n\n\na vector with extra dimensions\nagain, objects must be of the same type\narrays are multidimensional matrices\n\n\nmat.1 &lt;- matrix(1:12, nrow=4)\nmat.1\n\n     [,1] [,2] [,3]\n[1,]    1    5    9\n[2,]    2    6   10\n[3,]    3    7   11\n[4,]    4    8   12\n\n\n\n\n\narray.1 &lt;- array(1:16, dim=c(2,4,2))"
-  },
-  {
-    "objectID": "slides_r/lec_en-02.slides.html#data-frames",
-    "href": "slides_r/lec_en-02.slides.html#data-frames",
-    "title": "Getting the data in R",
-    "section": "data frames",
-    "text": "data frames\n\nmost commonly used data structure for statistical data analysis\npowerful 2-dimensional vector holding structure\ndataframes can hold vectors of any of the basic classes of data\n\n\n\n   treat nitrogen block height weight leafarea shootarea flowers\n1    tip   medium     1    7.5   7.62     11.7      31.9       1\n2    tip   medium     1   10.7  12.14     14.1      46.0      10\n3    tip   medium     1   11.2  12.76      7.1      66.7      10\n4    tip   medium     1   10.4   8.78     11.9      20.3       1\n5    tip   medium     1   10.4  13.58     14.5      26.9       4\n6    tip   medium     1    9.8  10.08     12.2      72.7       9\n7    tip   medium     1    6.9  10.11     13.2      43.1       7\n8    tip   medium     1    9.4  10.28     14.0      28.5       6\n9    tip   medium     2   10.4  10.48     10.5      57.8       5\n10   tip   medium     2   12.3  13.48     16.1      36.9       8"
-  },
-  {
-    "objectID": "slides_r/lec_en-02.slides.html#tidy-data",
-    "href": "slides_r/lec_en-02.slides.html#tidy-data",
-    "title": "Getting the data in R",
-    "section": "tidy data",
-    "text": "tidy data"
-  },
-  {
-    "objectID": "slides_r/lec_en-02.slides.html#importing-data",
-    "href": "slides_r/lec_en-02.slides.html#importing-data",
-    "title": "Getting the data in R",
-    "section": "importing data",
-    "text": "importing data\n\n\n\nsimplest method is to use spreadsheet\nand then import data into R\nsave as a comma separated file (*.csv)"
-  },
-  {
-    "objectID": "slides_r/lec_en-02.slides.html#importing-data-tips",
-    "href": "slides_r/lec_en-02.slides.html#importing-data-tips",
-    "title": "Getting the data in R",
-    "section": "Importing data tips",
-    "text": "Importing data tips\n\nmissing data represented with NA or empty cells. Do not mixed both\nNo spaces in names (use underscore if needed)\nno uppercase\nkeep variable names short & informative"
-  },
-  {
-    "objectID": "slides_r/lec_en-02.slides.html#importing-data-1",
-    "href": "slides_r/lec_en-02.slides.html#importing-data-1",
-    "title": "Getting the data in R",
-    "section": "importing data",
-    "text": "importing data\n\nthe read.table() function is the workhorse with format specified function to make coding faster\n\n  petunia &lt;- read.table('data/flowers.csv', header = TRUE, sep = ',')\n\n\n\n\n\npetunia\nname of the new object\n\n\nread.table()\nfunction use tot read tha data\n\n\n‘data/flowers.csv’\nrelative path name to the data file\n\n\nheader = TRUE\nfirst line contain columns names\n\n\nsep = ‘,’\ncolumns sparated by commas"
-  },
-  {
-    "objectID": "slides_r/lec_en-02.slides.html#importing-data-2",
-    "href": "slides_r/lec_en-02.slides.html#importing-data-2",
-    "title": "Getting the data in R",
-    "section": "importing data",
-    "text": "importing data\n\nsometimes columns are separated by tabs, sep = \"\\t\"\n\npetunia &lt;- read.table('data/flowers.csv', header = TRUE, sep = '\\t')\n\nyou can use format specific functions\n\npetunia &lt;- read.csv('flowers.csv')      # if comma-separated \npetunia &lt;- read.delim('flowers.txt')      # if tab-separated\n\nfunctions in the foreign package allows you to import files of other formats (i.e. from SAS, SPSS, Minitab etc)\nuse the readxl or readODS package to directly import MS Excel or LO calc spreadsheets directly"
-  },
-  {
-    "objectID": "slides_r/lec_en-02.slides.html#importing-data-3",
-    "href": "slides_r/lec_en-02.slides.html#importing-data-3",
-    "title": "Getting the data in R",
-    "section": "importing data",
-    "text": "importing data\n\nto view the contents of a data frame, type it’s name\nrarely a good idea as just fills up your console\nuse the head() and tail() to see first/last 6 lines\n\n\n\n[1] flowers\n\n\n  treat nitrogen block height weight leafarea shootarea flowers\n1   tip   medium     1    7.5   7.62     11.7      31.9       1\n2   tip   medium     1   10.7  12.14     14.1      46.0      10\n3   tip   medium     1   11.2  12.76      7.1      66.7      10\n4   tip   medium     1   10.4   8.78     11.9      20.3       1\n5   tip   medium     1   10.4  13.58     14.5      26.9       4\n6   tip   medium     1    9.8  10.08     12.2      72.7       9"
-  },
-  {
-    "objectID": "slides_r/lec_en-02.slides.html#data-wrangling",
-    "href": "slides_r/lec_en-02.slides.html#data-wrangling",
-    "title": "Getting the data in R",
-    "section": "data wrangling",
-    "text": "data wrangling\n\nstr() function: data frame dimensions, list of variables, type of variables\n\n\n&gt; str(flowers)\n\n'data.frame':   96 obs. of  8 variables:\n $ treat    : chr  \"tip\" \"tip\" \"tip\" \"tip\" ...\n $ nitrogen : chr  \" medium\" \" medium\" \" medium\" \" medium\" ...\n $ block    : int  1 1 1 1 1 1 1 1 2 2 ...\n $ height   : num  7.5 10.7 11.2 10.4 10.4 9.8 6.9 9.4 10.4 12.3 ...\n $ weight   : num  7.62 12.14 12.76 8.78 13.58 ...\n $ leafarea : num  11.7 14.1 7.1 11.9 14.5 12.2 13.2 14 10.5 16.1 ...\n $ shootarea: num  31.9 46 66.7 20.3 26.9 72.7 43.1 28.5 57.8 36.9 ...\n $ flowers  : int  1 10 10 1 4 9 7 6 5 8 ..."
-  },
-  {
-    "objectID": "slides_r/lec_en-02.slides.html#data-wrangling-1",
-    "href": "slides_r/lec_en-02.slides.html#data-wrangling-1",
-    "title": "Getting the data in R",
-    "section": "data wrangling",
-    "text": "data wrangling\n\nnames() function: vector of variable names\n\n\n&gt; names(flowers)\n\n[1] \"treat\"     \"nitrogen\"  \"block\"     \"height\"    \"weight\"    \"leafarea\" \n[7] \"shootarea\" \"flowers\""
-  },
-  {
-    "objectID": "slides_r/lec_en-02.slides.html#data-wrangling-2",
-    "href": "slides_r/lec_en-02.slides.html#data-wrangling-2",
-    "title": "Getting the data in R",
-    "section": "data wrangling",
-    "text": "data wrangling\n\naccess variables in your data frame using the $ notation\n\n\n&gt; flowers$height\n\n [1]  7.5 10.7 11.2 10.4 10.4  9.8  6.9  9.4 10.4 12.3 10.4 11.0  7.1  6.0  9.0\n[16]  4.5 12.6 10.0 10.0  8.5 14.1 10.1  8.5  6.5 11.5  7.7  6.4  8.8  9.2  6.2\n[31]  6.3 17.2  8.0  8.0  6.4  7.6  9.7 12.3  9.1  8.9  7.4  3.1  7.9  8.8  8.5\n[46]  5.6 11.5  5.8  5.6  5.3  7.5  4.1  3.5  8.5  4.9  2.5  5.4  3.9  5.8  4.5\n[61]  8.0  1.8  2.2  3.9  8.5  8.5  6.4  1.2  2.6 10.9  7.2  2.1  4.7  5.0  6.5\n[76]  2.6  6.0  9.3  4.6  5.2  3.9  2.3  5.2  2.2  4.5  1.8  3.0  3.7  2.4  5.7\n[91]  3.7  3.2  3.9  3.3  5.5  4.4\n\n\n\nyou can extract elements using the [rowIndex, columnIndex] method\nIndex can either be a positional index or a logical index"
-  },
-  {
-    "objectID": "slides_r/lec_en-02.slides.html#positional-index",
-    "href": "slides_r/lec_en-02.slides.html#positional-index",
-    "title": "Getting the data in R",
-    "section": "positional index",
-    "text": "positional index\n\nprovide the row and column position of the data you wish to extract\nindex can either be a positional index or a logical index\n\n\nflowers[1, 4]      # extract value of first row and 4th column\n\n[1] 7.5\n\n\n\nextract multiple elements by supplying vectors\n\n\nflowers[1:3, 1:4]      # extract rows 1 to 3 and columns 1 to 4\n\n  treat nitrogen block height\n1   tip   medium     1    7.5\n2   tip   medium     1   10.7\n3   tip   medium     1   11.2"
-  },
-  {
-    "objectID": "slides_r/lec_en-02.slides.html#positional-index-1",
-    "href": "slides_r/lec_en-02.slides.html#positional-index-1",
-    "title": "Getting the data in R",
-    "section": "positional index",
-    "text": "positional index\n\nanother example\n\n\n1flowers[c(3, 8, 20), c(1, 4, 5, 6)]\n\n\n1\n\nrows 3, 8 and 20 and columns 1, 4, 5 and 6\n\n\n\n\n   treat height weight leafarea\n3    tip   11.2  12.76      7.1\n8    tip    9.4  10.28     14.0\n20   tip    8.5  14.33     13.2\n\n\n\ncan assign these extracted values to another object if you want\nnew object inherits data.frame class\n\nflowers_red &lt;- flowers[c(3, 8, 20), c(1, 4, 5, 6)]\nflowers_red"
-  },
-  {
-    "objectID": "slides_r/lec_en-02.slides.html#positional-index-2",
-    "href": "slides_r/lec_en-02.slides.html#positional-index-2",
-    "title": "Getting the data in R",
-    "section": "positional index",
-    "text": "positional index\n\nwe can use a short cut if we want all rows or all columns extracted\nomitting the column index is shorthand for ‘all columns’\n\n\n&gt; flowers[1:3, ]\n\n  treat nitrogen block height weight leafarea shootarea flowers\n1   tip   medium     1    7.5   7.62     11.7      31.9       1\n2   tip   medium     1   10.7  12.14     14.1      46.0      10\n3   tip   medium     1   11.2  12.76      7.1      66.7      10\n\n\n\nomitting the row index is shorthand for ‘all rows’\n\n\n&gt; flowers[, 1:3]"
-  },
-  {
-    "objectID": "slides_r/lec_en-02.slides.html#positional-index-3",
-    "href": "slides_r/lec_en-02.slides.html#positional-index-3",
-    "title": "Getting the data in R",
-    "section": "positional index",
-    "text": "positional index\n\nan alternative method to select columns is to name the columns directly for columnIndex\n\n\n&gt; flowers[1:10, c('treat', 'nitrogen', 'leafarea', 'shootarea')]\n\n   treat nitrogen leafarea shootarea\n1    tip   medium     11.7      31.9\n2    tip   medium     14.1      46.0\n3    tip   medium      7.1      66.7\n4    tip   medium     11.9      20.3\n5    tip   medium     14.5      26.9\n6    tip   medium     12.2      72.7\n7    tip   medium     13.2      43.1\n8    tip   medium     14.0      28.5\n9    tip   medium     10.5      57.8\n10   tip   medium     16.1      36.9"
-  },
-  {
-    "objectID": "slides_r/lec_en-02.slides.html#logical-index",
-    "href": "slides_r/lec_en-02.slides.html#logical-index",
-    "title": "Getting the data in R",
-    "section": "logical index",
-    "text": "logical index\n\nwe can also extract rows based on a logical test\nexample, all rows where the height variable is greater than 12\n\n\n&gt; flowers[flowers$height &gt; 12,]\n\n   treat nitrogen block height weight leafarea shootarea flowers\n10   tip   medium     2   12.3  13.48     16.1      36.9       8\n17   tip     high     1   12.6  18.66     18.6      54.0       9\n21   tip     high     1   14.1  19.12     13.1     113.2      13\n32   tip     high     2   17.2  19.20     10.9      89.9      14\n38   tip      low     1   12.3  11.27     13.7      28.7       5\n\n\n\nor where leafarea is equal to 8.7\n\n\nflowers[flowers$leafarea == 8.7,]"
-  },
-  {
-    "objectID": "slides_r/lec_en-02.slides.html#logical-index-1",
-    "href": "slides_r/lec_en-02.slides.html#logical-index-1",
-    "title": "Getting the data in R",
-    "section": "logical index",
-    "text": "logical index\n\nwe can combine logical tests using the & symbol (AND) or the | symbol (OR)\nexample, extract all rows where height is &gt; 10.5 and nitrogen is equal to \"medium\"\n\n\nflowers[flowers$height &gt; 10.5 & flowers$nitrogen == 'medium',]\n\n\nor height is greater than 12.3 OR less than 1.8\n\n\nflowers[flowers$height &gt; 12.3 | flowers$height &lt; 1.8,]"
-  },
-  {
-    "objectID": "slides_r/lec_en-02.slides.html#exporting-data-frames",
-    "href": "slides_r/lec_en-02.slides.html#exporting-data-frames",
-    "title": "Getting the data in R",
-    "section": "exporting data frames",
-    "text": "exporting data frames\n\nthe write.csv() function exports data frames to an external file\n\n\n\nwrite.csv(flowers, 'flowers2.csv', row.names = FALSE)\n\n\n\nsaves flowers data frame to a file named ‘flowers.csv’\nrow.names = FALSE argument supresses the row names in the file"
-  },
-  {
-    "objectID": "slides_r/lec_en-02.slides.html#other-options",
-    "href": "slides_r/lec_en-02.slides.html#other-options",
-    "title": "Getting the data in R",
-    "section": "other options",
-    "text": "other options\n\nthere are many other options for importing and exporting data in R\nthe fread() and fwrite() functions in the read.table package are blazingly fast\nthe read_csv() and write_csv() (and other related) functions from the readr package for tidyverse alternatives\nif you have a lot of data (I mean alot!) then take a look at the ff and bigmemory packages"
+    "section": "Comment f-R un modèle animal",
+    "text": "Comment f-R un modèle animal\n\n\n\n\n\n\n\n\n\nLe livre est un tutoriel sur comment faire un un modèle animal avec R en utilisant plusieurs paquets R. Le projet est basé sur les tutoriels fournis dans “An ecologist guide to animal model” par Wilson et al. (2010), mis à jour et étendus."
   }
 ]

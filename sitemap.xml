@@ -1,39 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://Biostats-uOttawa.github.io/biostats-uottawa.github.io/slides_r/lec_en-01.slides.html</loc>
-    <lastmod>2024-04-29T14:04:30.686Z</lastmod>
+    <loc>https://Biostats-uOttawa.github.io/biostats-uottawa.github.io/index.html</loc>
+    <lastmod>2024-05-01T19:16:10.648Z</lastmod>
   </url>
   <url>
-    <loc>https://Biostats-uOttawa.github.io/biostats-uottawa.github.io/slides_r/lec_en-01.notes.html</loc>
-    <lastmod>2024-04-29T14:04:30.642Z</lastmod>
+    <loc>https://Biostats-uOttawa.github.io/biostats-uottawa.github.io/en/index.html</loc>
+    <lastmod>2024-05-01T19:15:09.623Z</lastmod>
   </url>
   <url>
-    <loc>https://Biostats-uOttawa.github.io/biostats-uottawa.github.io/slides_r/lec_en-03.slides.html</loc>
-    <lastmod>2024-04-29T14:04:19.534Z</lastmod>
+    <loc>https://Biostats-uOttawa.github.io/biostats-uottawa.github.io/people.html</loc>
+    <lastmod>2024-05-01T18:55:46.937Z</lastmod>
   </url>
   <url>
-    <loc>https://Biostats-uOttawa.github.io/biostats-uottawa.github.io/slides_r/lec_en-03.notes.html</loc>
-    <lastmod>2024-04-29T14:04:19.498Z</lastmod>
+    <loc>https://Biostats-uOttawa.github.io/biostats-uottawa.github.io/en/images.html</loc>
+    <lastmod>2024-05-01T15:35:54.856Z</lastmod>
   </url>
   <url>
     <loc>https://Biostats-uOttawa.github.io/biostats-uottawa.github.io/intro_r_en.html</loc>
     <lastmod>2024-04-22T20:40:59.269Z</lastmod>
   </url>
   <url>
-    <loc>https://Biostats-uOttawa.github.io/biostats-uottawa.github.io/people.html</loc>
-    <lastmod>2024-02-15T05:13:10.360Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Biostats-uOttawa.github.io/biostats-uottawa.github.io/index.html</loc>
-    <lastmod>2024-04-29T14:02:15.141Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Biostats-uOttawa.github.io/biostats-uottawa.github.io/slides_r/lec_en-02.notes.html</loc>
-    <lastmod>2024-04-29T14:04:24.802Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Biostats-uOttawa.github.io/biostats-uottawa.github.io/slides_r/lec_en-02.slides.html</loc>
-    <lastmod>2024-04-29T14:04:24.850Z</lastmod>
+    <loc>https://Biostats-uOttawa.github.io/biostats-uottawa.github.io/fr/index.html</loc>
+    <lastmod>2024-05-01T19:17:56.877Z</lastmod>
   </url>
 </urlset>
