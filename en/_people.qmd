@@ -9,13 +9,13 @@ about:
       text: Github
       href: https://github.com/juliengamartin
     - icon: window
-      text: uOttawa page / page uOttawa
+      text: website
       href: https://www.uottawa.ca/faculty-science/professors/julien-martin
     - icon: window
-      text: lab site / site labo
+      text: lab page
       href: https://juliengamartin.github.io/
     - icon: envelope
-      text: email / courriel
+      text: email
       href: "mailto:julien.martin@uottawa.ca"
 ---
 
@@ -26,15 +26,3 @@ I created the websites using `Quarto`, `R`, `revealjs`, `mermaid.js` and
 `graphViz`. I developed the theme for the slides based on the [xaringan
 blackboard
 theme](https://github.com/juancarloscastillo/xaringan-themes-blackboard).
-
-------------------------------------------------------------------------
-
-Julien est Professeur agrégé à l'Université d'Ottawa en biologie
-évolutive et quantitative et il enseigne R (et l'apprend) depuis plus de
-15 ans.
-
-J'ai créé le site internet en utilisant `Quarto`, `R`, `revealjs`,
-`mermaid.js` et `graphViz`. J'ai développé le thème de mes présentations
-à partir de du theme ["blackboard" pour
-xaringan](https://github.com/juancarloscastillo/xaringan-themes-blackboard).
-

@@ -3,13 +3,15 @@ project:
   output-dir: docs
   render:
     - "*.qmd"
-    - "!slides/"
+    - "!slides_r/"
   resources:
     - "slides_r/"
     - "data/"
 execute:
   freeze: auto
 website:
+#  margin-header: |
+#    ![](/img/hex/mad_logo_hex.png){width="150"}
   google-analytics: G-6LLMGL3T2Q
   title: "Biostats uOttawa"
   navbar:
@@ -28,9 +30,18 @@ website:
           - text: Chemin de l'enf-R (livre R)
             href: https://biostats-uottawa.github.io/R/fr/
     tools:
+      - icon: flag
+        menu:
+        - text: Français
+          href: fr/index.qmd
+        - text: English
+          href: en/index.qmd
+#      - icon: image
+#        href: images.qmd
+#        text: Images
       - icon: envelope
-        href: people.html
         text: Contact
+        href: people.qmd
       - icon: github
         menu:
         - text: Code
@@ -49,5 +60,4 @@ format:
       dark: [cosmo, css/theme-dark.scss]
     highlight: kate
     fig_align: center
-#    css: css/styles.css
     toc: true

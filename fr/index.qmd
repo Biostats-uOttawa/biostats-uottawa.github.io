@@ -1,0 +1,131 @@
+---
+title: "Biostats uOttawa"
+---
+
+{{< include ../_links.qmd >}}
+
+```{r}
+#| label: setup
+#| include: FALSE
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r}
+#| fig.align: 'center'
+#| out.width: "30%"
+dat<-data.frame(a = rnorm(10000))
+library(ggplot2)
+ggplot(dat, aes(a))+geom_density(color="blue", fill="red") +theme_classic()+xlab("X")
+```
+
+::: {style="text-align: center;"}
+{{< bi flag >}} [Content also available in **english**](../en/index.qmd) {{< bi flag >}}
+:::
+
+Le site regroupe les différentes ressources développées par [Julien Martin](../people.qmd) pour les cours de biostatistiques à uOttawa.
+
+# Cours de biostatistique à uOttawa {#fr}
+
+## Biostatistiques appliquées avec R (BIO 4X58)
+
+::: {layout=[22,78]}
+![](../img/hex/bio4x58_logo_hex.png){width="150"}
+
+::::{}
+  * Cours offerts aux étudiant au baccaulauréat et aux étudiants gradués en anglais et en français
+  * Pré-requis:
+    * cours d'introduction au statistiques recommandée
+    * Aucune connaissance de R et des statistiques requises
+  * BIO4158 anglais ([cours][4158_course] / [manuel][4158_manual])
+  * BIO4558 français ([cours][4558_course] / [manuel][4558_manual])
+
+::::
+
+:::
+
+## Biostatistiques avancées et science ouverte (BIO8940)
+
+::: {layout=[22,78]}
+
+![](../img/hex/bio8940_logo_hex.png){width="150"}
+
+::::{}
+  * Cours bilingues offerts aux étudiants gradués
+  * Pré-requis:
+    * connaissances fonctionelle de R (chargement de données, graphique et statistiques de bases)
+    * bonne compréhension des modèles linéaires
+    * Essentiellement Bio4x58
+  * [cours][8940_course] / [manuel][8940_manual]
+::::
+
+:::
+
+# Livres et tutoriels
+
+## Sur le chemin de l'enf-R (intro aux stats avec R)
+
+::: {layout=[22,78]}
+
+![](../img/hex/Rway_logo_hex_en.png){width="150"}
+
+::::{}
+Il s'agit d'un livre d'introduction aux statistiques et à R avec une approche multilingue.
+Le livre couvre une introduction à l'utilisation de base de R (chargement de données, manipulation et traçage), ainsi que des statistiques simples, la programmation, l'utilisation de github et de R markdown /Quarto avec R Studio et VS code.
+
+Le livre (encore en développement) est disponible en [anglais][R_way] et [français][chemin_R].
+J'ajouterai d'autres langues plus tard dans l'année, avec l'aide de volontaires.
+
+Voici également quelques diapositives sur une introduction à R uniquement en anglais ([slides][Rintro]).
+::::
+
+:::
+
+## Comment f-R un modèle animal {#wam_tuto-fr}
+
+::: {layout=[22,78]}
+  
+[![](../img/hex/wam_logo_hex.png){width="150"}](https://juliengamartin.github.io/wam_tuto/)
+
+::::{}
+Le [livre](https://juliengamartin.github.io/wam_tuto/) est un tutoriel sur comment faire un un modèle animal avec R en utilisant plusieurs paquets R. Le projet est basé sur les tutoriels fournis dans "An ecologist guide to animal model" par Wilson et al. (2010), mis à jour et étendus.
+::::
+
+:::
+
+# Consultations en statistique {#consult-fr}
+
+::: {layout=[22,78]}
+
+[![](../img/hex/consult_logo_hex.png){width="150"}](../people.qmd)
+
+::::{}
+Je fournis des services de consultation en biostatistique dans le cadre de mon service au département de Biologie.
+Pour discuter de vos problèmes en statistiques, veuillez simplement me contacter pour prendre un rendez-vous.
+
+Veuillez avoir avec vous (ou me l'envoyer en avance):
+
+* vos données
+* votre code R (au minimum capable de charger les données)
+* une hypothèse de travail ou question biologique claire
+
+::::
+
+:::
+
+Une consultation statistiques n'implique pas de m'ajouter en tant ue que co-auteur.
+Je demande simplement que vous m'ajoutiez au **Remerciements/Acknowledgements** de votre thèse et/ou manuscript.
+Je reconnais que dans certains cas, e.g. nombres répétées de consultations sur le même projet incluant le développement de code et analyse spécifique au projet, je peux devenir co-auteur sur un projet.
+Cette discussion a habituellement lieu de manière naturelle et à toujours lieu de manière ouverte et ransparente avec les personnes impliquées, étudiant.e.s et PI.s.
+Jusqu'à maintenant, je n'ai jamais demandé à être co-auteur, et je suis devenu co-auteur sur 3 articles et j'ai été consulté pour plus de 50 projets.
+
+
+# Extension Quarto pour une science reproduisible {#quarto-fr}
+
+Extensions Quarto pour faciliter la production de document reproduisible pour les étudiants gradués en Biologie de l'Université d'Ottawa
+
+* [bio-uo-proposal](https://github.com/JulienGAMartin/quarto-bio-uo-proposal):  
+  donne la structure nécessaire pour un proposé de recherche avec la mise en page adéquate (format pdf seulement pour l'instant, format docx en développement).
+* [bio-uo-thesis](https://github.com/JulienGAMartin/quarto-bio-uo-thesis):  
+  donne la structure et le formatage requit pour produire une thèse en format html et pdf pour l'université d'Ottawa. Le format html peut être rendu disponible via un site github.
+
+

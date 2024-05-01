@@ -1,0 +1,8 @@
+---
+title: "Note on images"
+---
+
+All photos, images and screenshot were produced by Julien Martin. Figures produced as code output were generated using R with code provided aither in teh document or available on github.
+
+Images were generated via NightCafé AI image generator (see image description and generating call below).
+
