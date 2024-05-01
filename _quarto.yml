@@ -30,25 +30,54 @@ website:
           - text: Chemin de l'enf-R (livre R)
             href: https://biostats-uottawa.github.io/R/fr/
     tools:
-      - icon: flag
-        menu:
-        - text: Français
-          href: fr/index.qmd
-        - text: English
-          href: en/index.qmd
-#      - icon: image
-#        href: images.qmd
-#        text: Images
-      - icon: envelope
-        text: Contact
-        href: people.qmd
+#      - icon: flag
+#        menu:
+#        - text: Français
+#          href: fr/index.qmd
+#        - text: English
+#          href: en/index.qmd
+##      - icon: image
+##        href: images.qmd
+##        text: Images
+#      - icon: envelope
+#        text: Contact
+#        href: people.qmd
       - icon: github
         menu:
         - text: Code
           href: https://github.com/biostats-uOttawa/biostats-uottawa.github.io
         - text: Issues
           href: https://github.com/Biostats-uOttawa/biostats-uottawa.github.io/issues
-
+  sidebar:
+    - id: fr
+      title: "Français"
+      style: "floating"
+      collapse-level: 2
+      align: left
+      contents:
+        - icon: flag
+          text: English
+          href: en/index.qmd
+        - icon: flag
+          text: Français
+          href: fr/index.qmd
+        - text: "Contact"
+          href: fr/people.qmd
+    - id: en
+      title: "English"
+      style: "floating"
+      collapse-level: 2
+      align: left
+      contents:
+        - icon: flag
+          text: English
+          href: en/index.qmd
+        - icon: flag
+          text: Français
+          href: fr/index.qmd
+        - text: "Contact"
+          href: en/people.qmd
+  
 bibliography: [biblio/book.bib, biblio/grateful-refs.bib]
 biblio-style: apalike
 csl: biblio/ecology.csl

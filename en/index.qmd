@@ -19,12 +19,8 @@ library(ggplot2)
 ggplot(dat, aes(a))+geom_density(color="blue", fill="red") +theme_classic()+xlab("X")
 ```
 
-::: {style="text-align: center;"}
-{{< bi flag >}} [Contenu aussi disponible en **français**](../fr/index.qmd) {{< bi flag >}}
-:::
-
 This site regroup the different resources developed for the biostatistic courses at the university of Ottawa
-by [Julien Martin](../people.qmd)  
+by [Julien Martin](people.qmd)  
 
 # Biostatistic courses at uOttawa {#en}
 
@@ -93,7 +89,7 @@ The [book](https://juliengamartin.github.io/wam_tuto/) is tutorial on how to fit
 # Statistical consulting {#consult}
 
 ::: {layout=[22,78]}
-[![](../img/hex/consult_logo_hex.png){fig-align="right" width="150"}](../people.qmd)   
+[![](../img/hex/consult_logo_hex.png){fig-align="right" width="150"}](people.qmd)   
 
 ::::{}
 As Part of my service in the Biology department, I provide statistical consulting.

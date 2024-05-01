@@ -18,11 +18,7 @@ library(ggplot2)
 ggplot(dat, aes(a))+geom_density(color="blue", fill="red") +theme_classic()+xlab("X")
 ```
 
-::: {style="text-align: center;"}
-{{< bi flag >}} [Content also available in **english**](../en/index.qmd) {{< bi flag >}}
-:::
-
-Le site regroupe les différentes ressources développées par [Julien Martin](../people.qmd) pour les cours de biostatistiques à uOttawa.
+Le site regroupe les différentes ressources développées par [Julien Martin](people.qmd) pour les cours de biostatistiques à uOttawa.
 
 # Cours de biostatistique à uOttawa {#fr}
 
@@ -96,7 +92,7 @@ Le [livre](https://juliengamartin.github.io/wam_tuto/) est un tutoriel sur comme
 
 ::: {layout=[22,78]}
 
-[![](../img/hex/consult_logo_hex.png){width="150"}](../people.qmd)
+[![](../img/hex/consult_logo_hex.png){width="150"}](people.qmd)
 
 ::::{}
 Je fournis des services de consultation en biostatistique dans le cadre de mon service au département de Biologie.
