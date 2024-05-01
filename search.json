@@ -11,42 +11,66 @@
     "href": "en/index.html",
     "title": "Biostats uOttawa",
     "section": "",
-    "text": "This site regroup the different resources developed for the biostatistic courses at the university of Ottawa by Julien Martin"
+    "text": "This site regroup the different resources developed for the biostatistic courses at the university of Ottawa by Julien Martin",
+    "crumbs": [
+      "Biostats with R (Bio4158)",
+      "English"
+    ]
   },
   {
     "objectID": "en/index.html#applied-biostatistics-with-r-bio-4x58",
     "href": "en/index.html#applied-biostatistics-with-r-bio-4x58",
     "title": "Biostats uOttawa",
     "section": "Applied biostatistics with R (BIO 4X58)",
-    "text": "Applied biostatistics with R (BIO 4X58)\n\n\n\n\n\n\n\n\n\n\nOffered to both undergraduate and graduate students in english and french\nPrerequisite:\n\nan introduction class to statisticis is good to have\nNo (or limited) knowledge of R and no (or limited) knowledge of stats expected.\n\nBIO4158 english (Course site / Course manual)\nBIO4558 french (Course site / Course manual)"
+    "text": "Applied biostatistics with R (BIO 4X58)\n\n\n\n\n\n\n\n\n\n\nOffered to both undergraduate and graduate students in english and french\nPrerequisite:\n\nan introduction class to statisticis is good to have\nNo (or limited) knowledge of R and no (or limited) knowledge of stats expected.\n\nBIO4158 english (Course site / Course manual)\nBIO4558 french (Course site / Course manual)",
+    "crumbs": [
+      "Biostats with R (Bio4158)",
+      "English"
+    ]
   },
   {
     "objectID": "en/index.html#advanced-biostatistics-and-open-science-bio-8940",
     "href": "en/index.html#advanced-biostatistics-and-open-science-bio-8940",
     "title": "Biostats uOttawa",
     "section": "Advanced biostatistics and open science (BIO 8940)",
-    "text": "Advanced biostatistics and open science (BIO 8940)\n\n\n\n\n\n\n\n\n\n\nBilingual course for graduate students\nPrerequisite:\n\na functional knowledge of R (loading data, running basic linear models, and making plots)\na good understanding of linear models\nessentially Bio8940 is a great next steps after completing Bio4x58.\n\nCourse site / Course manual"
+    "text": "Advanced biostatistics and open science (BIO 8940)\n\n\n\n\n\n\n\n\n\n\nBilingual course for graduate students\nPrerequisite:\n\na functional knowledge of R (loading data, running basic linear models, and making plots)\na good understanding of linear models\nessentially Bio8940 is a great next steps after completing Bio4x58.\n\nCourse site / Course manual",
+    "crumbs": [
+      "Biostats with R (Bio4158)",
+      "English"
+    ]
   },
   {
     "objectID": "en/index.html#statistics-with-r-on-the-r-way-to-hell",
     "href": "en/index.html#statistics-with-r-on-the-r-way-to-hell",
     "title": "Biostats uOttawa",
     "section": "Statistics with R: On the R-way to hell",
-    "text": "Statistics with R: On the R-way to hell\n\n\n\n\n\n\n\n\n\nThis is an introduction to statistics and R book with a multilingual approach. The book is covering an introduction to the basic use of R (data loading, wrangling and plotting), as well as programming, use of github and R markdown /Quarto with R Studio and VS code. It then covers a lot of statistical subjects.\nThe book (still under development) is available in English and French. I will add more languages later this year hopefully with help of volunteers."
+    "text": "Statistics with R: On the R-way to hell\n\n\n\n\n\n\n\n\n\nThis is an introduction to statistics and R book with a multilingual approach. The book is covering an introduction to the basic use of R (data loading, wrangling and plotting), as well as programming, use of github and R markdown /Quarto with R Studio and VS code. It then covers a lot of statistical subjects.\nThe book (still under development) is available in English and French. I will add more languages later this year hopefully with help of volunteers.",
+    "crumbs": [
+      "Biostats with R (Bio4158)",
+      "English"
+    ]
   },
   {
     "objectID": "en/index.html#wam_tuto",
     "href": "en/index.html#wam_tuto",
     "title": "Biostats uOttawa",
     "section": "How to fit an animal model",
-    "text": "How to fit an animal model\n\n\n\n\n\n\n\n\n\nThe book is tutorial on how to fit an animal model using multiple R packages. This is essentially an updated and extended version of the tutorials from “An ecologist guide to animal model” paper by Wilson et al. (2010)."
+    "text": "How to fit an animal model\n\n\n\n\n\n\n\n\n\nThe book is tutorial on how to fit an animal model using multiple R packages. This is essentially an updated and extended version of the tutorials from “An ecologist guide to animal model” paper by Wilson et al. (2010).",
+    "crumbs": [
+      "Biostats with R (Bio4158)",
+      "English"
+    ]
   },
   {
-    "objectID": "people.html",
-    "href": "people.html",
+    "objectID": "fr/people.html",
+    "href": "fr/people.html",
     "title": "Julien Martin",
     "section": "",
-    "text": "Julien is an Associate Professor at the University of Ottawa and has been teaching (and learning) R for the last 15 years.\nI created the websites using Quarto, R, revealjs, mermaid.js and graphViz. I developed the theme for the slides based on the xaringan blackboard theme.\n\nJulien est Professeur agrégé à l’Université d’Ottawa en biologie évolutive et quantitative et il enseigne R (et l’apprend) depuis plus de 15 ans.\nJ’ai créé le site internet en utilisant Quarto, R, revealjs, mermaid.js et graphViz. J’ai développé le thème de mes présentations à partir de du theme “blackboard” pour xaringan."
+    "text": "Julien est Professeur agrégé à l’Université d’Ottawa en biologie évolutive et quantitative et il enseigne R (et l’apprend) depuis plus de 15 ans.\nJ’ai créé le site internet en utilisant Quarto, R, revealjs, mermaid.js et graphViz. J’ai developpé le thème de mes présentations à partir de du theme “blackboard” pour xaringan.",
+    "crumbs": [
+      "Biostats with R (Bio4158)",
+      "Contact"
+    ]
   },
   {
     "objectID": "en/images.html",
@@ -54,6 +78,17 @@
     "title": "Note on images",
     "section": "",
     "text": "All photos, images and screenshot were produced by Julien Martin. Figures produced as code output were generated using R with code provided aither in teh document or available on github.\nImages were generated via NightCafé AI image generator (see image description and generating call below)."
+  },
+  {
+    "objectID": "en/people.html",
+    "href": "en/people.html",
+    "title": "Julien Martin",
+    "section": "",
+    "text": "Julien is an Associate Professor at the University of Ottawa and has been teaching (and learning) R for the last 15 years.\nI created the websites using Quarto, R, revealjs, mermaid.js and graphViz. I developed the theme for the slides based on the xaringan blackboard theme.",
+    "crumbs": [
+      "Biostats with R (Bio4158)",
+      "Contact"
+    ]
   },
   {
     "objectID": "intro_r_en.html",
@@ -88,34 +123,54 @@
     "href": "fr/index.html",
     "title": "Biostats uOttawa",
     "section": "",
-    "text": "Le site regroupe les différentes ressources développées par Julien Martin pour les cours de biostatistiques à uOttawa."
+    "text": "Le site regroupe les différentes ressources développées par Julien Martin pour les cours de biostatistiques à uOttawa.",
+    "crumbs": [
+      "Biostats with R (Bio4158)",
+      "Français"
+    ]
   },
   {
     "objectID": "fr/index.html#biostatistiques-appliquées-avec-r-bio-4x58",
     "href": "fr/index.html#biostatistiques-appliquées-avec-r-bio-4x58",
     "title": "Biostats uOttawa",
     "section": "Biostatistiques appliquées avec R (BIO 4X58)",
-    "text": "Biostatistiques appliquées avec R (BIO 4X58)\n\n\n\n\n\n\n\n\n\n\nCours offerts aux étudiant au baccaulauréat et aux étudiants gradués en anglais et en français\nPré-requis:\n\ncours d’introduction au statistiques recommandée\nAucune connaissance de R et des statistiques requises\n\nBIO4158 anglais (cours / manuel)\nBIO4558 français (cours / manuel)"
+    "text": "Biostatistiques appliquées avec R (BIO 4X58)\n\n\n\n\n\n\n\n\n\n\nCours offerts aux étudiant au baccaulauréat et aux étudiants gradués en anglais et en français\nPré-requis:\n\ncours d’introduction au statistiques recommandée\nAucune connaissance de R et des statistiques requises\n\nBIO4158 anglais (cours / manuel)\nBIO4558 français (cours / manuel)",
+    "crumbs": [
+      "Biostats with R (Bio4158)",
+      "Français"
+    ]
   },
   {
     "objectID": "fr/index.html#biostatistiques-avancées-et-science-ouverte-bio8940",
     "href": "fr/index.html#biostatistiques-avancées-et-science-ouverte-bio8940",
     "title": "Biostats uOttawa",
     "section": "Biostatistiques avancées et science ouverte (BIO8940)",
-    "text": "Biostatistiques avancées et science ouverte (BIO8940)\n\n\n\n\n\n\n\n\n\n\nCours bilingues offerts aux étudiants gradués\nPré-requis:\n\nconnaissances fonctionelle de R (chargement de données, graphique et statistiques de bases)\nbonne compréhension des modèles linéaires\nEssentiellement Bio4x58\n\ncours / manuel"
+    "text": "Biostatistiques avancées et science ouverte (BIO8940)\n\n\n\n\n\n\n\n\n\n\nCours bilingues offerts aux étudiants gradués\nPré-requis:\n\nconnaissances fonctionelle de R (chargement de données, graphique et statistiques de bases)\nbonne compréhension des modèles linéaires\nEssentiellement Bio4x58\n\ncours / manuel",
+    "crumbs": [
+      "Biostats with R (Bio4158)",
+      "Français"
+    ]
   },
   {
     "objectID": "fr/index.html#sur-le-chemin-de-lenf-r-intro-aux-stats-avec-r",
     "href": "fr/index.html#sur-le-chemin-de-lenf-r-intro-aux-stats-avec-r",
     "title": "Biostats uOttawa",
     "section": "Sur le chemin de l’enf-R (intro aux stats avec R)",
-    "text": "Sur le chemin de l’enf-R (intro aux stats avec R)\n\n\n\n\n\n\n\n\n\nIl s’agit d’un livre d’introduction aux statistiques et à R avec une approche multilingue. Le livre couvre une introduction à l’utilisation de base de R (chargement de données, manipulation et traçage), ainsi que des statistiques simples, la programmation, l’utilisation de github et de R markdown /Quarto avec R Studio et VS code.\nLe livre (encore en développement) est disponible en anglais et français. J’ajouterai d’autres langues plus tard dans l’année, avec l’aide de volontaires.\nVoici également quelques diapositives sur une introduction à R uniquement en anglais (slides)."
+    "text": "Sur le chemin de l’enf-R (intro aux stats avec R)\n\n\n\n\n\n\n\n\n\nIl s’agit d’un livre d’introduction aux statistiques et à R avec une approche multilingue. Le livre couvre une introduction à l’utilisation de base de R (chargement de données, manipulation et traçage), ainsi que des statistiques simples, la programmation, l’utilisation de github et de R markdown /Quarto avec R Studio et VS code.\nLe livre (encore en développement) est disponible en anglais et français. J’ajouterai d’autres langues plus tard dans l’année, avec l’aide de volontaires.\nVoici également quelques diapositives sur une introduction à R uniquement en anglais (slides).",
+    "crumbs": [
+      "Biostats with R (Bio4158)",
+      "Français"
+    ]
   },
   {
     "objectID": "fr/index.html#wam_tuto-fr",
     "href": "fr/index.html#wam_tuto-fr",
     "title": "Biostats uOttawa",
     "section": "Comment f-R un modèle animal",
-    "text": "Comment f-R un modèle animal\n\n\n\n\n\n\n\n\n\nLe livre est un tutoriel sur comment faire un un modèle animal avec R en utilisant plusieurs paquets R. Le projet est basé sur les tutoriels fournis dans “An ecologist guide to animal model” par Wilson et al. (2010), mis à jour et étendus."
+    "text": "Comment f-R un modèle animal\n\n\n\n\n\n\n\n\n\nLe livre est un tutoriel sur comment faire un un modèle animal avec R en utilisant plusieurs paquets R. Le projet est basé sur les tutoriels fournis dans “An ecologist guide to animal model” par Wilson et al. (2010), mis à jour et étendus.",
+    "crumbs": [
+      "Biostats with R (Bio4158)",
+      "Français"
+    ]
   }
 ]
