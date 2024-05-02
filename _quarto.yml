@@ -23,7 +23,7 @@ website:
         href: https://biostats-uottawa.github.io/bio4558_cours/
       - text: Advanced biostats and open science (Bio8940)
         href: https://biostats-uottawa.github.io/bio8940_course/
-      - text: Intro R Book
+      - text: Intro R
         menu:
           - text: R-way to hell (R book)
             href: https://biostats-uottawa.github.io/R/en/
