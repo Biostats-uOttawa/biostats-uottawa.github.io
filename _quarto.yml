@@ -61,6 +61,7 @@ website:
         - icon: flag
           text: Français
           href: fr/index.qmd
+        - fr/images.qmd
         - text: "Contact"
           href: fr/people.qmd
     - id: en
@@ -75,6 +76,7 @@ website:
         - icon: flag
           text: Français
           href: fr/index.qmd
+        - en/images.qmd
         - text: "Contact"
           href: en/people.qmd
   

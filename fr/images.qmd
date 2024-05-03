@@ -1,0 +1,20 @@
+---
+title: "Note sur les images"
+---
+
+Toutes les photos, images et captures d'écran ont été produites par Julien Martin. Les figures produites par du code ont été générées à l'aide de R, le code étant disponible dans les fichiers .qmd sur github.
+
+Les images ont été générées par Julien Martin via le générateur d'images NightCafé AI.
+
+# Informations sur l'image
+
+| Image | Appel au générateur d'IA et à l'interprétation|
+|:-------:|:--------------|
+| ![Biostats uO](../img/hex/biostat_logo_hex.png) | Distribution gaussienne avec des yeux, la bouche ouverte, les dents pointues et la langue tirée |
+| ![Bio4x58](../img/hex/bio4x58_logo_hex.png) | Haggis[^haggis] dormant avec des équations dans une bulle de rêve
+| ![Bio8940](../img/hex/bio8940_logo_hex.png) | Évolution de l'image précédente avec `plus` |
+| ![R way to hell](../img/hex/Rway_logo_hex_en.png) | Licorne sur la route de l'enfer |
+| ![Wam tuto](../img/hex/wam_logo_hex.png) | Arbre généalogique des animaux fantastiques |
+| ![Stat consulting](../img/hex/consult_logo_hex.png) | Scientifique dans un laboratoire fou avec la langue tirée |
+
+[^haggis]: Le haggis est à la fois un délicieux plat écossais et une bête légendaire qui erre dans les Highlands.

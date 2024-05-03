@@ -1,5 +1,8 @@
 ---
 title: "Biostats uOttawa"
+format: 
+  html:
+    css: ../css/header.css
 ---
 
 {{< include ../_links.qmd >}}
@@ -13,7 +16,8 @@ knitr::opts_chunk$set(echo = FALSE)
 ```{r}
 #| fig.align: 'center'
 #| out.width: "30%"
-# #| fig-cap: "Probability density function for a Gaussian distribution "
+#| fig-cap: "Probability density function for a Gaussian distribution "
+#| eval: false
 dat<-data.frame(a = rnorm(10000))
 library(ggplot2)
 ggplot(dat, aes(a))+geom_density(color="blue", fill="red") +theme_classic()+xlab("X")
