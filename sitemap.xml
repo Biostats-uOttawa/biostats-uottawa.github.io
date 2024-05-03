@@ -2,23 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://Biostats-uOttawa.github.io/biostats-uottawa.github.io/index.html</loc>
-    <lastmod>2024-05-01T19:16:10.648Z</lastmod>
+    <lastmod>2024-05-03T18:07:41.866Z</lastmod>
   </url>
   <url>
     <loc>https://Biostats-uOttawa.github.io/biostats-uottawa.github.io/en/index.html</loc>
-    <lastmod>2024-05-01T20:07:18.758Z</lastmod>
+    <lastmod>2024-05-03T17:54:36.428Z</lastmod>
   </url>
   <url>
     <loc>https://Biostats-uOttawa.github.io/biostats-uottawa.github.io/fr/people.html</loc>
     <lastmod>2024-05-01T19:47:30.719Z</lastmod>
   </url>
   <url>
-    <loc>https://Biostats-uOttawa.github.io/biostats-uottawa.github.io/en/images.html</loc>
-    <lastmod>2024-05-01T15:35:54.856Z</lastmod>
-  </url>
-  <url>
     <loc>https://Biostats-uOttawa.github.io/biostats-uottawa.github.io/en/people.html</loc>
     <lastmod>2024-05-01T18:24:11.482Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Biostats-uOttawa.github.io/biostats-uottawa.github.io/en/images.html</loc>
+    <lastmod>2024-05-03T18:34:18.467Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Biostats-uOttawa.github.io/biostats-uottawa.github.io/fr/images.html</loc>
+    <lastmod>2024-05-03T18:28:34.936Z</lastmod>
   </url>
   <url>
     <loc>https://Biostats-uOttawa.github.io/biostats-uottawa.github.io/intro_r_en.html</loc>
@@ -26,6 +30,6 @@
   </url>
   <url>
     <loc>https://Biostats-uOttawa.github.io/biostats-uottawa.github.io/fr/index.html</loc>
-    <lastmod>2024-05-01T20:07:06.830Z</lastmod>
+    <lastmod>2024-05-03T17:49:50.222Z</lastmod>
   </url>
 </urlset>
