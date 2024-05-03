@@ -6,8 +6,6 @@ Toutes les photos, images et captures d'écran ont été produites par Julien Ma
 
 Les images ont été générées par Julien Martin via le générateur d'images NightCafé AI.
 
-# Informations sur l'image
-
 | Image | Appel au générateur d'IA et à l'interprétation|
 |:-------:|:--------------|
 | ![Biostats uO](../img/hex/biostat_logo_hex.png) | Distribution gaussienne avec des yeux, la bouche ouverte, les dents pointues et la langue tirée |
