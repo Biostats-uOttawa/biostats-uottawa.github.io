@@ -28,19 +28,20 @@ by [Julien Martin](people.qmd)
 
 # Biostatistic courses at uOttawa {#en}
 
-## Applied biostatistics with R (BIO 4X58)
+## Applied biostatistics with R (Bio4x58 / Bio5x58)
 
 ::: {layout=[22,78]}
 
 [![](../img/hex/bio4x58_logo_hex.png){width="150"}][4158_course] 
 
 ::::{}
-  * Offered to both undergraduate and graduate students in english and french
+
+  * Offered to both undergraduate (Bio4x58) and graduate students (Bio5x58) in english (Bio4158 / Bio5158) and french (Bio4558 / Bio5558)
   * Prerequisite:
     * an introduction class to statisticis is good to have
     * No (or limited) knowledge of R and no (or limited) knowledge of stats expected.
-  * BIO4158 english ([Course site][4158_course] / [Course manual][4158_manual])
-  * BIO4558 french ([Course site][4558_course] / [Course manual][4558_manual])
+  * Bio4158 / Bio5158: english ([Course site][4158_course] / [Course manual][4158_manual])
+  * Bio4558 / Bio5558: french ([Course site][4558_course] / [Course manual][4558_manual])
 ::::
 
 :::
