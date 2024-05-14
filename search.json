@@ -18,11 +18,11 @@
     ]
   },
   {
-    "objectID": "en/index.html#applied-biostatistics-with-r-bio-4x58",
-    "href": "en/index.html#applied-biostatistics-with-r-bio-4x58",
+    "objectID": "en/index.html#applied-biostatistics-with-r-bio4x58-bio5x58",
+    "href": "en/index.html#applied-biostatistics-with-r-bio4x58-bio5x58",
     "title": "Biostats uOttawa",
-    "section": "Applied biostatistics with R (BIO 4X58)",
-    "text": "Applied biostatistics with R (BIO 4X58)\n\n\n\n\n\n\n\n\n\n\nOffered to both undergraduate and graduate students in english and french\nPrerequisite:\n\nan introduction class to statisticis is good to have\nNo (or limited) knowledge of R and no (or limited) knowledge of stats expected.\n\nBIO4158 english (Course site / Course manual)\nBIO4558 french (Course site / Course manual)",
+    "section": "Applied biostatistics with R (Bio4x58 / Bio5x58)",
+    "text": "Applied biostatistics with R (Bio4x58 / Bio5x58)\n\n\n\n\n\n\n\n\n\n\nOffered to both undergraduate (Bio4x58) and graduate students (Bio5x58) in english (Bio4158 / Bio5158) and french (Bio4558 / Bio5558)\nPrerequisite:\n\nan introduction class to statisticis is good to have\nNo (or limited) knowledge of R and no (or limited) knowledge of stats expected.\n\nBio 4158 / 5158 english (Course site / Course manual)\nBio 4558 / 5558 french (Course site / Course manual)",
     "crumbs": [
       "Biostats with R (Bio4158)",
       "English"
@@ -167,11 +167,11 @@
     ]
   },
   {
-    "objectID": "fr/index.html#biostatistiques-appliquées-avec-r-bio-4x58",
-    "href": "fr/index.html#biostatistiques-appliquées-avec-r-bio-4x58",
+    "objectID": "fr/index.html#biostatistiques-appliquées-avec-r-bio4x58-bio5x58",
+    "href": "fr/index.html#biostatistiques-appliquées-avec-r-bio4x58-bio5x58",
     "title": "Biostats uOttawa",
-    "section": "Biostatistiques appliquées avec R (BIO 4X58)",
-    "text": "Biostatistiques appliquées avec R (BIO 4X58)\n\n\n\n\n\n\n\n\n\n\nCours offerts aux étudiant au baccaulauréat et aux étudiants gradués en anglais et en français\nPré-requis:\n\ncours d’introduction au statistiques recommandée\nAucune connaissance de R et des statistiques requises\n\nBIO4158 anglais (cours / manuel)\nBIO4558 français (cours / manuel)",
+    "section": "Biostatistiques appliquées avec R (Bio4x58 / Bio5x58)",
+    "text": "Biostatistiques appliquées avec R (Bio4x58 / Bio5x58)\n\n\n\n\n\n\n ::::{}\n\n\n\nCours offerts aux étudiant au baccaulauréat (Bio4x58) et aux étudiants gradués (Bio5x58) en anglais (Bio4158 / Bio5158) et en français (Bio4558 / Bio5558)\nPré-requis:\n\ncours d’introduction au statistiques recommandée\nAucune connaissance de R et des statistiques requises\n\nBio4158 / Bio5158 anglais (cours / manuel)\nBio4558 / Bio5558 français (cours / manuel)\n\n\n\n\n:::",
     "crumbs": [
       "Biostats with R (Bio4158)",
       "Français"
@@ -181,19 +181,19 @@
     "objectID": "fr/index.html#biostatistiques-avancées-et-science-ouverte-bio8940",
     "href": "fr/index.html#biostatistiques-avancées-et-science-ouverte-bio8940",
     "title": "Biostats uOttawa",
-    "section": "Biostatistiques avancées et science ouverte (BIO8940)",
-    "text": "Biostatistiques avancées et science ouverte (BIO8940)\n\n\n\n\n\n\n\n\n\n\nCours bilingues offerts aux étudiants gradués\nPré-requis:\n\nconnaissances fonctionelle de R (chargement de données, graphique et statistiques de bases)\nbonne compréhension des modèles linéaires\nEssentiellement Bio4x58\n\ncours / manuel",
+    "section": "Biostatistiques avancées et science ouverte (Bio8940)",
+    "text": "Biostatistiques avancées et science ouverte (Bio8940)\n\n\n\n\n\n\n\n\n\n\nCours bilingues offerts aux étudiants gradués\nPré-requis:\n\nconnaissances fonctionelle de R (chargement de données, graphique et statistiques de bases)\nbonne compréhension des modèles linéaires\nEssentiellement Bio4x58\n\ncours / manuel",
     "crumbs": [
       "Biostats with R (Bio4158)",
       "Français"
     ]
   },
   {
-    "objectID": "fr/index.html#sur-le-chemin-de-lenf-r-intro-aux-stats-avec-r",
-    "href": "fr/index.html#sur-le-chemin-de-lenf-r-intro-aux-stats-avec-r",
+    "objectID": "fr/index.html#sur-le-chemin-de-lenf-r-biostats-avec-r",
+    "href": "fr/index.html#sur-le-chemin-de-lenf-r-biostats-avec-r",
     "title": "Biostats uOttawa",
-    "section": "Sur le chemin de l’enf-R (intro aux stats avec R)",
-    "text": "Sur le chemin de l’enf-R (intro aux stats avec R)\n\n\n\n\n\n\n\n\n\nIl s’agit d’un livre d’introduction aux statistiques et à R avec une approche multilingue. Le livre couvre une introduction à l’utilisation de base de R (chargement de données, manipulation et traçage), ainsi que des statistiques simples, la programmation, l’utilisation de github et de R markdown /Quarto avec R Studio et VS code.\nLe livre (encore en développement) est disponible en anglais et français. J’ajouterai d’autres langues plus tard dans l’année, avec l’aide de volontaires.\nVoici également quelques diapositives sur une introduction à R uniquement en anglais (slides).",
+    "section": "Sur le chemin de l’enf-R (Biostats avec R)",
+    "text": "Sur le chemin de l’enf-R (Biostats avec R)\n\n\n\n\n\n\n\n\n\nIl s’agit d’un livre d’introduction aux statistiques et à R avec une approche multilingue. Le livre couvre une introduction à l’utilisation de base de R (chargement de données, manipulation et traçage), ainsi que des statistiques simples, la programmation, l’utilisation de github et de R markdown /Quarto avec R Studio et VS code.\nLe livre (encore en développement) est disponible en anglais et français. J’ajouterai d’autres langues plus tard dans l’année, avec l’aide de volontaires.\nVoici également quelques diapositives sur une introduction à R uniquement en anglais (slides).",
     "crumbs": [
       "Biostats with R (Bio4158)",
       "Français"
