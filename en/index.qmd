@@ -38,10 +38,11 @@ by [Julien Martin](people.qmd)
 
   * Offered to both undergraduate (Bio4x58) and graduate students (Bio5x58) in english (Bio4158 / Bio5158) and french (Bio4558 / Bio5558)
   * Prerequisite:
-    * an introduction class to statisticis is good to have
+    * an introduction class to statistics is needed (MAT279 or equivalent is required)
     * No (or limited) knowledge of R and no (or limited) knowledge of stats expected.
-  * Bio4158 / Bio5158: english ([Course site][4158_course] / [Course manual][4158_manual])
-  * Bio4558 / Bio5558: french ([Course site][4558_course] / [Course manual][4558_manual])
+  * Course sites: [BioX158: english][4158_course] /
+[BioX558: french][4558_course]
+  * Book [On the R-way to hell][R_way] / [Sur le chemin de l'enf-R][chemin_R] is used as course manual with course specific chapters indicated in the [table][manual_chap-en] and on course website.
 ::::
 
 :::
@@ -57,7 +58,8 @@ by [Julien Martin](people.qmd)
     * a functional knowledge of R (loading data, running basic linear models, and making plots) 
     * a good understanding of linear models
     * essentially Bio8940 is a great next steps after completing Bio4x58.
-  * [Course site][8940_course] / [Course manual][8940_manual]
+  * [Course site][8940_course] 
+  * Book [On the R-way to hell][R_way] / [Sur le chemin de l'enf-R][chemin_R] is used as course manual with course specific chapters indicated in the [table][manual_chap-en] and on course website.
 ::::
 
 :::

@@ -17,17 +17,15 @@ website:
   navbar:
     title: '![](/img/logo_hex.png){width="50px"} Biostats uOttawa'
     left:
-      - text: Biostats with R (Bio4158)
-        href: https://biostats-uottawa.github.io/bio4158_course/
-      - text: Biostats avec R (Bio4558)
-        href: https://biostats-uottawa.github.io/bio4558_cours/
-      - text: Advanced biostats and open science (Bio8940)
+      - text: Intro Biostats & R (BioXx58)
+        href: https://biostats-uottawa.github.io/bioxx58/
+      - text: Biostats adv. / av.(Bio8940)
         href: https://biostats-uottawa.github.io/bio8940_course/
-      - text: Intro R
+      - text: Livre / Book
         menu:
-          - text: R-way to hell (R book)
+          - text: R-way to hell
             href: https://biostats-uottawa.github.io/R/en/
-          - text: Chemin de l'enf-R (livre R)
+          - text: Chemin de l'enf-R
             href: https://biostats-uottawa.github.io/R/fr/
     tools:
 #      - icon: flag

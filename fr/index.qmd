@@ -29,15 +29,18 @@ Le site regroupe les différentes ressources développées par [Julien Martin](p
 ## Biostatistiques appliquées avec R (Bio4x58 / Bio5x58)
 
 ::: {layout=[22,78]}
+
 ![](../img/hex/bio4x58_logo_hex.png){width="150"}
+
 ::::{}
 
   * Cours offerts aux étudiant au baccaulauréat (Bio4x58) et aux étudiants gradués (Bio5x58) en anglais (Bio4158 / Bio5158) et en français (Bio4558 / Bio5558)
   * Pré-requis:
-    * cours d'introduction au statistiques recommandée
+    * cours d'introduction au statistiques obligatoire (MAT279 ou équivalent)
     * Aucune connaissance de R et des statistiques requises
-  * Bio4158 / Bio5158: anglais ([cours][4158_course] / [manuel][4158_manual])
-  * Bio4558 / Bio5558: français ([cours][4558_course] / [manuel][4558_manual])
+  * Sites des cours: [BioX158: anglais][4158_course] /
+[BioX558: français][4558_course]
+  * [On the R-way to hell][R_way] / [Sur le chemin de l'enf-R][chemin_R] est utilisé comme manuel de cours et de laboratoire.
 
 ::::
 
@@ -50,12 +53,14 @@ Le site regroupe les différentes ressources développées par [Julien Martin](p
 ![](../img/hex/bio8940_logo_hex.png){width="150"}
 
 ::::{}
+
   * Cours bilingues offerts aux étudiants gradués
   * Pré-requis:
     * connaissances fonctionelle de R (chargement de données, graphique et statistiques de bases)
     * bonne compréhension des modèles linéaires
     * Essentiellement Bio4x58
-  * [cours][8940_course] / [manuel][8940_manual]
+  * [Site du cours][8940_course]
+  * [On the R-way to hell][R_way] / [Sur le chemin de l'enf-R][chemin_R] est utilisé comme manuel de cours et de laboratoire.
 ::::
 
 :::
