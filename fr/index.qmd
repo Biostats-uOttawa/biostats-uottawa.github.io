@@ -35,6 +35,10 @@ Le site regroupe les différentes ressources développées par [Julien Martin](p
 ::::{}
 
   * Cours offerts aux étudiant au baccaulauréat (Bio4x58) et aux étudiants gradués (Bio5x58) en anglais (Bio4158 / Bio5158) et en français (Bio4558 / Bio5558)
+  * Contenu :
+    * Fondements des statistique (distributions, IC, valeurs p, théorème de la limite centrale, raisonnement bayésien, ...)
+    * Modèles linéaires (t-test, ANOVA, régression, ANCOVA, modèle linéaire général)
+    * Introduction à R et ensuite tout est fait avec R
   * Pré-requis:
     * cours d'introduction au statistiques obligatoire (MAT279 ou équivalent)
     * Aucune connaissance de R et des statistiques requises
@@ -55,8 +59,15 @@ Le site regroupe les différentes ressources développées par [Julien Martin](p
 ::::{}
 
   * Cours bilingues offerts aux étudiants gradués
+  * Contenu :
+    * Brève révision des modèles linéaires (prérequis)
+    * Modèles linéaires généralisés
+    * Modèles mixtes (lmm et glmm)
+    * Approche bayésienne
+    * Tout est fait avec R
+    * Quarto / Rmarkdown
   * Pré-requis:
-    * connaissances fonctionelle de R (chargement de données, graphique et statistiques de bases)
+    * connaissances fonctionnelle de R (chargement de données, graphique et statistiques de bases)
     * bonne compréhension des modèles linéaires
     * Essentiellement Bio4x58
   * [Site du cours][8940_course]

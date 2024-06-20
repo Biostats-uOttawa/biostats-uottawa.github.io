@@ -4,6 +4,9 @@ title: "Biostats uOttawa"
 #  text: |
 #    <meta http-equiv="refresh" content="0; URL=./en/index.html">
 #    <link rel="canonical" href="./en/index.html">
+format:
+  html:
+    toc: false
 ---
 <style>
 .quarto-title-block .quarto-title{
@@ -19,17 +22,8 @@ title: "Biostats uOttawa"
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-```{r}
-#| fig.align: 'center'
-#| out.width: "30%"
-#| eval: false
-dat<-data.frame(a = rnorm(10000))
-library(ggplot2)
-ggplot(dat, aes(a))+geom_density(color="blue", fill="red") +theme_classic()+xlab("X")
-```
-
 ![](img/logo_hex.png){fig-align="center"}
 
 ::: {style="text-align: center;"}
-{{< bi flag >}} [Contenu en **français**](fr/index.qmd) / [Content in **english**](en/index.qmd) {{< bi flag >}}
+{{< bi flag >}} [**Français**](fr/index.qmd) / [**English**](en/index.qmd) {{< bi flag >}}
 :::

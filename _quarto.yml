@@ -18,9 +18,9 @@ website:
     title: '![](/img/logo_hex.png){width="50px"} Biostats uOttawa'
     left:
       - text: Intro Biostats & R (BioXx58)
-        href: https://biostats-uottawa.github.io/bioxx58/
+        href: https://biostats-uottawa.github.io/bioXx58/
       - text: Biostats adv. / av.(Bio8940)
-        href: https://biostats-uottawa.github.io/bio8940_course/
+        href: https://biostats-uottawa.github.io/bio8940/
       - text: Livre / Book
         menu:
           - text: R-way to hell

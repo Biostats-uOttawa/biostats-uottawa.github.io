@@ -37,6 +37,10 @@ by [Julien Martin](people.qmd)
 ::::{}
 
   * Offered to both undergraduate (Bio4x58) and graduate students (Bio5x58) in english (Bio4158 / Bio5158) and french (Bio4558 / Bio5558)
+  * Content:
+    * Foundations of statistics (distributions, CIs, p-values, central limit theorem, Bayesian thinking, ...)
+    * linear models (t-test, ANOVA, regression, ANCOVA, general linear model)
+    * Intro to R and then everything done in R
   * Prerequisite:
     * an introduction class to statistics is needed (MAT279 or equivalent is required)
     * No (or limited) knowledge of R and no (or limited) knowledge of stats expected.
@@ -54,6 +58,13 @@ by [Julien Martin](people.qmd)
 
 ::::{}
   * Bilingual course for graduate students
+  * Content:
+    * Brief revision of linear models (assume to be known and a prerequisite)
+    * Generalized linear model
+    * Mixed models (lmm and glmm)
+    * Bayesian approach
+    * Everything done in R
+    * Quarto / Rmarkdown
   * Prerequisite:
     * a functional knowledge of R (loading data, running basic linear models, and making plots) 
     * a good understanding of linear models

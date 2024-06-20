@@ -5,16 +5,16 @@
 -->
 
 [8940_manual]: https://biostats-uottawa.github.io/R/en/ 
-[8940_course]: https://biostats-uottawa.github.io/bio8940_course/
+[8940_course]: https://biostats-uottawa.github.io/bio8940/
 
 [4158_manual]: https://biostats-uottawa.github.io/R/en/ 
-[4158_course]: https://biostats-uottawa.github.io/bio4158_course/
+[4158_course]: https://biostats-uottawa.github.io/bioXx58/en/
 
 [4558_manual]: https://biostats-uottawa.github.io/R/fr/ 
-[4558_course]: https://biostats-uottawa.github.io/bio4558_cours/
+[4558_course]: https://biostats-uottawa.github.io/bioXx58/fr/
 
-[manual_chap-en]: https://biostats-uottawa.github.io/R/en/#course-associated-reading
-[manual_chap-fr]: https://biostats-uottawa.github.io/R/fr/#chapitre-a-lire
+[manual_chap-en]: https://biostats-uottawa.github.io/R/en/#chapters-to-read
+[manual_chap-fr]: https://biostats-uottawa.github.io/R/fr/#chapitres-a-lire
 
 [R_way]: https://biostats-uottawa.github.io/R/en/ 
 [chemin_R]: https://biostats-uottawa.github.io/R/fr/
