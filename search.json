@@ -22,7 +22,7 @@
     "href": "en/index.html#applied-biostatistics-with-r-bio4x58-bio5x58",
     "title": "Biostats uOttawa",
     "section": "Applied biostatistics with R (Bio4x58 / Bio5x58)",
-    "text": "Applied biostatistics with R (Bio4x58 / Bio5x58)\n\n\n\n\n\n\n\n\n\n\nOffered to both undergraduate (Bio4x58) and graduate students (Bio5x58) in english (Bio4158 / Bio5158) and french (Bio4558 / Bio5558)\nPrerequisite:\n\nan introduction class to statistics is needed (MAT279 or equivalent is required)\nNo (or limited) knowledge of R and no (or limited) knowledge of stats expected.\n\nCourse sites: BioX158: english / BioX558: french\nBook On the R-way to hell / Sur le chemin de l’enf-R is used as course manual with course specific chapters indicated in the table and on course website.",
+    "text": "Applied biostatistics with R (Bio4x58 / Bio5x58)\n\n\n\n\n\n\n\n\n\n\nOffered to both undergraduate (Bio4x58) and graduate students (Bio5x58) in english (Bio4158 / Bio5158) and french (Bio4558 / Bio5558)\nContent:\n\nFoundations of statistics (distributions, CIs, p-values, central limit theorem, Bayesian thinking, …)\nlinear models (t-test, ANOVA, regression, ANCOVA, general linear model)\nIntro to R and then everything done in R\n\nPrerequisite:\n\nan introduction class to statistics is needed (MAT279 or equivalent is required)\nNo (or limited) knowledge of R and no (or limited) knowledge of stats expected.\n\nCourse sites: BioX158: english / BioX558: french\nBook On the R-way to hell / Sur le chemin de l’enf-R is used as course manual with course specific chapters indicated in the table and on course website.",
     "crumbs": [
       "Intro Biostats & R (BioXx58)",
       "English"
@@ -33,7 +33,7 @@
     "href": "en/index.html#advanced-biostatistics-and-open-science-bio-8940",
     "title": "Biostats uOttawa",
     "section": "Advanced biostatistics and open science (BIO 8940)",
-    "text": "Advanced biostatistics and open science (BIO 8940)\n\n\n\n\n\n\n\n\n\n\nBilingual course for graduate students\nPrerequisite:\n\na functional knowledge of R (loading data, running basic linear models, and making plots)\na good understanding of linear models\nessentially Bio8940 is a great next steps after completing Bio4x58.\n\nCourse site\nBook On the R-way to hell / Sur le chemin de l’enf-R is used as course manual with course specific chapters indicated in the table and on course website.",
+    "text": "Advanced biostatistics and open science (BIO 8940)\n\n\n\n\n\n\n\n\n\n\nBilingual course for graduate students\nContent:\n\nBrief revision of linear models (assume to be known and a prerequisite)\nGeneralized linear model\nMixed models (lmm and glmm)\nBayesian approach\nEverything done in R\nQuarto / Rmarkdown\n\nPrerequisite:\n\na functional knowledge of R (loading data, running basic linear models, and making plots)\na good understanding of linear models\nessentially Bio8940 is a great next steps after completing Bio4x58.\n\nCourse site\nBook On the R-way to hell / Sur le chemin de l’enf-R is used as course manual with course specific chapters indicated in the table and on course website.",
     "crumbs": [
       "Intro Biostats & R (BioXx58)",
       "English"
@@ -171,7 +171,7 @@
     "href": "fr/index.html#biostatistiques-appliquées-avec-r-bio4x58-bio5x58",
     "title": "Biostats uOttawa",
     "section": "Biostatistiques appliquées avec R (Bio4x58 / Bio5x58)",
-    "text": "Biostatistiques appliquées avec R (Bio4x58 / Bio5x58)\n\n\n\n\n\n\n\n\n\n\nCours offerts aux étudiant au baccaulauréat (Bio4x58) et aux étudiants gradués (Bio5x58) en anglais (Bio4158 / Bio5158) et en français (Bio4558 / Bio5558)\nPré-requis:\n\ncours d’introduction au statistiques obligatoire (MAT279 ou équivalent)\nAucune connaissance de R et des statistiques requises\n\nSites des cours: BioX158: anglais / BioX558: français\nOn the R-way to hell / Sur le chemin de l’enf-R est utilisé comme manuel de cours et de laboratoire.",
+    "text": "Biostatistiques appliquées avec R (Bio4x58 / Bio5x58)\n\n\n\n\n\n\n\n\n\n\nCours offerts aux étudiant au baccaulauréat (Bio4x58) et aux étudiants gradués (Bio5x58) en anglais (Bio4158 / Bio5158) et en français (Bio4558 / Bio5558)\nContenu :\n\nFondements des statistique (distributions, IC, valeurs p, théorème de la limite centrale, raisonnement bayésien, …)\nModèles linéaires (t-test, ANOVA, régression, ANCOVA, modèle linéaire général)\nIntroduction à R et ensuite tout est fait avec R\n\nPré-requis:\n\ncours d’introduction au statistiques obligatoire (MAT279 ou équivalent)\nAucune connaissance de R et des statistiques requises\n\nSites des cours: BioX158: anglais / BioX558: français\nOn the R-way to hell / Sur le chemin de l’enf-R est utilisé comme manuel de cours et de laboratoire.",
     "crumbs": [
       "Intro Biostats & R (BioXx58)",
       "Français"
@@ -182,7 +182,7 @@
     "href": "fr/index.html#biostatistiques-avancées-et-science-ouverte-bio8940",
     "title": "Biostats uOttawa",
     "section": "Biostatistiques avancées et science ouverte (Bio8940)",
-    "text": "Biostatistiques avancées et science ouverte (Bio8940)\n\n\n\n\n\n\n\n\n\n\nCours bilingues offerts aux étudiants gradués\nPré-requis:\n\nconnaissances fonctionelle de R (chargement de données, graphique et statistiques de bases)\nbonne compréhension des modèles linéaires\nEssentiellement Bio4x58\n\nSite du cours\nOn the R-way to hell / Sur le chemin de l’enf-R est utilisé comme manuel de cours et de laboratoire.",
+    "text": "Biostatistiques avancées et science ouverte (Bio8940)\n\n\n\n\n\n\n\n\n\n\nCours bilingues offerts aux étudiants gradués\nContenu :\n\nBrève révision des modèles linéaires (prérequis)\nModèles linéaires généralisés\nModèles mixtes (lmm et glmm)\nApproche bayésienne\nTout est fait avec R\nQuarto / Rmarkdown\n\nPré-requis:\n\nconnaissances fonctionnelle de R (chargement de données, graphique et statistiques de bases)\nbonne compréhension des modèles linéaires\nEssentiellement Bio4x58\n\nSite du cours\nOn the R-way to hell / Sur le chemin de l’enf-R est utilisé comme manuel de cours et de laboratoire.",
     "crumbs": [
       "Intro Biostats & R (BioXx58)",
       "Français"
