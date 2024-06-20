@@ -1,65 +1,86 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
+    "objectID": "fr/index.html",
+    "href": "fr/index.html",
     "title": "Biostats uOttawa",
     "section": "",
-    "text": "Contenu en français / Content in english"
+    "text": "Le site regroupe les différentes ressources développées par Julien Martin pour les cours de biostatistiques à uOttawa.",
+    "crumbs": [
+      "Intro Biostats & R (BioXx58)",
+      "Français"
+    ]
   },
   {
-    "objectID": "en/index.html",
-    "href": "en/index.html",
+    "objectID": "fr/index.html#biostatistiques-appliquées-avec-r-bio4x58-bio5x58",
+    "href": "fr/index.html#biostatistiques-appliquées-avec-r-bio4x58-bio5x58",
     "title": "Biostats uOttawa",
+    "section": "Biostatistiques appliquées avec R (Bio4x58 / Bio5x58)",
+    "text": "Biostatistiques appliquées avec R (Bio4x58 / Bio5x58)\n\n\n\n\n\n\n\n\n\n\nCours offerts aux étudiant au baccaulauréat (Bio4x58) et aux étudiants gradués (Bio5x58) en anglais (Bio4158 / Bio5158) et en français (Bio4558 / Bio5558)\nContenu :\n\nFondements des statistique (distributions, IC, valeurs p, théorème de la limite centrale, raisonnement bayésien, …)\nModèles linéaires (t-test, ANOVA, régression, ANCOVA, modèle linéaire général)\nIntroduction à R et ensuite tout est fait avec R\n\nPré-requis:\n\ncours d’introduction au statistiques obligatoire (MAT279 ou équivalent)\nAucune connaissance de R et des statistiques requises\n\nSites des cours: BioX158: anglais / BioX558: français\nOn the R-way to hell / Sur le chemin de l’enf-R est utilisé comme manuel de cours et de laboratoire.",
+    "crumbs": [
+      "Intro Biostats & R (BioXx58)",
+      "Français"
+    ]
+  },
+  {
+    "objectID": "fr/index.html#biostatistiques-avancées-et-science-ouverte-bio8940",
+    "href": "fr/index.html#biostatistiques-avancées-et-science-ouverte-bio8940",
+    "title": "Biostats uOttawa",
+    "section": "Biostatistiques avancées et science ouverte (Bio8940)",
+    "text": "Biostatistiques avancées et science ouverte (Bio8940)\n\n\n\n\n\n\n\n\n\n\nCours bilingues offerts aux étudiants gradués\nContenu :\n\nBrève révision des modèles linéaires (prérequis)\nModèles linéaires généralisés\nModèles mixtes (lmm et glmm)\nApproche bayésienne\nTout est fait avec R\nQuarto / Rmarkdown\n\nPré-requis:\n\nconnaissances fonctionnelle de R (chargement de données, graphique et statistiques de bases)\nbonne compréhension des modèles linéaires\nEssentiellement Bio4x58\n\nSite du cours\nOn the R-way to hell / Sur le chemin de l’enf-R est utilisé comme manuel de cours et de laboratoire.",
+    "crumbs": [
+      "Intro Biostats & R (BioXx58)",
+      "Français"
+    ]
+  },
+  {
+    "objectID": "fr/index.html#sur-le-chemin-de-lenf-r-biostats-avec-r",
+    "href": "fr/index.html#sur-le-chemin-de-lenf-r-biostats-avec-r",
+    "title": "Biostats uOttawa",
+    "section": "Sur le chemin de l’enf-R (Biostats avec R)",
+    "text": "Sur le chemin de l’enf-R (Biostats avec R)\n\n\n\n\n\n\n\n\n\nIl s’agit d’un livre d’introduction aux statistiques et à R avec une approche multilingue. Le livre couvre une introduction à l’utilisation de base de R (chargement de données, manipulation et traçage), ainsi que des statistiques simples, la programmation, l’utilisation de github et de R markdown /Quarto avec R Studio et VS code.\nLe livre (encore en développement) est disponible en anglais et français. J’ajouterai d’autres langues plus tard dans l’année, avec l’aide de volontaires.\nVoici également quelques diapositives sur une introduction à R uniquement en anglais (slides).",
+    "crumbs": [
+      "Intro Biostats & R (BioXx58)",
+      "Français"
+    ]
+  },
+  {
+    "objectID": "fr/index.html#wam_tuto-fr",
+    "href": "fr/index.html#wam_tuto-fr",
+    "title": "Biostats uOttawa",
+    "section": "Comment f-R un modèle animal",
+    "text": "Comment f-R un modèle animal\n\n\n\n\n\n\n\n\n\nLe livre est un tutoriel sur comment faire un un modèle animal avec R en utilisant plusieurs paquets R. Le projet est basé sur les tutoriels fournis dans “An ecologist guide to animal model” par Wilson et al. (2010), mis à jour et étendus.",
+    "crumbs": [
+      "Intro Biostats & R (BioXx58)",
+      "Français"
+    ]
+  },
+  {
+    "objectID": "intro_r_en.html",
+    "href": "intro_r_en.html",
+    "title": "On the R-way to hell",
     "section": "",
-    "text": "This site regroup the different resources developed for the biostatistic courses at the university of Ottawa by Julien Martin",
-    "crumbs": [
-      "Intro Biostats & R (BioXx58)",
-      "English"
-    ]
+    "text": "A few presentations to take as an easy intro to R.\n\n\n\n\n\nTopic\nSlides\n\n\n\n\nIntroduction R\n / \n\n\nData in R\n / \n\n\nSimple stats in R\n /"
   },
   {
-    "objectID": "en/index.html#applied-biostatistics-with-r-bio4x58-bio5x58",
-    "href": "en/index.html#applied-biostatistics-with-r-bio4x58-bio5x58",
-    "title": "Biostats uOttawa",
-    "section": "Applied biostatistics with R (Bio4x58 / Bio5x58)",
-    "text": "Applied biostatistics with R (Bio4x58 / Bio5x58)\n\n\n\n\n\n\n\n\n\n\nOffered to both undergraduate (Bio4x58) and graduate students (Bio5x58) in english (Bio4158 / Bio5158) and french (Bio4558 / Bio5558)\nContent:\n\nFoundations of statistics (distributions, CIs, p-values, central limit theorem, Bayesian thinking, …)\nlinear models (t-test, ANOVA, regression, ANCOVA, general linear model)\nIntro to R and then everything done in R\n\nPrerequisite:\n\nan introduction class to statistics is needed (MAT279 or equivalent is required)\nNo (or limited) knowledge of R and no (or limited) knowledge of stats expected.\n\nCourse sites: BioX158: english / BioX558: french\nBook On the R-way to hell / Sur le chemin de l’enf-R is used as course manual with course specific chapters indicated in the table and on course website.",
-    "crumbs": [
-      "Intro Biostats & R (BioXx58)",
-      "English"
-    ]
+    "objectID": "intro_r_en.html#slides",
+    "href": "intro_r_en.html#slides",
+    "title": "On the R-way to hell",
+    "section": "",
+    "text": "A few presentations to take as an easy intro to R.\n\n\n\n\n\nTopic\nSlides\n\n\n\n\nIntroduction R\n / \n\n\nData in R\n / \n\n\nSimple stats in R\n /"
   },
   {
-    "objectID": "en/index.html#advanced-biostatistics-and-open-science-bio-8940",
-    "href": "en/index.html#advanced-biostatistics-and-open-science-bio-8940",
-    "title": "Biostats uOttawa",
-    "section": "Advanced biostatistics and open science (BIO 8940)",
-    "text": "Advanced biostatistics and open science (BIO 8940)\n\n\n\n\n\n\n\n\n\n\nBilingual course for graduate students\nContent:\n\nBrief revision of linear models (assume to be known and a prerequisite)\nGeneralized linear model\nMixed models (lmm and glmm)\nBayesian approach\nEverything done in R\nQuarto / Rmarkdown\n\nPrerequisite:\n\na functional knowledge of R (loading data, running basic linear models, and making plots)\na good understanding of linear models\nessentially Bio8940 is a great next steps after completing Bio4x58.\n\nCourse site\nBook On the R-way to hell / Sur le chemin de l’enf-R is used as course manual with course specific chapters indicated in the table and on course website.",
-    "crumbs": [
-      "Intro Biostats & R (BioXx58)",
-      "English"
-    ]
+    "objectID": "intro_r_en.html#manual",
+    "href": "intro_r_en.html#manual",
+    "title": "On the R-way to hell",
+    "section": "Manual",
+    "text": "Manual\nHere is a link to the the introduction to R manual: On the R-way to hell"
   },
   {
-    "objectID": "en/index.html#statistics-with-r-on-the-r-way-to-hell",
-    "href": "en/index.html#statistics-with-r-on-the-r-way-to-hell",
-    "title": "Biostats uOttawa",
-    "section": "Statistics with R: On the R-way to hell",
-    "text": "Statistics with R: On the R-way to hell\n\n\n\n\n\n\n\n\n\nThis is an introduction to statistics and R book with a multilingual approach. The book is covering an introduction to the basic use of R (data loading, wrangling and plotting), as well as programming, use of github and R markdown /Quarto with R Studio and VS code. It then covers a lot of statistical subjects.\nThe book (still under development) is available in English and French. I will add more languages later this year hopefully with help of volunteers.",
-    "crumbs": [
-      "Intro Biostats & R (BioXx58)",
-      "English"
-    ]
-  },
-  {
-    "objectID": "en/index.html#wam_tuto",
-    "href": "en/index.html#wam_tuto",
-    "title": "Biostats uOttawa",
-    "section": "How to fit an animal model",
-    "text": "How to fit an animal model\n\n\n\n\n\n\n\n\n\nThe book is tutorial on how to fit an animal model using multiple R packages. This is essentially an updated and extended version of the tutorials from “An ecologist guide to animal model” paper by Wilson et al. (2010).",
-    "crumbs": [
-      "Intro Biostats & R (BioXx58)",
-      "English"
-    ]
+    "objectID": "intro_r_en.html#about-slides-and-notes",
+    "href": "intro_r_en.html#about-slides-and-notes",
+    "title": "On the R-way to hell",
+    "section": "About slides  and notes ",
+    "text": "About slides  and notes \n\nSlides \nSlides in revealjs format (html). If you want then as a pdf (note you might loose some functionality or contents due to tabs and scroll sections):\n\nOpen the slides in your browser from a link on this page\nPress e to get into the PDF export mode (?print-pdf should appear near the end of the url and white borders should appear)\nOpen the in-browser print dialog (CTRL/CMD+P).\nChange the Destination setting to Save as PDF.\nChange the Layout to Landscape.\nChange the Margins to None.\nEnable the Background graphics option (if you want it)\nClick Save 🎉\n\n\n\nNotes \nContent of the slides in html format as a self-contained downloadable file and including tabs and scroll sections.\nMore importantly, notes have the commenting and annotateing tools activated via https://hypothes.is/. If you create a free account , you can annotate and comment slides as well as share your annotations/comments with the public or via private or public groups."
   },
   {
     "objectID": "fr/people.html",
@@ -128,86 +149,65 @@
     ]
   },
   {
-    "objectID": "intro_r_en.html",
-    "href": "intro_r_en.html",
-    "title": "On the R-way to hell",
-    "section": "",
-    "text": "A few presentations to take as an easy intro to R.\n\n\n\n\n\nTopic\nSlides\n\n\n\n\nIntroduction R\n / \n\n\nData in R\n / \n\n\nSimple stats in R\n /"
-  },
-  {
-    "objectID": "intro_r_en.html#slides",
-    "href": "intro_r_en.html#slides",
-    "title": "On the R-way to hell",
-    "section": "",
-    "text": "A few presentations to take as an easy intro to R.\n\n\n\n\n\nTopic\nSlides\n\n\n\n\nIntroduction R\n / \n\n\nData in R\n / \n\n\nSimple stats in R\n /"
-  },
-  {
-    "objectID": "intro_r_en.html#manual",
-    "href": "intro_r_en.html#manual",
-    "title": "On the R-way to hell",
-    "section": "Manual",
-    "text": "Manual\nHere is a link to the the introduction to R manual: On the R-way to hell"
-  },
-  {
-    "objectID": "intro_r_en.html#about-slides-and-notes",
-    "href": "intro_r_en.html#about-slides-and-notes",
-    "title": "On the R-way to hell",
-    "section": "About slides  and notes ",
-    "text": "About slides  and notes \n\nSlides \nSlides in revealjs format (html). If you want then as a pdf (note you might loose some functionality or contents due to tabs and scroll sections):\n\nOpen the slides in your browser from a link on this page\nPress e to get into the PDF export mode (?print-pdf should appear near the end of the url and white borders should appear)\nOpen the in-browser print dialog (CTRL/CMD+P).\nChange the Destination setting to Save as PDF.\nChange the Layout to Landscape.\nChange the Margins to None.\nEnable the Background graphics option (if you want it)\nClick Save 🎉\n\n\n\nNotes \nContent of the slides in html format as a self-contained downloadable file and including tabs and scroll sections.\nMore importantly, notes have the commenting and annotateing tools activated via https://hypothes.is/. If you create a free account , you can annotate and comment slides as well as share your annotations/comments with the public or via private or public groups."
-  },
-  {
-    "objectID": "fr/index.html",
-    "href": "fr/index.html",
+    "objectID": "index.html",
+    "href": "index.html",
     "title": "Biostats uOttawa",
     "section": "",
-    "text": "Le site regroupe les différentes ressources développées par Julien Martin pour les cours de biostatistiques à uOttawa.",
+    "text": "Français / English"
+  },
+  {
+    "objectID": "en/index.html",
+    "href": "en/index.html",
+    "title": "Biostats uOttawa",
+    "section": "",
+    "text": "This site regroup the different resources developed for the biostatistic courses at the university of Ottawa by Julien Martin",
     "crumbs": [
       "Intro Biostats & R (BioXx58)",
-      "Français"
+      "English"
     ]
   },
   {
-    "objectID": "fr/index.html#biostatistiques-appliquées-avec-r-bio4x58-bio5x58",
-    "href": "fr/index.html#biostatistiques-appliquées-avec-r-bio4x58-bio5x58",
+    "objectID": "en/index.html#applied-biostatistics-with-r-bio4x58-bio5x58",
+    "href": "en/index.html#applied-biostatistics-with-r-bio4x58-bio5x58",
     "title": "Biostats uOttawa",
-    "section": "Biostatistiques appliquées avec R (Bio4x58 / Bio5x58)",
-    "text": "Biostatistiques appliquées avec R (Bio4x58 / Bio5x58)\n\n\n\n\n\n\n\n\n\n\nCours offerts aux étudiant au baccaulauréat (Bio4x58) et aux étudiants gradués (Bio5x58) en anglais (Bio4158 / Bio5158) et en français (Bio4558 / Bio5558)\nContenu :\n\nFondements des statistique (distributions, IC, valeurs p, théorème de la limite centrale, raisonnement bayésien, …)\nModèles linéaires (t-test, ANOVA, régression, ANCOVA, modèle linéaire général)\nIntroduction à R et ensuite tout est fait avec R\n\nPré-requis:\n\ncours d’introduction au statistiques obligatoire (MAT279 ou équivalent)\nAucune connaissance de R et des statistiques requises\n\nSites des cours: BioX158: anglais / BioX558: français\nOn the R-way to hell / Sur le chemin de l’enf-R est utilisé comme manuel de cours et de laboratoire.",
+    "section": "Applied biostatistics with R (Bio4x58 / Bio5x58)",
+    "text": "Applied biostatistics with R (Bio4x58 / Bio5x58)\n\n\n\n\n\n\n\n\n\n\nOffered to both undergraduate (Bio4x58) and graduate students (Bio5x58) in english (Bio4158 / Bio5158) and french (Bio4558 / Bio5558)\nContent:\n\nFoundations of statistics (distributions, CIs, p-values, central limit theorem, Bayesian thinking, …)\nlinear models (t-test, ANOVA, regression, ANCOVA, general linear model)\nIntro to R and then everything done in R\n\nPrerequisite:\n\nan introduction class to statistics is needed (MAT279 or equivalent is required)\nNo (or limited) knowledge of R and no (or limited) knowledge of stats expected.\n\nCourse sites: BioX158: english / BioX558: french\nBook On the R-way to hell / Sur le chemin de l’enf-R is used as course manual with course specific chapters indicated in the table and on course website.",
     "crumbs": [
       "Intro Biostats & R (BioXx58)",
-      "Français"
+      "English"
     ]
   },
   {
-    "objectID": "fr/index.html#biostatistiques-avancées-et-science-ouverte-bio8940",
-    "href": "fr/index.html#biostatistiques-avancées-et-science-ouverte-bio8940",
+    "objectID": "en/index.html#advanced-biostatistics-and-open-science-bio-8940",
+    "href": "en/index.html#advanced-biostatistics-and-open-science-bio-8940",
     "title": "Biostats uOttawa",
-    "section": "Biostatistiques avancées et science ouverte (Bio8940)",
-    "text": "Biostatistiques avancées et science ouverte (Bio8940)\n\n\n\n\n\n\n\n\n\n\nCours bilingues offerts aux étudiants gradués\nContenu :\n\nBrève révision des modèles linéaires (prérequis)\nModèles linéaires généralisés\nModèles mixtes (lmm et glmm)\nApproche bayésienne\nTout est fait avec R\nQuarto / Rmarkdown\n\nPré-requis:\n\nconnaissances fonctionnelle de R (chargement de données, graphique et statistiques de bases)\nbonne compréhension des modèles linéaires\nEssentiellement Bio4x58\n\nSite du cours\nOn the R-way to hell / Sur le chemin de l’enf-R est utilisé comme manuel de cours et de laboratoire.",
+    "section": "Advanced biostatistics and open science (BIO 8940)",
+    "text": "Advanced biostatistics and open science (BIO 8940)\n\n\n\n\n\n\n\n\n\n\nBilingual course for graduate students\nContent:\n\nBrief revision of linear models (assume to be known and a prerequisite)\nGeneralized linear model\nMixed models (lmm and glmm)\nBayesian approach\nEverything done in R\nQuarto / Rmarkdown\n\nPrerequisite:\n\na functional knowledge of R (loading data, running basic linear models, and making plots)\na good understanding of linear models\nessentially Bio8940 is a great next steps after completing Bio4x58.\n\nCourse site\nBook On the R-way to hell / Sur le chemin de l’enf-R is used as course manual with course specific chapters indicated in the table and on course website.",
     "crumbs": [
       "Intro Biostats & R (BioXx58)",
-      "Français"
+      "English"
     ]
   },
   {
-    "objectID": "fr/index.html#sur-le-chemin-de-lenf-r-biostats-avec-r",
-    "href": "fr/index.html#sur-le-chemin-de-lenf-r-biostats-avec-r",
+    "objectID": "en/index.html#statistics-with-r-on-the-r-way-to-hell",
+    "href": "en/index.html#statistics-with-r-on-the-r-way-to-hell",
     "title": "Biostats uOttawa",
-    "section": "Sur le chemin de l’enf-R (Biostats avec R)",
-    "text": "Sur le chemin de l’enf-R (Biostats avec R)\n\n\n\n\n\n\n\n\n\nIl s’agit d’un livre d’introduction aux statistiques et à R avec une approche multilingue. Le livre couvre une introduction à l’utilisation de base de R (chargement de données, manipulation et traçage), ainsi que des statistiques simples, la programmation, l’utilisation de github et de R markdown /Quarto avec R Studio et VS code.\nLe livre (encore en développement) est disponible en anglais et français. J’ajouterai d’autres langues plus tard dans l’année, avec l’aide de volontaires.\nVoici également quelques diapositives sur une introduction à R uniquement en anglais (slides).",
+    "section": "Statistics with R: On the R-way to hell",
+    "text": "Statistics with R: On the R-way to hell\n\n\n\n\n\n\n\n\n\nThis is an introduction to statistics and R book with a multilingual approach. The book is covering an introduction to the basic use of R (data loading, wrangling and plotting), as well as programming, use of github and R markdown /Quarto with R Studio and VS code. It then covers a lot of statistical subjects.\nThe book (still under development) is available in English and French. I will add more languages later this year hopefully with help of volunteers.",
     "crumbs": [
       "Intro Biostats & R (BioXx58)",
-      "Français"
+      "English"
     ]
   },
   {
-    "objectID": "fr/index.html#wam_tuto-fr",
-    "href": "fr/index.html#wam_tuto-fr",
+    "objectID": "en/index.html#wam_tuto",
+    "href": "en/index.html#wam_tuto",
     "title": "Biostats uOttawa",
-    "section": "Comment f-R un modèle animal",
-    "text": "Comment f-R un modèle animal\n\n\n\n\n\n\n\n\n\nLe livre est un tutoriel sur comment faire un un modèle animal avec R en utilisant plusieurs paquets R. Le projet est basé sur les tutoriels fournis dans “An ecologist guide to animal model” par Wilson et al. (2010), mis à jour et étendus.",
+    "section": "How to fit an animal model",
+    "text": "How to fit an animal model\n\n\n\n\n\n\n\n\n\nThe book is tutorial on how to fit an animal model using multiple R packages. This is essentially an updated and extended version of the tutorials from “An ecologist guide to animal model” paper by Wilson et al. (2010).",
     "crumbs": [
       "Intro Biostats & R (BioXx58)",
-      "Français"
+      "English"
     ]
   }
 ]
