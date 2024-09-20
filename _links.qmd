@@ -4,20 +4,20 @@
 ```
 -->
 
-[8940_manual]: https://biostats-uottawa.github.io/R/en/ 
+[8940_manual]: https://biostats-uottawa.github.io/Rway 
 [8940_course]: https://biostats-uottawa.github.io/bio8940/
 
-[4158_manual]: https://biostats-uottawa.github.io/R/en/ 
+[4158_manual]: https://biostats-uottawa.github.io/Rway 
 [4158_course]: https://biostats-uottawa.github.io/bioXx58/en/
 
-[4558_manual]: https://biostats-uottawa.github.io/R/fr/ 
+[4558_manual]: https://biostats-uottawa.github.io/enfR 
 [4558_course]: https://biostats-uottawa.github.io/bioXx58/fr/
 
-[manual_chap-en]: https://biostats-uottawa.github.io/R/en/#chapters-to-read
-[manual_chap-fr]: https://biostats-uottawa.github.io/R/fr/#chapitres-a-lire
+[manual_chap-en]: https://biostats-uottawa.github.io/Rway#chapters-to-read
+[manual_chap-fr]: https://biostats-uottawa.github.io/enfR#chapitres-a-lire
 
-[R_way]: https://biostats-uottawa.github.io/R/en/ 
-[chemin_R]: https://biostats-uottawa.github.io/R/fr/
+[R_way]: https://biostats-uottawa.github.io/Rway 
+[chemin_R]: https://biostats-uottawa.github.io/enfR
 
 [lab_website]: https://juliengamartin.github.io/
 [moi_uo]: https://www.uottawa.ca/faculty-science/professors/julien-martin
