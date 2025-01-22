@@ -13,6 +13,7 @@ website:
 #  margin-header: |
 #    ![](/img/hex/mad_logo_hex.png){width="150"}
   google-analytics: G-6LLMGL3T2Q
+  cookie-consent: true
   title: "Biostats uOttawa"
   navbar:
     title: '![](/img/logo_hex.png){width="50px"} Biostats uOttawa'
